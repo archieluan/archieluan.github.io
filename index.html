@@ -45,7 +45,7 @@
     
     <script id="hexo-configurations">
     let REDEFINE = window.REDEFINE || {};
-    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
     REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/shuhang_avatar.jpg","favicon":"/images/shuhang_logo.png","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"SHUHANG LUAN","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.2","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}}};
     REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
@@ -94,14 +94,6 @@
         
             <div class="social-contacts fade-in-down-animation">
                 
-                    
-                        
-                            <span class="social-contact-item github">
-                                <a target="_blank" href="https://github.com/archieluan/archieluan.github.io">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </span>
-                        
                     
                 
                     
@@ -210,6 +202,38 @@
                         
                             <li class="menu-item">
                                 <!-- Menu -->
+                                <a class="" 
+                                    href="/categories"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        CATEGORIES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        TAGS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
                                 <a class="has-dropdown" 
                                     href="#" onClick="return false;">
                                     
@@ -230,41 +254,6 @@
                                     
                                         <li>
                                         <a href="/portfolio">PORTFOLIO
-                                        </a>
-                                        </li>
-                                    
-                                    </ul>
-                                
-                            </li>
-                    
-                        
-                            <li class="menu-item">
-                                <!-- Menu -->
-                                <a class="has-dropdown" 
-                                    href="#" onClick="return false;">
-                                    
-                                        
-                                            <i class="fa-regular fa-link"></i>
-                                        
-                                        LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
-                                    
-                                </a>
-                                <!-- Submenu -->
-                                
-                                    <ul class="sub-menu">
-                                    
-                                        <li>
-                                        <a target="_blank" rel="noopener" href="https://luanshuhang.artstation.com/">ARTSTATION
-                                        </a>
-                                        </li>
-                                    
-                                        <li>
-                                        <a href="/link2">LINK2
-                                        </a>
-                                        </li>
-                                    
-                                        <li>
-                                        <a href="/link3">LINK3
                                         </a>
                                         </li>
                                     
@@ -327,6 +316,36 @@
             
                 
                     <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/categories"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                CATEGORIES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                TAGS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
                         <a class="has-dropdown" 
                         href="#" onClick="return false;">
                             
@@ -346,35 +365,6 @@
                         
                             <li class="dropdown-item flex-center">
                                 <a class="dropdown-item" href="/portfolio">PORTFOLIO</a>
-                            </li>
-                        
-                    
-            
-                
-                    <li class="drawer-menu-item flex-center">
-                        <a class="has-dropdown" 
-                        href="#" onClick="return false;">
-                            
-                                
-                                    <i class="fa-regular fa-link"></i>
-                                
-                                LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
-                            
-                        </a>
-                    </li>
-                    <!-- Submenu -->
-                              
-                        
-                            <li class="dropdown-item flex-center">
-                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://luanshuhang.artstation.com/">ARTSTATION</a>
-                            </li>
-                        
-                            <li class="dropdown-item flex-center">
-                                <a class="dropdown-item" href="/link2">LINK2</a>
-                            </li>
-                        
-                            <li class="dropdown-item flex-center">
-                                <a class="dropdown-item" href="/link3">LINK3</a>
                             </li>
                         
                     
@@ -405,31 +395,72 @@
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/02/18/hello-world/">
-                        Hello World
+                    <a href="/2023/02/18/solve-the-bug-of-the-image/">
+                        经验：解决了关于Hexo本地图片无法加载的问题
                     </a>
                 </h3>
 
                 <div class="home-article-content markdown-body">
                     
-                        Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, ...
+                        这几天上网找了很多方式都没有完美解决问题，后来查看了官方文档后终于解决了问题（完美解决），现在贴出来如下。建议以后大家遇到了问题也先去看看官方文档：https://hexo.io/zh-cn/docs 
+解决方案如下：1. 更改配置：在根目录下配置文...
                     
                 </div>
 
                 <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Feb 18 2023 02:51:03 GMT-0500">
+            <span class="home-article-date" data-date="Sat Feb 18 2023 14:52:12 GMT-0500">
                 
                     2023-02-18
                 
             </span>
         </span>
         
+            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E5%90%84%E7%A7%8D%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">各种经验总结</a>&nbsp;
+                        </li>
+                    
+                    
+                        <li>
+                            &gt; 
+                            <a href="/categories/%E5%90%84%E7%A7%8D%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/%E7%A8%8B%E5%BA%8F%E5%90%91/">程序向</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Debug/">Debug</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/">网页设计</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/bug%E7%83%A6%E6%AD%BB%E4%BA%86%EF%BC%81/">bug烦死了！</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
         
     </div>
 
-    <a href="/2023/02/18/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/02/18/solve-the-bug-of-the-image/">Read more<span class="seo-reader-text">经验：解决了关于Hexo本地图片无法加载的问题</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -441,21 +472,23 @@
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/02/17/uploaded-my-resume-and-artstation-link/">
-                        Uploaded my resume and artstation link
+                    <a href="/2023/02/17/my-resume-and-artstation-link/">
+                        更新：简历与作品集
                     </a>
                 </h3>
 
                 <div class="home-article-content markdown-body">
                     
-                        
+                        上传了简历和作品集，在右上方栏目的“ABOUT”中，接下来我会通过发布文章来展示一些其他作品，并开放留言板模块，希望得到大佬们的指点~
+    
+
                     
                 </div>
 
                 <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Feb 17 2023 19:47:47 GMT-0500">
+            <span class="home-article-date" data-date="Fri Feb 17 2023 19:47:40 GMT-0500">
                 
                     2023-02-17
                 
@@ -463,9 +496,21 @@
         </span>
         
         
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
     </div>
 
-    <a href="/2023/02/17/uploaded-my-resume-and-artstation-link/">Read more<span class="seo-reader-text">Uploaded my resume and artstation link</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/02/17/my-resume-and-artstation-link/">Read more<span class="seo-reader-text">更新：简历与作品集</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -512,6 +557,207 @@
     </div>
 
     <a href="/2023/02/17/my-first-blog/">Read more<span class="seo-reader-text">Hello world，我叫栾书航！</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/02/15/hello-world/">
+                        Hello World
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, ...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Feb 15 2023 19:23:05 GMT-0500">
+                
+                    2023-02-15
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2023/02/15/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/2021/01/11/MoJee-Animation/">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/059/609/988/large/shuhang-luan-1617252276-1.jpg?1676759601" alt="作品：《MoJee》-Animation" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2021/01/11/MoJee-Animation/">
+                        作品：《MoJee》-Animation
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Introduction：《MoJee》，我的毕业设计动画，团队由两人组成，队友胡梓雍负责二维角色和场景概念的创作，我作为导演负责剩下所有，制作时长两个半月。我也是通过这个作品，申请到了国外的众多学校。现在回头看看，当时制作手法较为笨拙，也暴露了很多...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jan 11 2021 16:05:07 GMT-0500">
+                
+                    2021-01-11
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>&nbsp;
+                        </li>
+                    
+                    
+                        <li>
+                            &gt; 
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/%E5%8D%A1%E9%80%9A%E5%8A%A8%E7%94%BB/">卡通动画</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/3D%E5%8A%A8%E7%94%BB/">3D动画</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E5%8D%A1%E9%80%9A/">卡通</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2021/01/11/MoJee-Animation/">Read more<span class="seo-reader-text">作品：《MoJee》-Animation</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/2020/10/15/Ring-Animation/">
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/058/675/331/large/shuhang-luan-01.jpg?1674708297" alt="作品：《戒之歌》-Animation" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2020/10/15/Ring-Animation/">
+                        作品：《戒之歌》-Animation
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Introduction：中文名：《戒之歌》，英文名：《The darkest hour before the dawn》。这个作品是我在本科，开题答辩的时候做出的demo，当时设想的背景非常宏大。可惜因为毕设团队都参加了实习，最后夭折了。
+Back...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Oct 15 2020 16:05:07 GMT-0400">
+                
+                    2020-10-15
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>&nbsp;
+                        </li>
+                    
+                    
+                        <li>
+                            &gt; 
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/CG%E5%8A%A8%E7%94%BB/">CG动画</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/3D%E5%8A%A8%E7%94%BB/">3D动画</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/CG/">CG</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2020/10/15/Ring-Animation/">Read more<span class="seo-reader-text">作品：《戒之歌》-Animation</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>

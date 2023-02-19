@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/02/15/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello world，我叫栾书航！</title>
+    <url>/2023/02/17/my-first-blog/</url>
+    <content><![CDATA[<p>​	</p>
+<hr>
+<p>大家好，我叫栾书航，一个集阳光、帅气与智慧于一身的男人…</p>
+<p>​	一直很想搭建一个人网站，但是因为时间和技术问题，被耽误了。这次借着初步掌握python程序，手感还热乎的时候，赶紧将它搭建起来了。</p>
+<p>​	时间还是太赶了，萨凡纳的作业很多，老师也非常的严格，想得到一个好成绩，确实是不容易的事情，因此想在课余时间来学习其他新的知识，也需要很大的勇气。</p>
+<p>​	对于这个博客，我的初步计划主要以分享个人作品、杂七杂八的经验为主。通过不断学习，来慢慢将自己对于网页和生活中的idea加入其中。</p>
+<p>​	<strong>So, be knowledgeable, be healthy, be safe!</strong></p>
+<p>​	</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>经验：解决了关于Hexo本地图片无法加载的问题</title>
+    <url>/2023/02/18/solve-the-bug-of-the-image/</url>
+    <content><![CDATA[<p>这几天上网找了很多方式都没有完美解决问题，后来查看了官方文档后终于解决了问题（完美解决），现在贴出来如下。建议以后大家遇到了问题也先去看看官方文档：<a class="link" href="https://hexo.io/zh-cn/docs">https://hexo.io/zh-cn/docs <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="解决方案如下："><a href="#解决方案如下：" class="headerlink" title="解决方案如下："></a>解决方案如下：</h3><h4 id="1-更改配置："><a href="#1-更改配置：" class="headerlink" title="1. 更改配置："></a>1. 更改配置：</h4><p>在根目录下配置文件<code>_config.yml</code> 中有 <code>post_asset_folder:false改为true</code>。这样在建立文件时，<code>Hexo</code>会自动建立一个与文章同名的文件夹，这样就可以把与该文章相关的所有资源（图片）都放到那个文件夹里方便后面引用。如这里我放了一张test.jpg的图片。</p>
+<h4 id="2-git-bash安装插件："><a href="#2-git-bash安装插件：" class="headerlink" title="2.git bash安装插件："></a>2.git bash安装插件：</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/7ym0n/hexo-asset-image --save</span><br></pre></td></tr></table></figure></div>
+
+<p>（这是个修改过的插件，经测试无问题），使用这个插件来引入图片，而不是网上那些方法里说的用传统md语法相对路径的方法。</p>
+<h4 id="3-MD图片代码："><a href="#3-MD图片代码：" class="headerlink" title="3. MD图片代码："></a>3. MD图片代码：</h4><p>（最重要的！！！）插入图片时用这种方式：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img test.jpg This is an test image %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>　　　　　<em><strong>*注意”asset_img”是前缀！！（我写错了很多次），其中test.jpg就是你要引用的图片，我这里就是test.jpg，后面的This is an test image是图片描述，可以自己修改。*</strong></em></p>
+<h4 id="4-这样就能成功显示了，测试下吧："><a href="#4-这样就能成功显示了，测试下吧：" class="headerlink" title="4. 这样就能成功显示了，测试下吧："></a>4. 这样就能成功显示了，测试下吧：</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>
+
+
+
+
+
+
+
+<h3 id><a href="#" class="headerlink" title></a></h3><h3 id="-1"><a href="#-1" class="headerlink" title></a></h3><p>部分转载于:<a class="link" href="https://www.cnblogs.com/Jesee/p/11234387.html">https://www.cnblogs.com/Jesee/p/11234387.html <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>               </p>
+]]></content>
+      <categories>
+        <category>各种经验总结</category>
+        <category>程序向</category>
+      </categories>
+      <tags>
+        <tag>Debug</tag>
+        <tag>网页设计</tag>
+        <tag>bug烦死了！</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新：简历与作品集</title>
+    <url>/2023/02/17/my-resume-and-artstation-link/</url>
+    <content><![CDATA[<p>上传了简历和作品集，在右上方栏目的“ABOUT”中，接下来我会通过发布文章来展示一些其他作品，并开放留言板模块，希望得到大佬们的指点~</p>
+  <img lazyload src="/images/loading.svg" data-src="/2023/02/17/my-resume-and-artstation-link/my-resume-and-artstation-link.png" class title="This is a screenshot">  
+]]></content>
+      <tags>
+        <tag>个人作品</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作品：《戒之歌》-Animation</title>
+    <url>/2020/10/15/Ring-Animation/</url>
+    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>中文名：《戒之歌》，英文名：《The darkest hour before the dawn》。这个作品是我在本科，开题答辩的时候做出的demo，当时设想的背景非常宏大。可惜因为毕设团队都参加了实习，最后夭折了。</p>
+<h3 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h3><p>在自然之婴诞生之时，时空产生平行空间，两个误入其中的不同种族分别带走了其不同的灵魂部分，并被扶养长大。因为在残酷的战场中，切身感受到身边的杀戮与残酷，因此激发了自然之子的融合，拥有沟通万物之力的她成功拔下战场中心的守护之剑并沟通巨龙平息战争。</p>
+<h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、UE4、AE完成。</p>
+<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><p>YouTube: <a class="link" href="https://youtu.be/uKfmAQI5Gsk">https://youtu.be/uKfmAQI5Gsk <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Highres-Screenshot："><a href="#Highres-Screenshot：" class="headerlink" title="Highres Screenshot："></a>Highres Screenshot：</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/058/675/327/large/shuhang-luan-1667809323904.jpg?1674708287" alt="The darkest hour is that before the dawn"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/058/675/329/large/shuhang-luan-03.jpg?1674708293" alt="The darkest hour is that before the dawn"></p>
+<h3 id><a href="#" class="headerlink" title></a><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/058/675/324/large/shuhang-luan-02.jpg?1674708361" alt="The darkest hour is that before the dawn"><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/058/675/331/large/shuhang-luan-01.jpg?1674708297" alt="The darkest hour is that before the dawn"></h3><h3 id="Game-Screenshot"><a href="#Game-Screenshot" class="headerlink" title="Game Screenshot:"></a>Game Screenshot:</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/326/large/shuhang-luan-highresscreenshot00002.jpg?1676760523" alt="The darkest hour is that before the dawn"><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/334/large/shuhang-luan-highresscreenshot00009.jpg?1676760530" alt="The darkest hour is that before the dawn"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/058/675/334/large/shuhang-luan-a9dbe2a4fd0c0b2e490374b0d0b8644.jpg?1674708327" alt="The darkest hour is that before the dawn"></p>
+]]></content>
+      <categories>
+        <category>个人作品</category>
+        <category>CG动画</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>3D动画</tag>
+        <tag>CG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作品：《MoJee》-Animation</title>
+    <url>/2021/01/11/MoJee-Animation/</url>
+    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee》，我的毕业设计动画，团队由两人组成，队友胡梓雍负责二维角色和场景概念的创作，我作为导演负责剩下所有，制作时长两个半月。我也是通过这个作品，申请到了国外的众多学校。现在回头看看，当时制作手法较为笨拙，也暴露了很多细节上的问题。</p>
+<h3 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h3><p>MoJee因爱而生，是生活在原始森林里的小野人，长期的营养不良导致他非常瘦弱，令人怜惜。但他心地淳朴，乐观且活泼。他一生都在追求着功夫的最高境界，为此独自离开族群，飘洋过海来到仙岛，向猴子大师求学武艺。</p>
+<p>而这个小野人也代表着作者本身，我希望像他一样，千山万水，只为追求心中的那个梦想。</p>
+<h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、UE4、AE完成。</p>
+<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><p>Flash video: <a class="link" href="https://youtu.be/AtUuJvBMirQ">https://youtu.be/AtUuJvBMirQ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Full video :  <a class="link" href="https://youtu.be/hzk-pTPDPsQ">https://youtu.be/hzk-pTPDPsQ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Highres-Screenshot："><a href="#Highres-Screenshot：" class="headerlink" title="Highres Screenshot："></a>Highres Screenshot：</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/609/988/large/shuhang-luan-1617252276-1.jpg?1676759601" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/018/large/shuhang-luan-main-00418.jpg?1676759678" alt="MoJee"></p>
+<img lazyload src="/images/loading.svg" data-src="/2021/01/11/MoJee-Animation/HighresScreenshot00013.jpg" class title="This is an mojee image">
+
+<img lazyload src="/images/loading.svg" data-src="/2021/01/11/MoJee-Animation/HighresScreenshot00015.jpg" class title="This is an mojee image">
+
+<img lazyload src="/images/loading.svg" data-src="/2021/01/11/MoJee-Animation/HighresScreenshot00014.jpg" class title="This is an mojee image">
+
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/609/992/large/shuhang-luan-highresscreenshot00002.jpg?1676759607" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/609/994/large/shuhang-luan-highresscreenshot00005.jpg?1676759614" alt="MoJee"></p>
+<h3 id><a href="#" class="headerlink" title></a><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/609/995/large/shuhang-luan-highresscreenshot00016.jpg?1676759623" alt="MoJee"><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/609/999/large/shuhang-luan-highresscreenshot00017.jpg?1676759632" alt="MoJee"></h3><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/610/009/large/shuhang-luan-highresscreenshot00019.jpg?1676759658" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/610/017/large/shuhang-luan-highresscreenshot00020.jpg?1676759670" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/610/005/large/shuhang-luan-highresscreenshot00018.jpg?1676759645" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/610/027/large/shuhang-luan-main-00681.jpg?1676759690" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/022/large/shuhang-luan-main-00627.jpg?1676759684" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/610/033/large/shuhang-luan-main-00761.jpg?1676759702" alt="MoJee"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/030/large/shuhang-luan-main-00725.jpg?1676759696" alt="MoJee"></p>
+<h3 id="-1"><a href="#-1" class="headerlink" title></a><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/036/large/shuhang-luan-main-00859.jpg?1676759714" alt="MoJee"></h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/034/large/shuhang-luan-main-00824.jpg?1676759708" alt="MoJee"></p>
+]]></content>
+      <categories>
+        <category>个人作品</category>
+        <category>卡通动画</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>3D动画</tag>
+        <tag>卡通</tag>
+      </tags>
+  </entry>
+</search>
