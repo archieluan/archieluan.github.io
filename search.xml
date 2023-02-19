@@ -276,4 +276,112 @@
         <tag>程序向</tag>
       </tags>
   </entry>
+  <entry>
+    <title>作品：用Python创建飓风模拟器</title>
+    <url>/2023/02/15/HurricaneStarter/</url>
+    <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/code01.gif" class title="This is an roman image">
+
+<img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/code02.gif" class title="This is an roman image">
+
+
+
+<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《飓风模拟器》，是本学期所修的代码课程中的一项作业，选自Nifty Assignments 2018 -斯坦福计算机科学SIGCSE。</p>
+<p>作业要求：您将编写代码，使飓风沿着其轨迹移动，同时在地图上标记每个点的风暴类别。至少，你的代码应该显示一个提供的飓风路径，着色和改变线的厚度适当的类别，以不同的速度移动海龟适当的风速(速度)，并打印类别的值为每个数据点的适当颜色。</p>
+<p>额外学分: 1.展示课堂教学之外的个人研究. 2.创建从可能的飓风文件列表中选择的能力。3.为用户提供选择所有飓风并同时在一个窗口中绘制它们的能力(绘制重叠).</p>
+<p>本人超额完成任务，获得导师表扬，Yes！</p>
+<h2 id="Design-thinking"><a href="#Design-thinking" class="headerlink" title="Design thinking:"></a>Design thinking:</h2><h3 id="背景与启动函数制作"><a href="#背景与启动函数制作" class="headerlink" title="背景与启动函数制作"></a>背景与启动函数制作</h3><ul>
+<li>首先以turtle库为基本库绘制图像：</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle </span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>创建启动函数，包括创建一个turtle对象和一个屏幕对象，设置坐标系统以匹配经纬度，并显示地图的背景图像。</li>
+<li>该函数返回一个元组，其中包含turtle对象、屏幕对象和地图背景图像。</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hurricane_setup</span>():</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">import</span> tkinter</span><br><span class="line"></span><br><span class="line">    <span class="comment"># set size of window to size of map</span></span><br><span class="line">    turtle.setup(<span class="number">965</span>, <span class="number">600</span>)</span><br><span class="line"></span><br><span class="line">    wn = turtle.Screen()</span><br><span class="line">    wn.title(<span class="string">&quot;Hurricane Tracker&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># kludge to get the map shown as a background image,</span></span><br><span class="line">    <span class="comment"># since wn.bgpic does not allow you to position the image</span></span><br><span class="line">    canvas = wn.getcanvas()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># set the coordinate system to match lat/long</span></span><br><span class="line">    <span class="comment"># DRF - parameters are llx lly urx ury (lower left and upper right)</span></span><br><span class="line">    turtle.setworldcoordinates(-<span class="number">90</span>, <span class="number">0</span>, -<span class="number">17.66</span>, <span class="number">45</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># DRF - Windows only supports gif, pgm, ppm unless you use the PIL library</span></span><br><span class="line">    map_bg_img = tkinter.PhotoImage(file=<span class="string">&quot;images/atlantic-basin.gif&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># additional kludge for positioning the background image</span></span><br><span class="line">    <span class="comment"># when setworldcoordinates is used</span></span><br><span class="line">    canvas.create_image(-<span class="number">1175</span>, -<span class="number">580</span>, anchor=tkinter.NW, image=map_bg_img)</span><br><span class="line"></span><br><span class="line">    t = turtle.Turtle()</span><br><span class="line">    wn.register_shape(<span class="string">&quot;images/hurricane.gif&quot;</span>)</span><br><span class="line">    t.shape(<span class="string">&quot;images/hurricane.gif&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> (t, wn, map_bg_img)</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>定义飓风函数，首先开启地图</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hurricane</span>():</span><br><span class="line">    (t, wn, map_bg_img) = hurricane_setup()</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="列表读取与设定"><a href="#列表读取与设定" class="headerlink" title="列表读取与设定"></a>列表读取与设定</h3><ul>
+<li><p>定义了一个包含了五个数据文件的列表 files</p>
+</li>
+<li><p>然后，使用while 循环，让用户选择一个数据文件进行处理</p>
+</li>
+<li><p>当用户输入选择的文件编号后，代码将读取该文件中的数据并存储到一个名为 data 的列表中</p>
+</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 读取数据文件</span></span><br><span class="line">files = [<span class="string">&#x27;newdata/florence2018.csv&#x27;</span>, <span class="string">&#x27;newdata/dorian2019.csv&#x27;</span>, <span class="string">&#x27;newdata/irma2017.csv&#x27;</span>, <span class="string">&#x27;newdata/jose2017.csv&#x27;</span>, <span class="string">&#x27;newdata/michael2018.csv&#x27;</span>]</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(files)):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;x + <span class="number">1</span>&#125;</span>) <span class="subst">&#123;files[x][<span class="number">8</span>:]&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    file_number =<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;Which file do you want to play? please enter a number(1 to 5):&quot;</span>))</span><br><span class="line">    <span class="keyword">if</span> <span class="number">0</span> &lt;= file_number - <span class="number">1</span> &lt; <span class="built_in">len</span>(files):</span><br><span class="line">        data = []</span><br></pre></td></tr></table></figure></div>
+
+
+
+<ul>
+<li>使用“with open（file）as f：”语法，它可以自动关闭文件，从而避免了因为忘记关闭文件而导致的错误</li>
+<li>使用 ”f.readlines()“ 函数将文件内容逐行读取到一个列表 f_csv 中</li>
+<li>接着，使用一个 for 循环遍历 f_csv 中的每一行，并用 “enumerate()” 函数获取并定义行和高</li>
+<li>最后跳过第一行（名称）</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">file = files[file_number-<span class="number">1</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Roger that...wait please&quot;</span>)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file) <span class="keyword">as</span> f:</span><br><span class="line">    f_csv = f.readlines()</span><br><span class="line"></span><br><span class="line"><span class="comment"># set line and column</span></span><br><span class="line">    <span class="keyword">for</span> i, column <span class="keyword">in</span> <span class="built_in">enumerate</span>(f_csv):</span><br><span class="line">        <span class="comment"># use the enumerate function can get all the line number(enumerate = line number)</span></span><br><span class="line">        <span class="comment"># i = line number(the first variable)</span></span><br><span class="line">        <span class="comment"># skip headline:</span></span><br><span class="line">        column = column.split(<span class="string">&quot;,&quot;</span>)</span><br><span class="line">        <span class="keyword">if</span> i == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="建立函数内新列表"><a href="#建立函数内新列表" class="headerlink" title="建立函数内新列表"></a>建立函数内新列表</h3><ul>
+<li>将需要用到的数据，进行整理，并合成一个新的列表</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># set position,wind_speed,category:</span></span><br><span class="line"><span class="comment"># coordinates =(Lon, Lat)</span></span><br><span class="line">position = <span class="built_in">float</span>(column[<span class="number">3</span>]), <span class="built_in">float</span>(column[<span class="number">2</span>])</span><br><span class="line">category = column[-<span class="number">1</span>][:-<span class="number">1</span>]</span><br><span class="line">wind_speed = column[<span class="number">4</span>][:-<span class="number">3</span>]</span><br><span class="line"><span class="comment"># group a new data(csv)</span></span><br><span class="line">data.append([position, category, wind_speed])</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="设置绘图判定"><a href="#设置绘图判定" class="headerlink" title="设置绘图判定"></a>设置绘图判定</h3><ul>
+<li>使用for循环进行判定，根据数据调节颜色、宽度、速度等</li>
+<li></li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(data)):</span><br><span class="line">                position = data[i][<span class="number">0</span>]</span><br><span class="line">                category = data[i][<span class="number">1</span>]</span><br><span class="line">                wind_speed = data[i][<span class="number">2</span>]</span><br><span class="line">                t.speed(<span class="number">10</span> - (<span class="built_in">float</span>(wind_speed) * (<span class="number">2</span> / <span class="number">37</span>)))</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> category == <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">                    t.color(<span class="string">&#x27;white&#x27;</span>)</span><br><span class="line">                    t.pensize(<span class="number">1</span>)</span><br><span class="line">                <span class="keyword">elif</span> category == <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    t.color(<span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">                    t.pensize(<span class="number">2</span>)</span><br><span class="line">                <span class="keyword">elif</span> category == <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    t.color(<span class="string">&#x27;green&#x27;</span>)</span><br><span class="line">                    t.pensize(<span class="number">4</span>)</span><br><span class="line">                <span class="keyword">elif</span> category == <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    t.color(<span class="string">&#x27;yellow&#x27;</span>)</span><br><span class="line">                    t.pensize(<span class="number">6</span>)</span><br><span class="line">                <span class="keyword">elif</span> category == <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    t.color(<span class="string">&#x27;orange&#x27;</span>)</span><br><span class="line">                    t.pensize(<span class="number">8</span>)</span><br><span class="line">                <span class="keyword">elif</span> category == <span class="string">&#x27;5&#x27;</span>:</span><br><span class="line">                    t.color(<span class="string">&#x27;red&#x27;</span>)</span><br><span class="line">                    t.pensize(<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> category != <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">                    t.write(data[i][<span class="number">1</span>], font=(<span class="string">&quot;Arial&quot;</span>, <span class="number">10</span>, <span class="string">&quot;normal&quot;</span>))</span><br><span class="line">                t.goto(position)</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> i == <span class="number">0</span>:</span><br><span class="line">                    t.pd()</span><br><span class="line">            t.pu()</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>通过判定，用户输入值在正确范围内的，进行绘制；输入0，为退出；输入其他错误，则会提示重新修改！</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">        <span class="keyword">elif</span> -<span class="number">1</span> &gt; file_number-<span class="number">1</span> :</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Sorry,Invalid file number...&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Please try again...&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">elif</span> file_number - <span class="number">1</span> &gt;= <span class="built_in">len</span>(files):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Wrong! Wrong! Wrong!&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Try again!&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">elif</span> file_number == <span class="number">0</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Bye~&quot;</span>)</span><br><span class="line">        exit()</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">	hurricane()</span><br><span class="line">	</span><br><span class="line">main()</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>完成！</li>
+</ul>
+<h4 id="输入值截图："><a href="#输入值截图：" class="headerlink" title="输入值截图："></a>输入值截图：</h4><img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/01.jpg" class title="This is an roman image"> 
+
+<img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/02.jpg" class title="This is an roman image">
+
+
+
+<h3 id="易错点反思："><a href="#易错点反思：" class="headerlink" title="易错点反思："></a>易错点反思：</h3><ol>
+<li>很多新的语法还不够熟练，经常想不起来用，这也导致很多时候代码写不下去。</li>
+<li>学会了使用AI进行询问新函数和语法的使用。</li>
+</ol>
+<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/%E5%9B%BE%E7%89%871.jpg" class title="This is an roman image">
+
+<img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/%E5%9B%BE%E7%89%872.jpg" class title="This is an roman image">
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>作品集</category>
+        <category>程序向</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>Python</tag>
+        <tag>程序向</tag>
+        <tag>模拟</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
 </search>
