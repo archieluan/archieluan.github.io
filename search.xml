@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/02/15/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello world，我叫栾书航！</title>
     <url>/2023/02/17/my-first-blog/</url>
     <content><![CDATA[<p>​	</p>
@@ -175,14 +157,14 @@
   </entry>
   <entry>
     <title>作品：用Python创建罗马文字图形</title>
-    <url>/2023/01/19/Practice-plane-composition/</url>
+    <url>/2022/11/18/Practice-plane-composition/</url>
     <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/616/049/small/shuhang-luan-wi23-v705-p1-luanshuhang.jpg?1676782321" alt="img" style="zoom: 80%;">
 
 
 
 <h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>在我练习Python的时候，我观察了罗马字体，发现如果将把它放在平面构成里，它看起来也非常漂亮。因此我试着将它构建了出来。</p>
 <h2 id="Reference："><a href="#Reference：" class="headerlink" title="Reference："></a>Reference：</h2><p>大致模仿了罗马文字圆形形式，比例非常好。</p>
-<img lazyload src="/images/loading.svg" data-src="/2023/01/19/Practice-plane-composition/1676782386825.jpg" class title="This is an roman image">
+<img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/1676782386825.jpg" class title="This is an roman image">
 
 
 
@@ -208,7 +190,7 @@
 <li><p>效果图如下：</p>
 </li>
 </ul>
-<img lazyload src="/images/loading.svg" data-src="/2023/01/19/Practice-plane-composition/0221593ffb0ea73e6b067288c10ca75.png" class title="This is an roman image">
+<img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/0221593ffb0ea73e6b067288c10ca75.png" class title="This is an roman image">
 
 <h3 id="制作Main程序："><a href="#制作Main程序：" class="headerlink" title="制作Main程序："></a>制作Main程序：</h3><ul>
 <li>建立Constants,并导入五个图形函数文件：</li>
@@ -244,11 +226,11 @@
 <li>其次，我没有在一开始就设计程序的大框架，而是盲目的一个一个去绘制图形，到最后想到要开始制作main程序的时候，发现所有文件都很独立，工程很大，最后不得不一个一个反攻修改。</li>
 <li>我不能理解很多变量之间的操作和结果，所以我不断出错。最后，我使用了我能理解的if函数，在尝试中完成了我的工作。</li>
 </ol>
-<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2023/01/19/Practice-plane-composition/%E5%9B%BE%E7%89%871.png" class title="This is an roman image">
+<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/%E5%9B%BE%E7%89%871.png" class title="This is an roman image">
 
 
 
-<h2 id="另附杂七杂八临摹练习图："><a href="#另附杂七杂八临摹练习图：" class="headerlink" title="另附杂七杂八临摹练习图："></a>另附杂七杂八临摹练习图：</h2><img lazyload src="/images/loading.svg" data-src="/2023/01/19/Practice-plane-composition/%E5%9B%BE%E7%89%872.png" class title="This is an roman image">
+<h2 id="另附杂七杂八临摹练习图："><a href="#另附杂七杂八临摹练习图：" class="headerlink" title="另附杂七杂八临摹练习图："></a>另附杂七杂八临摹练习图：</h2><img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/%E5%9B%BE%E7%89%872.png" class title="This is an roman image">
 
 
 
@@ -278,17 +260,17 @@
   </entry>
   <entry>
     <title>作品：用Python创建飓风模拟器</title>
-    <url>/2023/02/15/HurricaneStarter/</url>
-    <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/code01.gif" class title="This is an hurricane image">
+    <url>/2022/12/20/HurricaneStarter/</url>
+    <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/code01.gif" class title="This is an hurricane image">
 
-<img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/code02.gif" class title="This is an hurricane image">
+<img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/code02.gif" class title="This is an hurricane image">
 
 
 
-<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《飓风模拟器》，是本学期所修的代码课程中的一项作业，选自Nifty Assignments 2018 -斯坦福计算机科学SIGCSE。</p>
+<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《飓风模拟器》，是在学校所修的代码课程中的一项作业，选自Nifty Assignments 2018 -斯坦福计算机科学SIGCSE。</p>
 <p>作业要求：您将编写代码，使飓风沿着其轨迹移动，同时在地图上标记每个点的风暴类别。至少，你的代码应该显示一个提供的飓风路径，着色和改变线的厚度适当的类别，以不同的速度移动海龟适当的风速(速度)，并打印类别的值为每个数据点的适当颜色。</p>
 <p>额外学分: 1.展示课堂教学之外的个人研究. 2.创建从可能的飓风文件列表中选择的能力。3.为用户提供选择所有飓风并同时在一个窗口中绘制它们的能力(绘制重叠).</p>
-<p>本人超额完成任务，获得导师表扬，Yes！</p>
+<p>超额完成作业，虽作品依旧相对粗糙，但也是在技术上成长的过程，因此记录下来，作为经验。</p>
 <h2 id="Design-thinking"><a href="#Design-thinking" class="headerlink" title="Design thinking:"></a>Design thinking:</h2><h3 id="背景与启动函数制作"><a href="#背景与启动函数制作" class="headerlink" title="背景与启动函数制作"></a>背景与启动函数制作</h3><ul>
 <li>首先以turtle库为基本库绘制图像：</li>
 </ul>
@@ -348,9 +330,9 @@
 <ul>
 <li>完成！</li>
 </ul>
-<h4 id="输入值截图："><a href="#输入值截图：" class="headerlink" title="输入值截图："></a>输入值截图：</h4><img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/01.jpg" class title="This is an hurricane image"> 
+<h4 id="输入值截图："><a href="#输入值截图：" class="headerlink" title="输入值截图："></a>输入值截图：</h4><img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/01.jpg" class title="This is an hurricane image"> 
 
-<img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/02.jpg" class title="This is an hurricane image">
+<img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/02.jpg" class title="This is an hurricane image">
 
 
 
@@ -358,9 +340,9 @@
 <li>很多新的语法还不够熟练，经常想不起来用，这也导致很多时候代码写不下去。</li>
 <li>学会了使用AI进行询问新函数和语法的使用。</li>
 </ol>
-<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/%E5%9B%BE%E7%89%871.jpg" class title="This is an hurricane image">
+<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/%E5%9B%BE%E7%89%871.jpg" class title="This is an hurricane image">
 
-<img lazyload src="/images/loading.svg" data-src="/2023/02/15/HurricaneStarter/%E5%9B%BE%E7%89%872.jpg" class title="This is an hurricane image">
+<img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/%E5%9B%BE%E7%89%872.jpg" class title="This is an hurricane image">
 
 
 
@@ -382,6 +364,212 @@
         <tag>程序向</tag>
         <tag>模拟</tag>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作品：用Python创建Maya重命名工具</title>
+    <url>/2023/02/01/rename-maya-tool/</url>
+    <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2023/02/01/rename-maya-tool/tree01.gif" class title="This is an hurricane image">
+
+<img lazyload src="/images/loading.svg" data-src="/2023/02/01/rename-maya-tool/rename-tool.jpg" class title="This is an hurricane image">
+
+
+
+
+<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《Maya重命名工具》，是我在22年在腾讯天美工作室实习的时候，最常见也最实用的一个工具，这也是我认为逻辑清晰，也非常容易制作的工具。特别是在辅助程序组进行批量创建模型，测试性能的时候，自己创建一个这样的工具，真的能提高太多的效率了。</p>
+<p>不过22年我还不熟悉python，只会在UE5中使用widget工具，用库里已经存在的函数节点来连接，虽然也很方便，但是也会受到很多的限制。</p>
+<h5 id="UE5-Widget工具展示："><a href="#UE5-Widget工具展示：" class="headerlink" title="UE5-Widget工具展示："></a>UE5-Widget工具展示：</h5><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/132/small/shuhang-luan-tool01.jpg?1676860570" alt="img" style="zoom:50%;">
+
+
+
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/133/small/shuhang-luan-tool02.jpg?1676860572" alt="img"></p>
+<p>因此在我开始练习python工具制作后，我就想起了曾经的“挚爱”。</p>
+<p>那么，开干！</p>
+<h2 id="Design-thinking"><a href="#Design-thinking" class="headerlink" title="Design thinking:"></a>Design thinking:</h2><h3 id="建立窗口"><a href="#建立窗口" class="headerlink" title="建立窗口"></a>建立窗口</h3><ul>
+<li>创建后缀字典：</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">SUFFIXES = &#123;</span><br><span class="line">    <span class="string">&quot;mesh&quot;</span>: <span class="string">&quot;GEO&quot;</span>,</span><br><span class="line">    <span class="string">&quot;joint&quot;</span>: <span class="string">&quot;JNT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;camera&quot;</span>: <span class="string">&quot;CAM&quot;</span>,</span><br><span class="line">    <span class="string">&quot;ambientLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;directionalLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;pointLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;spotLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>创建类，设定窗口名称</li>
+<li>Tips：创建类的目的是把相关的代码封装在一起，并提供可重复使用的接口和工具，方便管理和维护代码。在这个例子中，RenamerUi 类的目的是创建 Maya 的批量重命名工具的用户界面。使用类可以把 UI 元素封装在一起，并在需要时方便地创建、显示、删除等。</li>
+<li>在创建窗口前，先删去之前的同名窗口</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">RenamerUi</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    WINDOW_NAME = <span class="string">&quot;BatchNamingUi&quot;</span></span><br><span class="line">    APP_NAME = <span class="string">&quot;Batch naming&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">display</span>(<span class="params">cls</span>):</span><br><span class="line">        cls.delete()</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>建立窗口并命名</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 建立窗口</span></span><br><span class="line">    <span class="comment"># 主主控件</span></span><br><span class="line">    main_window = cmds.window(cls.WINDOW_NAME, title=<span class="string">&quot;Batch Renamer&quot;</span>, sizeable=<span class="literal">True</span>, menuBar=<span class="literal">True</span>)</span><br><span class="line">    main_layout = cmds.columnLayout(adjustableColumn=<span class="literal">True</span>, parent=main_window)</span><br><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="UI界面"><a href="#UI界面" class="headerlink" title="UI界面"></a>UI界面</h3><h4 id="主控件"><a href="#主控件" class="headerlink" title="主控件"></a>主控件</h4><ul>
+<li>设置界面内的主控件，并依附于窗口</li>
+<li>创建UI：选择方法</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 选择界面</span></span><br><span class="line">method_layout = cmds.formLayout(parent=main_layout)</span><br><span class="line"></span><br><span class="line">cls.method = cmds.radioButtonGrp(numberOfRadioButtons=<span class="number">2</span>,</span><br><span class="line">                                 label=<span class="string">&quot;Method: &quot;</span>,</span><br><span class="line">                                 columnWidth=(<span class="number">1</span>, <span class="number">75</span>),</span><br><span class="line">                                 h=<span class="number">27</span>,</span><br><span class="line">                                 w=<span class="number">512</span>,</span><br><span class="line">                                 sl=<span class="number">1</span>,</span><br><span class="line">                                 labelArray2=(<span class="string">&quot;Selected&quot;</span>,<span class="string">&quot;Hierarchy&quot;</span>),</span><br><span class="line">                                 parent=method_layout)</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+
+
+<h4 id="UI-重命名"><a href="#UI-重命名" class="headerlink" title="UI- 重命名"></a>UI- 重命名</h4><h5 id="子控件与输入窗口"><a href="#子控件与输入窗口" class="headerlink" title="子控件与输入窗口"></a>子控件与输入窗口</h5><ul>
+<li><p>“Rename”窗口不需要输入值，因此使用<code>cmds.frameLayout()</code>命令创建栏目，并使用bgs&#x3D;True添加颜色</p>
+</li>
+<li><p>使用<code>cmds.textFieldGrp(）</code>命令创建帧布局窗口小部件，返回的值为字符串</p>
+</li>
+<li><p>使用<code>columnWidth1/2=</code>命令控制标签和帧布局窗口的宽度</p>
+</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 名称窗口</span></span><br><span class="line">rename_layout = cmds.frameLayout(label=<span class="string">&quot;Rename&quot;</span>, parent=main_layout, bgs=<span class="literal">True</span></span><br><span class="line">rename_form_layout = cmds.formLayout(parent=rename_layout, h=<span class="number">60</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#cw1:将name向右移动一段位置（增加空格）cw2:控制输入文本位置</span></span><br><span class="line">cls.name_tfg = cmds.textFieldGrp(label=<span class="string">&quot;Name: &quot;</span>,</span><br><span class="line">                                 columnWidth=(<span class="number">1</span>, <span class="number">75</span>),</span><br><span class="line">                                 columnWidth2=(<span class="number">2</span>, <span class="number">426</span>),</span><br><span class="line">                                 editable=<span class="literal">True</span>,</span><br><span class="line">                                 parent=rename_form_layout)</span><br><span class="line"></span><br><span class="line">cls.prefix_tfg = cmds.textFieldGrp(label=<span class="string">&quot;Prefix: &quot;</span>,</span><br><span class="line">                                   columnWidth=(<span class="number">1</span>, <span class="number">75</span>),</span><br><span class="line">                                   columnWidth2=(<span class="number">2</span>, <span class="number">426</span>),</span><br><span class="line">                                   editable=<span class="literal">True</span>,</span><br><span class="line">                                   parent=rename_form_layout)</span><br><span class="line"></span><br><span class="line">cls.suffix_tfg = cmds.textFieldGrp(label=<span class="string">&quot;Suffix: &quot;</span>,</span><br><span class="line">                                   columnWidth=(<span class="number">1</span>, <span class="number">40</span>),</span><br><span class="line">                                   columnWidth2=(<span class="number">2</span>, <span class="number">80</span>),</span><br><span class="line">                                   editable=<span class="literal">True</span>,</span><br><span class="line">                                   parent=rename_form_layout)</span><br><span class="line"></span><br><span class="line">cls.autoSuffix_cbg = cmds.checkBoxGrp(numberOfCheckBoxes=<span class="number">1</span>,</span><br><span class="line">                                      label=<span class="string">&quot;Auto Suffix: &quot;</span>,</span><br><span class="line">                                      columnWidth=(<span class="number">1</span>, <span class="number">70</span>),</span><br><span class="line">                                      io=<span class="literal">False</span>,</span><br><span class="line">                                      changeCommand=cls.toggleSuffixField,</span><br><span class="line">                                      parent=rename_form_layout)</span><br><span class="line"><span class="comment"># 设定后缀-数字位数</span></span><br><span class="line"><span class="comment"># 创建标签</span></span><br><span class="line">padding_label = cmds.text(<span class="string">&quot;Padding: &quot;</span>, align=<span class="string">&quot;right&quot;</span>, width=<span class="number">60</span>, parent=rename_form_layout)</span><br><span class="line">   </span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>读取整数字段，控制后缀名的数值位数</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">cls.padding = cmds.intField(width=<span class="number">50</span>,</span><br><span class="line">                            value=<span class="number">1</span>,</span><br><span class="line">                            minValue=<span class="number">1</span>,</span><br><span class="line">                            maxValue=<span class="number">6</span>,</span><br><span class="line">                            step=<span class="number">1</span>,</span><br><span class="line">                            parent=rename_form_layout)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="布局排版"><a href="#布局排版" class="headerlink" title="布局排版"></a>布局排版</h5><ul>
+<li>使用<code>cmds.formLayout（）</code>命令，控制各控件进行排版</li>
+<li>例如：<code>ac=(cls.autoSuffix_cbg, &quot;left&quot;, 0, cls.suffix_tfg)</code> 表示将 <code>autoSuffix_cbg</code> 这个控件的左侧对齐到 <code>suffix_tfg</code> 这个控件的右侧，并且二者之间没有空白区域</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, af=(cls.name_tfg, <span class="string">&quot;top&quot;</span>, <span class="number">6</span>))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, af=(cls.name_tfg, <span class="string">&quot;left&quot;</span>, <span class="number">0</span>))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.prefix_tfg, <span class="string">&quot;top&quot;</span>, <span class="number">3</span>, cls.name_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.suffix_tfg, <span class="string">&quot;top&quot;</span>, <span class="number">3</span>, cls.name_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.suffix_tfg, <span class="string">&quot;left&quot;</span>, <span class="number">0</span>, cls.prefix_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.autoSuffix_cbg, <span class="string">&quot;top&quot;</span>, <span class="number">6</span>, cls.name_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.autoSuffix_cbg, <span class="string">&quot;left&quot;</span>, <span class="number">0</span>, cls.suffix_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(padding_label, <span class="string">&quot;top&quot;</span>, <span class="number">6</span>, cls.name_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(padding_label, <span class="string">&quot;left&quot;</span>, <span class="number">0</span>, cls.autoSuffix_cbg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.padding, <span class="string">&quot;top&quot;</span>, <span class="number">3</span>, cls.name_tfg))</span><br><span class="line">   cmds.formLayout(rename_form_layout, e=<span class="literal">True</span>, ac=(cls.padding, <span class="string">&quot;left&quot;</span>, <span class="number">0</span>, padding_label))</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h4 id="UI-搜索和替换"><a href="#UI-搜索和替换" class="headerlink" title="UI- 搜索和替换"></a>UI- 搜索和替换</h4><ul>
+<li>使用相同方法创建搜索和替换的UI界面，在此不多赘述…</li>
+<li>最后加入<code>cmds.showWindow(main_window)</code>打开窗口</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Search and Replace UI</span></span><br><span class="line">replace_layout = cmds.frameLayout(label=<span class="string">&quot;Search and Replace&quot;</span>, parent=main_layout, bgs=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">replace_form_layout = cmds.formLayout(parent=replace_layout, h=<span class="number">65</span>)</span><br><span class="line"></span><br><span class="line">cls.searchFor_tfg = cmds.textFieldGrp(label=<span class="string">&quot;Search For: &quot;</span>,</span><br><span class="line">                                      columnWidth=(<span class="number">1</span>, <span class="number">75</span>),</span><br><span class="line">                                      columnWidth2=(<span class="number">2</span>, <span class="number">426</span>),</span><br><span class="line">                                      editable=<span class="literal">True</span>,</span><br><span class="line">                                      parent=replace_form_layout)</span><br><span class="line"></span><br><span class="line">cls.replaceWith_tfg = cmds.textFieldGrp(label=<span class="string">&quot;Replace With: &quot;</span>,</span><br><span class="line">                                        columnWidth=(<span class="number">1</span>, <span class="number">75</span>),</span><br><span class="line">                                        columnWidth2=(<span class="number">2</span>, <span class="number">426</span>),</span><br><span class="line">                                        editable=<span class="literal">True</span>,</span><br><span class="line">                                        parent=replace_form_layout)</span><br><span class="line"></span><br><span class="line">cmds.formLayout(replace_form_layout, e=<span class="literal">True</span>, af=(cls.searchFor_tfg, <span class="string">&quot;top&quot;</span>, <span class="number">6</span>))</span><br><span class="line">cmds.formLayout(replace_form_layout, e=<span class="literal">True</span>, af=(cls.searchFor_tfg, <span class="string">&quot;left&quot;</span>, <span class="number">0</span>))</span><br><span class="line">cmds.formLayout(replace_form_layout, e=<span class="literal">True</span>, ac=(cls.replaceWith_tfg, <span class="string">&quot;top&quot;</span>, <span class="number">3</span>, cls.searchFor_tfg))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Buttons UI</span></span><br><span class="line">button_layout = cmds.flowLayout(parent=main_layout)</span><br><span class="line">rename_btn = cmds.button(label=<span class="string">&quot;Rename&quot;</span>,</span><br><span class="line">                         width=<span class="number">170</span>,</span><br><span class="line">                         height=<span class="number">28</span>,</span><br><span class="line">                         command=<span class="string">&quot;batchRenamerUi.rename_objects()&quot;</span>,</span><br><span class="line">                         parent=button_layout)</span><br><span class="line"></span><br><span class="line">replace_btn = cmds.button(label=<span class="string">&quot;Replace&quot;</span>,</span><br><span class="line">                          width=<span class="number">170</span>,</span><br><span class="line">                          height=<span class="number">28</span>,</span><br><span class="line">                          command=<span class="string">&quot;batchRenamerUi.replace_objects()&quot;</span>,</span><br><span class="line">                          parent=button_layout)</span><br><span class="line"></span><br><span class="line">replace_btn = cmds.button(label=<span class="string">&quot;Cancel&quot;</span>,</span><br><span class="line">                          width=<span class="number">170</span>,</span><br><span class="line">                          height=<span class="number">28</span>,</span><br><span class="line">                          command=<span class="string">&quot;batchRenamerUi.delete()&quot;</span>,</span><br><span class="line">                          parent=button_layout)</span><br><span class="line"></span><br><span class="line">cmds.window(main_window, e=<span class="literal">True</span>, w=<span class="number">200</span>, h=<span class="number">150</span>)</span><br><span class="line">cmds.window(main_window, e=<span class="literal">True</span>, sizeable=<span class="literal">True</span>)</span><br><span class="line">cmds.window(main_window, e=<span class="literal">True</span>, rtf=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">cmds.showWindow(main_window)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="重命名函数"><a href="#重命名函数" class="headerlink" title="重命名函数"></a>重命名函数</h3><h4 id="退出设定"><a href="#退出设定" class="headerlink" title="退出设定"></a>退出设定</h4><ul>
+<li>如果关闭窗口，则退出UI界面</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@classmethod</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">delete</span>(<span class="params">cls</span>):</span><br><span class="line">    <span class="keyword">if</span> cmds.window(cls.WINDOW_NAME, exists=<span class="literal">True</span>):</span><br><span class="line">        cmds.deleteUI(cls.WINDOW_NAME, window=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="自动后缀设定"><a href="#自动后缀设定" class="headerlink" title="自动后缀设定"></a>自动后缀设定</h4><ul>
+<li>如果自动后缀功能开启，则无法使用后缀重命名</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">@classmethod</span><br><span class="line">def toggleSuffixField(cls, value):</span><br><span class="line">    if value:</span><br><span class="line">        cmds.textFieldGrp(cls.suffix_tfg, e=1, en=0)</span><br><span class="line">    else:</span><br><span class="line">        cmds.textFieldGrp(cls.suffix_tfg, e=1, en=1)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h4 id="重命名函数-1"><a href="#重命名函数-1" class="headerlink" title="重命名函数"></a>重命名函数</h4><h5 id="获取值"><a href="#获取值" class="headerlink" title="获取值"></a>获取值</h5><ul>
+<li>获取UI中所有的值，并保存到相应变量</li>
+<li>定义appending中的counter初始值为1，以作后用</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@classmethod</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">rename_objects</span>(<span class="params">cls</span>):</span><br><span class="line"></span><br><span class="line">    rename_data = cmds.textFieldGrp(cls.name_tfg, query=<span class="literal">True</span>, text=<span class="literal">True</span>)</span><br><span class="line">    prefix_data = cmds.textFieldGrp(cls.prefix_tfg, query=<span class="literal">True</span>, text=<span class="literal">True</span>)</span><br><span class="line">    padding_data = cmds.intField(cls.padding, query=<span class="literal">True</span>, value=<span class="literal">True</span>)</span><br><span class="line">    hierarchy_data = cmds.radioButtonGrp(cls.method, query=<span class="literal">True</span>, select=<span class="literal">True</span>)</span><br><span class="line">    counter = <span class="number">1</span></span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="方法判定"><a href="#方法判定" class="headerlink" title="方法判定"></a>方法判定</h5><ul>
+<li>判定选择方法，如果 hierarchy_data &#x3D; 2，则代表选择了第二个选项，代表选择了hierarchy</li>
+<li>如果用户选择了hierarchy，则使用<code>cmds.listRelatives()</code>获取所有后代物体，并选中（很好用！）</li>
+<li>若选择的是select，则只选择场景中选中的模型</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> hierarchy_data == <span class="number">2</span>:</span><br><span class="line">    sel = cmds.ls(sl=<span class="literal">True</span>, tr=<span class="literal">True</span>)</span><br><span class="line">    children = cmds.listRelatives(sel, ad=<span class="literal">True</span>, <span class="built_in">type</span>=<span class="string">&#x27;transform&#x27;</span>)</span><br><span class="line">    cmds.select(children, add=<span class="literal">True</span>)</span><br><span class="line">    sel = cmds.ls(sl=<span class="literal">True</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    sel = cmds.ls(sl=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="获取后缀"><a href="#获取后缀" class="headerlink" title="获取后缀"></a>获取后缀</h5><ul>
+<li>错误判定，若未选择模型，则提示报错</li>
+<li>检查box里是否选择了自动后缀，若无，则获取用户输入的后缀信息</li>
+<li>若有，则获取层级下的所有子对象的type，并对照字典一一赋予</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">len</span>(sel) &lt; <span class="number">1</span>:</span><br><span class="line">    <span class="keyword">raise</span> RuntimeError(<span class="string">&quot;Please select at least one object to rename&quot;</span>)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">for</span> obj <span class="keyword">in</span> sel:</span><br><span class="line">        <span class="keyword">if</span> cmds.checkBoxGrp(cls.autoSuffix_cbg, query=<span class="literal">True</span>, value1=<span class="literal">True</span>):</span><br><span class="line">            objType = cmds.objectType(obj)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> objType == <span class="string">&quot;transform&quot;</span>:</span><br><span class="line">                children = cmds.listRelatives(obj, children=<span class="literal">True</span>, ni=<span class="literal">True</span>)[<span class="number">0</span>]</span><br><span class="line">                objType = cmds.objectType(children)</span><br><span class="line">            suffix_data = <span class="string">&quot;_&quot;</span> + SUFFIXES.get(objType, DEFAULT_SUFFIX)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            suffix_data = cmds.textFieldGrp(cls.suffix_tfg, query=<span class="literal">True</span>, text=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">      </span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="重命名："><a href="#重命名：" class="headerlink" title="重命名："></a>重命名：</h5><ul>
+<li><code>&quot;&#123;0&#125;&#123;1&#125;&#123;2&#125;&#123;3&#125;&quot;.format(prefix_data, rename_data, str(counter).zfill(padding_data), suffix_data</code>中的<code>&quot;&#123;0&#125;&#123;1&#125;&#123;2&#125;&#123;3&#125;&quot;.</code>表示将后方的4个数值合并为一个新的字符串</li>
+<li>每复制一个物体，计数器增加1</li>
+<li>最后清除选择</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">  			cmds.rename(<span class="string">&quot;&#123;0&#125;&#123;1&#125;&#123;2&#125;&#123;3&#125;&quot;</span>.<span class="built_in">format</span>(prefix_data, rename_data, 			     						<span class="built_in">str</span>(counter).zfill(padding_data), suffix_data))</span><br><span class="line">       		counter+=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出有多少模型被更改</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Renamed &#123;0&#125; Objects&quot;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(sel)))</span><br><span class="line">cmds.select(cl=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h4 id="搜索与替换函数："><a href="#搜索与替换函数：" class="headerlink" title="搜索与替换函数："></a>搜索与替换函数：</h4><h5 id="获取值-1"><a href="#获取值-1" class="headerlink" title="获取值"></a>获取值</h5><ul>
+<li>定义搜索与替换函数</li>
+<li>获取搜索、替换和方法值</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@classmethod</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">replace_objects</span>(<span class="params">cls</span>):</span><br><span class="line"></span><br><span class="line">    searchFor_data = cmds.textFieldGrp(cls.searchFor_tfg, query=<span class="literal">True</span>, text=<span class="literal">True</span>)</span><br><span class="line">    replaceWith_data = cmds.textFieldGrp(cls.replaceWith_tfg, query=<span class="literal">True</span>, text=<span class="literal">True</span>)</span><br><span class="line">    hierarchy_data = cmds.radioButtonGrp(cls.method, query=<span class="literal">True</span>, select=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="判定与替换："><a href="#判定与替换：" class="headerlink" title="判定与替换："></a>判定与替换：</h5><ul>
+<li>同上：获取所选模型，并保存到sel变量中（selection缩写）</li>
+<li>使用str.replace命令，把新名称替换旧名称</li>
+</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> hierarchy_data == <span class="number">2</span>:</span><br><span class="line">    sel = cmds.ls(sl=<span class="literal">True</span>, tr=<span class="literal">True</span>)</span><br><span class="line">    children = cmds.listRelatives(sel, ad=<span class="literal">True</span>, <span class="built_in">type</span>=<span class="string">&#x27;transform&#x27;</span>)</span><br><span class="line">    cmds.select(children, add=<span class="literal">True</span>)</span><br><span class="line">    sel = cmds.ls(sl=<span class="literal">True</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    sel = cmds.ls(sl=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">len</span>(sel) &lt; <span class="number">1</span>:</span><br><span class="line">    <span class="keyword">raise</span> RuntimeError(<span class="string">&quot;Please select at least one object to replace&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> searchFor_data == <span class="string">&quot;&quot;</span>:</span><br><span class="line">    <span class="keyword">raise</span> RuntimeError(<span class="string">&quot;Please enter a name to search for&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> replaceWith_data == <span class="string">&quot;&quot;</span>:</span><br><span class="line">    <span class="keyword">raise</span> RuntimeError(<span class="string">&quot;Please enter a name to replace with&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> sel:</span><br><span class="line">        <span class="keyword">if</span> searchFor_data <span class="keyword">in</span> i:</span><br><span class="line">            renamedString = i.replace(searchFor_data, replaceWith_data)</span><br><span class="line">            cmds.rename(i, renamedString)</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>！！！重点：<code>replace</code> 是 Python 字符串方法，用于替换字符串中的子字符串。注意！这只是在 Python 中修改了字符串，它并不会实际更改场景中物体的名称。因此，要更改场景中的物体名称，还是需要使用 <code>cmds.rename(oldname,newname)</code> 命令（血的教训！！！）</li>
+</ul>
+<h3 id="易错点反思："><a href="#易错点反思：" class="headerlink" title="易错点反思："></a>易错点反思：</h3><ol>
+<li>很多新的语法还不够熟练，经常想不起来用，这也导致很多时候代码写不下去。</li>
+<li>还是有一些bug存在，比如添加了“_”，但是不识别，目前只能手动添加。也许是命令不兼容，有时间了还需要继续研究解决。</li>
+</ol>
+<h4 id><a href="#" class="headerlink" title></a></h4>]]></content>
+      <categories>
+        <category>作品集</category>
+        <category>程序向</category>
+        <category>Python</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>Python</tag>
+        <tag>程序向</tag>
+        <tag>工具</tag>
+        <tag>重命名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作品：《Lost corner》-Animation</title>
+    <url>/2023/02/19/Shader/</url>
+    <content><![CDATA[<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><iframe width="900" height="500" src="https://www.youtube.com/embed/c_GezAnwtUo" title="Lost Corner" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《Lost Corner》，《遗失的角落》，是冬季学期的Game Shader项目作品。工程较大，较赶，在一个月内完成了模型、UV、材质全流程（SD+SP)、UE5- Shader、场景和灯光的全流程制作，因此整体质量受到了影响，我会在接下来的空余时间，继续深入优化贴图的细节。</p>
+<h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、Substance Designer&#x2F;Painter、UE5完成。</p>
+<h3 id="Highres-Screenshot："><a href="#Highres-Screenshot：" class="headerlink" title="Highres Screenshot："></a>Highres Screenshot：</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/650/000/large/shuhang-luan-l2-new-0362.jpg?1676863415" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/968/large/shuhang-luan-l2-old-0356.jpg?1676863286" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/650/013/large/shuhang-luan-l2-new-0760.jpg?1676863458" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/981/large/shuhang-luan-l2-old-0713.jpg?1676863342" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/650/003/large/shuhang-luan-l2-new-0155.jpg?1676863425" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/992/large/shuhang-luan-l2-old-0165.jpg?1676863391" alt="Lost Corner"></p>
+<h4 id><a href="#" class="headerlink" title></a></h4><h3 id="Process"><a href="#Process" class="headerlink" title="Process:"></a>Process:</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/862/large/shuhang-luan-2.jpg?1676862857" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/864/large/shuhang-luan-3.jpg?1676862860" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/866/large/shuhang-luan-4.jpg?1676862862" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/867/large/shuhang-luan-5.jpg?1676862865" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/869/large/shuhang-luan-6.jpg?1676862867" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/871/large/shuhang-luan-7.jpg?1676862870" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/873/large/shuhang-luan-8.jpg?1676862873" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/874/large/shuhang-luan-9.jpg?1676862876" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/875/large/shuhang-luan-10.jpg?1676862880" alt="Lost Corner"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/877/large/shuhang-luan-11.jpg?1676862883" alt="Lost Corner"></p>
+<h3 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement:"></a>Achievement:</h3><p>重点训练了Substance Designer中的程序化贴图制作，并生成大量可控的变量，以供Substance Painter中进行绘制，并着重训练了SP进入UE5中后的材质优化工作。</p>
+<p>大大增强了自己对于节点式和程序化的逻辑思维能力，与同时进行的python练习作品结合，加深了对程序化和工具化的理解，更加坚定了对于技术美术方向的研究目标。</p>
+<h3 id="Obsolete-Version"><a href="#Obsolete-Version" class="headerlink" title="Obsolete Version"></a>Obsolete Version</h3><ul>
+<li><h5 id="废弃草稿："><a href="#废弃草稿：" class="headerlink" title="废弃草稿："></a>废弃草稿：</h5><iframe width="900" height="550" src="https://www.youtube.com/embed/42SLKtntxyM" title="Still — Obsolete version" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+        <category>美术向</category>
+        <category>CG动画</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>3D动画</tag>
+        <tag>CG</tag>
+        <tag>团队作品</tag>
+        <tag>Shader</tag>
       </tags>
   </entry>
 </search>
