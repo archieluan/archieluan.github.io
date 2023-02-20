@@ -93,8 +93,14 @@
 <h3 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h3><p>MoJee因爱而生，是生活在原始森林里的小野人，长期的营养不良导致他非常瘦弱，令人怜惜。但他心地淳朴，乐观且活泼。他一生都在追求着功夫的最高境界，为此独自离开族群，飘洋过海来到仙岛，向猴子大师求学武艺。</p>
 <p>而这个小野人也代表着作者本身，我希望像他一样，千山万水，只为追求心中的那个梦想。</p>
 <h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、UE4、AE完成。</p>
-<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><p>Flash video: <a class="link" href="https://youtu.be/AtUuJvBMirQ">https://youtu.be/AtUuJvBMirQ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>Full video :  <a class="link" href="https://youtu.be/hzk-pTPDPsQ">https://youtu.be/hzk-pTPDPsQ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><h4 id="Flash-video"><a href="#Flash-video" class="headerlink" title="Flash video:"></a>Flash video:</h4><iframe width="900" height="400" src="https://www.youtube.com/embed/AtUuJvBMirQ" title="MoJee快闪剪辑版" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+<h4 id="Full-video"><a href="#Full-video" class="headerlink" title="Full video :"></a>Full video :</h4><iframe width="900" height="500" src="https://www.youtube.com/embed/hzk-pTPDPsQ" title="MoJee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
 <h3 id="Highres-Screenshot："><a href="#Highres-Screenshot：" class="headerlink" title="Highres Screenshot："></a>Highres Screenshot：</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/609/988/large/shuhang-luan-1617252276-1.jpg?1676759601" alt="MoJee"></p>
 <p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/610/018/large/shuhang-luan-main-00418.jpg?1676759678" alt="MoJee"></p>
 <img lazyload src="/images/loading.svg" data-src="/2021/01/11/MoJee-Animation/HighresScreenshot00013.jpg" class title="This is an mojee image">
@@ -573,9 +579,34 @@
       </tags>
   </entry>
   <entry>
-    <title>作品：《MoJee》-Animation</title>
+    <title>作品：《MoJee》-Game</title>
     <url>/2022/04/11/MoJee-game/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><iframe width="900" height="450" src="https://www.youtube.com/embed/Yg9xIYjodgk?list=PLO9ob5u34jnvZMbMdvK5eQ1mXKMAc0Ruu" title="SAV WINTER GAME_ ShuhangLuan low voice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee-Game》，是一个学校的Game pipeline课程项目作品，在2022.3月完成。制作周期仅为两个月，课程比较紧张，因此续弦了本科毕业设计的MoJee IP，制作出一个游戏世界。</p>
+<h3 id="Main-Designer："><a href="#Main-Designer：" class="headerlink" title="Main Designer："></a>Main Designer：</h3><ol>
+<li>进行了模型贴图的优化，并重定向游戏内骨骼配置。</li>
+<li>完成了角色状态机的走跑跳，与连续攻击动作。</li>
+<li>通过素材和特效制作，搭建两个较为完备的游戏关卡。</li>
+<li>制作了大量的交互程序，比如关卡跳跃、人物攻击、怪物惊醒、追踪与死亡，血条和头像等UI界面、音效等等，通宵了无数个夜晚，解决了一个又一个bug，痛恨自己不是程序员出身。</li>
+</ol>
+<h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、Substance Designer&#x2F;Painter、UE5完成。</p>
+<h3 id="Game-Screenshot："><a href="#Game-Screenshot：" class="headerlink" title="Game Screenshot："></a>Game Screenshot：</h3><h3 id><a href="#" class="headerlink" title></a><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/652/914/large/shuhang-luan-game02.jpg?1676873236" alt="MoJee -Game"></h3><p>​                                                     <img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/652/811/large/shuhang-luan-058f66a0d667cff6876232c8077f660-1.jpg?1676872951" alt="MoJee -Game" style="zoom: 50%;">                                                                                 </p>
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/652/826/large/shuhang-luan-f441f6dbf9af0813bd9596c261d72e2.jpg?1676872983" alt="MoJee -Game" style="zoom:50%;">
+
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/652/814/large/shuhang-luan-7352f6f02be2e93f59d44c92bab2c9c.jpg?1676872963" alt="MoJee -Game" style="zoom:50%;">
+
+
+
+<img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/652/817/large/shuhang-luan-bf86316f6b70e9e3558e748b707ebe1.jpg?1676872970" alt="MoJee -Game">
+
+<img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/652/815/large/shuhang-luan-7756a7adf96c3a282c39e5e32783c12.jpg?1676872966" alt="MoJee -Game">
+
+<img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/652/809/large/shuhang-luan-2dbc7edd7a1b9319274c5446cc2b614.jpg?1676872944" alt="MoJee -Game">
+
+<p>​                                      <img lazyload src="/images/loading.svg" data-src="/2022/04/11/MoJee-game/game01.jpg" class title="This is an hurricane image"></p>
+<p>​                                  </p>
+]]></content>
       <categories>
         <category>作品集</category>
         <category>游戏</category>
