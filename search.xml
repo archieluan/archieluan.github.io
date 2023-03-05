@@ -160,10 +160,7 @@
   <entry>
     <title>作品：用Python创建罗马文字图形</title>
     <url>/2022/11/18/Practice-plane-composition/</url>
-    <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/616/049/small/shuhang-luan-wi23-v705-p1-luanshuhang.jpg?1676782321" alt="img" style="zoom: 80%;">
-
-
-
+    <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01hsz4yanmu2luhoiqhihu3231.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="程序图集合"></p>
 <h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>在我练习Python的时候，我观察了罗马字体，发现如果将把它放在平面构成里，它看起来也非常漂亮。因此我试着将它构建了出来。</p>
 <h2 id="Reference："><a href="#Reference：" class="headerlink" title="Reference："></a>Reference：</h2><p>大致模仿了罗马文字圆形形式，比例非常好。</p>
 <img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/1676782386825.jpg" class title="This is an roman image">
@@ -380,11 +377,8 @@
 
 <h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《Maya重命名工具》，是我在22年在腾讯天美工作室实习的时候，最常见也最实用的一个工具，这也是我认为逻辑清晰，也非常容易制作的工具。特别是在辅助程序组进行批量创建模型，测试性能的时候，自己创建一个这样的工具，真的能提高太多的效率了。</p>
 <p>不过22年我还不熟悉python，只会在UE5中使用widget工具，用库里已经存在的函数节点来连接，虽然也很方便，但是也会受到很多的限制。</p>
-<h5 id="UE5-Widget工具展示："><a href="#UE5-Widget工具展示：" class="headerlink" title="UE5-Widget工具展示："></a>UE5-Widget工具展示：</h5><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/059/649/132/small/shuhang-luan-tool01.jpg?1676860570" alt="img" style="zoom:50%;">
-
-
-
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/059/649/133/small/shuhang-luan-tool02.jpg?1676860572" alt="img"></p>
+<h5 id="UE5-Widget工具展示："><a href="#UE5-Widget工具展示：" class="headerlink" title="UE5-Widget工具展示："></a>UE5-Widget工具展示：</h5><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/018vd0oeinkvb5wvkfpgwn3932.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="程序图集合"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01t6vjyq6n3x7wtuaw34yl3638.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="程序图集合"></p>
 <p>因此在我开始练习python工具制作后，我就想起了曾经的“挚爱”。</p>
 <p>那么，开干！</p>
 <h2 id="Design-thinking"><a href="#Design-thinking" class="headerlink" title="Design thinking:"></a>Design thinking:</h2><h3 id="建立窗口"><a href="#建立窗口" class="headerlink" title="建立窗口"></a>建立窗口</h3><ul>
@@ -577,7 +571,7 @@
   <entry>
     <title>作品：《MoJee》-Game</title>
     <url>/2022/04/11/MoJee-game/</url>
-    <content><![CDATA[<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><iframe width="900" height="450" src="https://www.youtube.com/embed/Yg9xIYjodgk?list=PLO9ob5u34jnvZMbMdvK5eQ1mXKMAc0Ruu" title="SAV WINTER GAME_ ShuhangLuan low voice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <content><![CDATA[<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><iframe width="900" height="450" src="https://video.zcool.cn/72f58640ba4071ed800f0764a3fc0102/5af5989a846a4aa28cd54cdb5c5fa2a9-5287d2089db37e62345123a1be272f8b.mp4?auth_key=1677977039-9f00d89c4cd943968b732ecc0132dc65-0-853a2ef509c81a0a1f64331acbab0ab9" title="SAV WINTER GAME_ ShuhangLuan low voice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee-Game》，是一个学校的Game pipeline课程项目作品，在2022.3月完成。制作周期仅为两个月，课程比较紧张，因此续弦了本科毕业设计的MoJee IP，制作出一个游戏世界。</p>
 <h3 id="Main-Designer："><a href="#Main-Designer：" class="headerlink" title="Main Designer："></a>Main Designer：</h3><ol>
@@ -676,19 +670,19 @@
   <entry>
     <title>作品：作品集 — PDF</title>
     <url>/2023/03/03/MyPortfolio/</url>
-    <content><![CDATA[<h2 id="以下为本科至研一期间作品："><a href="#以下为本科至研一期间作品：" class="headerlink" title="以下为本科至研一期间作品："></a>以下为本科至研一期间作品：</h2><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/764/large/shuhang-luan-01.jpg?1677751587" alt="Portfolio_china"><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/769/large/shuhang-luan-02.jpg?1677751523" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/773/large/shuhang-luan-03.jpg?1677751529" alt="Portfolio_china"><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/777/large/shuhang-luan-04.jpg?1677751535" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/784/large/shuhang-luan-05.jpg?1677751543" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/786/large/shuhang-luan-06.jpg?1677751551" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/791/large/shuhang-luan-07.jpg?1677751555" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/794/large/shuhang-luan-08.jpg?1677751560" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/797/large/shuhang-luan-09.jpg?1677751566" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/800/large/shuhang-luan-10.jpg?1677751569" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/804/large/shuhang-luan-11.jpg?1677751576" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/805/large/shuhang-luan-12.jpg?1677751580" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/809/large/shuhang-luan-13.jpg?1677751587" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/841/large/shuhang-luan-14-1.jpg?1677751673" alt="Portfolio_china"><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/068/843/large/shuhang-luan-15-1.jpg?1677751677" alt="Portfolio_china"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/068/814/large/shuhang-luan-16.jpg?1677751605" alt="Portfolio_china"></p>
+    <content><![CDATA[<h2 id="以下为本科至研一期间作品："><a href="#以下为本科至研一期间作品：" class="headerlink" title="以下为本科至研一期间作品："></a>以下为本科至研一期间作品：</h2><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01sr87oyrfg31mgy2nutmg3732.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/011aizpinrbokn7ywpmjse3337.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/012a9i5fdte6at64tpcv5f3331.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01w2hf6vxyrpldkb4vfggl3333.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01vxmj5vyquuj2f4ddv1c63935.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01775wmuyjgku8we8oexun3836.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01tddcnwaidlhsaae60ewh3535.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01ptgmry3xzt57uwhdgksw3134.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/011mhc0c2cq03rqzfrvb1u3034.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01uqfnn9gqhhd1cfdnwltb3734.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/019xprsvaeduy59ax9yeem3237.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/0174vp84t39xcaqg09jvab3433.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01q8cx6quwfzsqnkse03vh3930.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/018bmosvyxtytm5rv6rcwt3336.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/011ewaobwhey4b3qnwq4ar3830.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01qqsk643togcsiels3q2k3632.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="美术作品集"></p>
 <h4 id="注：后期的作品，暂时以博客文章形式上传"><a href="#注：后期的作品，暂时以博客文章形式上传" class="headerlink" title="注：后期的作品，暂时以博客文章形式上传"></a>注：后期的作品，暂时以博客文章形式上传</h4><h4 id="以下为作品集合集链接："><a href="#以下为作品集合集链接：" class="headerlink" title="以下为作品集合集链接："></a>以下为作品集合集链接：</h4><a class="button  center large" href="https://archieluan.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86" title="作品集合集 点击进入"><i class="fa-solid fa-bars"></i> 作品集合集 点击进入</a>
 
 <a class="button  center regular" href="https://archieluan.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%BE%8E%E6%9C%AF%E5%90%91/" title="美术向 点击进入"><i class="fa-solid fa-bars"></i> 美术向 点击进入</a>
