@@ -389,7 +389,7 @@ new Artitalk({
       pageSize: 50, //每页评论数量
       shuoPla: '', //评论框里显示，可以不填
       motion: 0, //加载动画的开关 0（关闭），1（开启）
-      atComment: 1, //评论功能的开关 0（关闭），1（开启）
+      atComment: 0, //评论功能的开关 0（关闭），1（开启）
       bgImg: '', //评论框里的背景，可以不填
       color1: '#ffffff', //说说背景颜色 1 & 按钮颜色 1
       color2: '#ffffff', //说说背景颜色 2 & 按钮颜色 2
@@ -397,9 +397,19 @@ new Artitalk({
 })
 </script>
 
+
             
         </div>
         <div class="page-template-comments">
+            
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
+    
+</div>
+
             
         </div>
     </div>
