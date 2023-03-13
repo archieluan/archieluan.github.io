@@ -701,4 +701,260 @@
         <tag>个人作品集</tag>
       </tags>
   </entry>
+  <entry>
+    <title>有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染</title>
+    <url>/2023/03/13/workflow-for-organic-food/</url>
+    <content><![CDATA[<h2 id="有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染"><a href="#有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染" class="headerlink" title="有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染"></a>有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染</h2><h2 id="I-引言"><a href="#I-引言" class="headerlink" title="I. 引言"></a>I. 引言</h2><ul>
+<li><h3 id="研究背景和目的"><a href="#研究背景和目的" class="headerlink" title="研究背景和目的"></a>研究背景和目的</h3><p>在游戏开发过程中，场景的设计和制作一直是一个重要的环节，其逼真度和细节程度可以直接影响到游戏的质量和玩家的游戏体验。而随着技术的不断发展，游戏场景的制作和渲染也在不断创新和进步。模块化材质技术是一种重要的技术手段，它可以将场景中的元素或对象分解成多个小模块进行制作和组合，每个小模块都可以单独制作和修改，从而提高制作效率和减少工作量。</p>
+<p>在游戏场景制作中，有机食物场景是一个重要的类别，它包括了各种蔬菜、水果、肉类等食物和食品的场景。在有机食物场景的制作中，除了需要考虑到食物本身的特点和形态，还需要注意到材质的制作和渲染。</p>
+</li>
+<li><h3 id="研究方法与框架"><a href="#研究方法与框架" class="headerlink" title="研究方法与框架"></a>研究方法与框架</h3><p>本文旨在探讨模块化材质技术在有机食物场景制作和渲染中的应用。通过介绍有机食物场景的概念、特点和设计要求，详细讲解如何使用模块化材质技术创建有机食物场景中的材质和灯光效果，包括使用Maya进行模型制作和UV展开，使用Substance Designer进行材质制作，以及使用Substance Painter进行纹理绘制和调整。</p>
+<p>在此基础上，通过具体的案例分析，展示了如何使用模块化材质技术制作逼真的有机食物场景。接着，探讨了有机食物场景渲染时需要考虑的因素和注意事项，以及模块化材质技术在有机食物场景渲染中的应用案例。最后，详细介绍了使用Substance Suite进行有机食物材质的制作和使用UE5进行有机食物场景的搭建、动画与渲染的应用实践，并展示了有机食物场景的展示效果。</p>
+</li>
+</ul>
+<h2 id="II-完成品展示"><a href="#II-完成品展示" class="headerlink" title="II. 完成品展示"></a>II. 完成品展示</h2><ul>
+<li><h3 id="最终视频"><a href="#最终视频" class="headerlink" title="最终视频"></a>最终视频</h3><iframe width="608" height="304" src="https://www.youtube.com/embed/u7jM_NXORmk" title="Aesthetic of Decay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>width="900" height="450"></iframe>
+</li>
+<li><h3 id="最终截图"><a href="#最终截图" class="headerlink" title="最终截图"></a>最终截图</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/507/747/small/shuhang-luan-p3-luan-material-all.jpg?1678729496" alt="img"></p>
+</li>
+</ul>
+<h2 id="III-模块化材质技术的应用"><a href="#III-模块化材质技术的应用" class="headerlink" title="III. 模块化材质技术的应用"></a>III. 模块化材质技术的应用</h2><ul>
+<li><h3 id="模型准备-Maya"><a href="#模型准备-Maya" class="headerlink" title="模型准备(Maya)"></a>模型准备(Maya)</h3><ul>
+<li><h4 id="模型创作："><a href="#模型创作：" class="headerlink" title="模型创作："></a>模型创作：</h4></li>
+</ul>
+<p>我们首先根据设计需求和场景要求，在Maya中进行模型的创作。这包括了各种有机食物元素的建模，如蔬菜、水果、肉类等。我们使用了Maya中的多边形建模工具，根据实际需求和设计要求进行建模。在建模过程中，我们特别注意了模型的细节和形态，以确保最终的模型可以满足实际要求和场景需求。</p>
+<ul>
+<li><h4 id="UV展开："><a href="#UV展开：" class="headerlink" title="UV展开："></a>UV展开：</h4><p>在模型创作完成后，我们需要对模型进行UV展开。UV展开是将3D模型的表面展开成2D图像的过程，它是进行材质贴图和纹理绘制的前提条件。在展开UV的过程中，我们使用了Maya中的UV编辑工具，对每个模型进行了UV的排布和调整。在排布UV的过程中，我们特别注意了模型的连续性和可重复性，以确保最终的UV贴图可以满足实际要求和场景需求。同时，我们还使用了Maya中的UV布局工具和自动展开工具，以提高UV排布的效率和准确性。</p>
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/508/844/small/shuhang-luan-luan-p3-uv-ref.jpg?1678731193" alt="img" style="zoom: 67%;"></li>
+</ul>
+</li>
+</ul>
+<p>​				</p>
+<ul>
+<li><h3 id="模块化材质技术"><a href="#模块化材质技术" class="headerlink" title="模块化材质技术"></a>模块化材质技术</h3><p>在有机食物场景制作中，纹理贴图是一个非常关键的环节。为了创建逼真的有机材质，我们采用了Substance Designer和Substance Painter这两个专业的纹理制作软件，通过使用它们，可以有效地提高纹理贴图的制作效率和质量。</p>
+<ul>
+<li><h4 id="材质纹理分析"><a href="#材质纹理分析" class="headerlink" title="材质纹理分析"></a>材质纹理分析</h4><p>以芒果为例，芒果这个有机食物材质具有非常复杂的颜色和纹理细节，下面是我对这个材质的材质纹理分析，以及如何在Substance Designer中使用节点绘制来创建这个材质：</p>
+<ul>
+<li><h5 id="颜色变化和分布"><a href="#颜色变化和分布" class="headerlink" title="颜色变化和分布"></a>颜色变化和分布</h5><p>芒果的颜色变化和分布非常丰富，通常呈现出黄色、橙色、红色等多种颜色的混合效果。同时，芒果表面的颜色还具有颗粒状的分布，这些颗粒状的颜色通常呈现出深色或浅色的点状分布。</p>
+<p>在Substance Designer中，可以使用多种节点来创建这种复杂的颜色变化和分布效果，如Gradient Map、Gradient Radial等。可以根据实际情况来选择不同的节点和参数，以达到理想的颜色效果。同时，也可以使用Mask节点来实现颗粒状的颜色分布效果，使用Noise节点来创建细小的噪点细节效果。</p>
+</li>
+<li><h5 id="纹理和颗粒细节"><a href="#纹理和颗粒细节" class="headerlink" title="纹理和颗粒细节"></a>纹理和颗粒细节</h5><p>芒果的表面具有非常丰富的纹理和颗粒细节，这些细节通常呈现出深浅不一、大小不同、形状复杂等特点。其中，芒果表面的纹理和颗粒通常集中在果实的凹凸处，如果核周围等位置。</p>
+<p>在Substance Designer中，可以使用多种节点来创建这种复杂的纹理和颗粒细节效果，如Noise、Height to Normal等。可以根据实际情况来选择不同的节点和参数，以达到理想的效果。同时，也可以使用Mask节点来控制纹理和颗粒的分布位置和大小，以达到更加真实的效果。</p>
+<p>总之，芒果这种有机食物材质具有非常复杂的颜色和纹理细节，通过在Substance Designer中使用节点绘制，可以轻松地创建逼真的芒果材质。需要注意的是，不同的芒果品种和质量会呈现出不同的颜色和纹理特征，因此在实际制作中，需要根据实际情况来进行调整和优化。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/509/676/small/shuhang-luan-mango.jpg?1678732384" alt="img"></p>
+</li>
+</ul>
+</li>
+<li><h4 id="模块化材质创建-Substance-Designer"><a href="#模块化材质创建-Substance-Designer" class="headerlink" title="模块化材质创建(Substance Designer)"></a>模块化材质创建(Substance Designer)</h4><p>模块化材质技术可以将复杂的材质分解成多个小模块进行制作和组合，每个小模块都可以单独制作和修改，从而提高制作效率和减少工作量。Substance Designer作为一款专业的材质创作软件，可以轻松地创建各种复杂的模块化材质。</p>
+<ul>
+<li><h5 id="创建基础材质"><a href="#创建基础材质" class="headerlink" title="创建基础材质"></a>创建基础材质</h5><p>首先，我们需要创建一个基础材质。在Substance Designer中，可以使用基础节点（如Gradient Map、Checker、Turbulence等）创建基础材质，然后添加颜色、光泽度等属性。这些基础节点可以与其他节点进行组合，创建出各种不同的材质。</p>
+</li>
+<li><h5 id="制作材质模块"><a href="#制作材质模块" class="headerlink" title="制作材质模块"></a>制作材质模块</h5><p>接着，我们可以使用各种节点和工具来制作材质模块。Substance Designer提供了丰富的节点和工具，如Noise、Tile Sampler、Pattern Generator等，可以轻松地创建各种材质细节，如纹理、凹凸、颗粒等。在制作模块时，可以根据实际情况选择不同的节点和工具，以达到理想的效果。</p>
+</li>
+<li><h5 id="组合材质模块"><a href="#组合材质模块" class="headerlink" title="组合材质模块"></a>组合材质模块</h5><p>在制作完各种材质模块后，我们需要将它们组合起来，创建出一个完整的模块化材质。在Substance Designer中，可以使用Blend、Transform等节点进行组合，也可以使用Functions、Switch等节点进行控制，以实现各种不同的组合效果。</p>
+</li>
+<li><h5 id="以芒果为例的流程制作"><a href="#以芒果为例的流程制作" class="headerlink" title="以芒果为例的流程制作"></a>以芒果为例的流程制作</h5><p>以芒果为例，我们来讲解如何使用模块化材质技术在Substance Designer中创建逼真的芒果材质。首先，我们可以使用基础节点创建基础材质，并添加颜色、光泽度等属性。对于芒果这种有机食物材质，可以使用Noise、Tile Sampler、Pattern Generator等节点和工具，制作出各种材质细节，如果肉的纹理和颗粒感，果皮的光泽和凹凸感等。制作模块时，需要根据实际情况选择不同的节点和工具，以达到理想的效果。</p>
+<p>在制作完各种材质模块后，需要将它们组合起来，创建出一个完整的芒果材质。在Substance Designer中，可以使用Blend、Transform等节点进行组合，也可以使用Functions、Switch等节点进行控制，以实现各种不同的组合效果。需要注意的是，不同的芒果品种和质量会呈现出不同的颜色和纹理特征，因此在实际制作中，需要根据实际情况进行调整和优化。通过使用模块化材质技术，在制作芒果材质时可以提高制作效率和减少工作量。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/578/small/shuhang-luan-mango-sceen.jpg?1678733481" alt="img"></p>
+</li>
+<li><h5 id="重要节点分析"><a href="#重要节点分析" class="headerlink" title="重要节点分析"></a>重要节点分析</h5><ul>
+<li>Input nodes: 这些节点用于导入不同的输入图像或参数，如高度图、法线图等。在芒果材质中，这些节点可能会导入芒果的高度图和法线图等。</li>
+<li>Shape nodes: 这些节点用于创建基本形状，如球体、立方体等。在芒果材质中，这些节点可能会用于创建芒果的基本形状。</li>
+<li>Generator nodes: 这些节点用于生成各种纹理、噪点和图案等。在芒果材质中，这些节点可能会用于创建芒果表面的纹理和颗粒效果。</li>
+<li>Filter nodes: 这些节点用于调整和过滤输入的图像或纹理。在芒果材质中，这些节点可能会用于调整芒果表面的颜色和纹理。</li>
+<li>Blending nodes: 这些节点用于将不同的材质模块进行混合和组合。在芒果材质中，这些节点可能会用于将不同的纹理模块进行混合和组合。</li>
+<li>Utility nodes: 这些节点用于执行一些实用功能，如旋转、变换、曲线调整等。在芒果材质中，这些节点可能会用于调整和优化芒果的颜色和纹理。</li>
+<li>Output nodes: 这些节点用于输出最终的材质贴图或纹理。在芒果材质中，这些节点会生成最终的芒果材质纹理，供后续的渲染使用。</li>
+</ul>
+<p>需要注意的是，这些节点只是Substance Designer中可用的一部分节点，还有许多其他类型的节点可以使用，具体使用哪些节点和参数取决于实际的材质制作需求。</p>
+</li>
+</ul>
+</li>
+<li><h4 id="模块化材质绘制-Substance-Painter"><a href="#模块化材质绘制-Substance-Painter" class="headerlink" title="模块化材质绘制(Substance Painter)"></a>模块化材质绘制(Substance Painter)</h4><ul>
+<li><h5 id="导入模型和材质"><a href="#导入模型和材质" class="headerlink" title="导入模型和材质"></a>导入模型和材质</h5><p>首先，我们需要将模型和材质导入到Substance Painter中。在导入材质时，可以选择预设材质或自定义材质。同时，也可以设置各种材质属性，如颜色、光泽度、金属度等。</p>
+</li>
+<li><h5 id="绘制基础颜色"><a href="#绘制基础颜色" class="headerlink" title="绘制基础颜色"></a>绘制基础颜色</h5><p>接着，我们可以使用Paint工具在模型上绘制基础颜色。在绘制基础颜色时，可以根据实际情况选择不同的颜色、透明度和笔刷大小等参数，以达到理想的效果。</p>
+</li>
+<li><h5 id="添加材质细节"><a href="#添加材质细节" class="headerlink" title="添加材质细节"></a>添加材质细节</h5><p>在绘制完基础颜色后，我们可以使用各种工具和节点来添加材质细节。Substance Painter提供了丰富的节点和工具，如Smart Materials、Smart Masks、Brushes等，可以轻松地创建各种细节效果，如纹理、凹凸、颗粒等。</p>
+<p>其中，Smart Materials是一种预设的材质集合，可以通过单击一次即可应用到模型上，快速创建各种细节效果。Smart Masks则是一种快速创建遮罩的工具，可以通过各种算法（如高光、环境光、曲率等）来创建遮罩，以实现各种不同的效果。</p>
+</li>
+<li><h5 id="调整材质属性"><a href="#调整材质属性" class="headerlink" title="调整材质属性"></a>调整材质属性</h5><p> 我们可以直接使用SD制作好的模块化材质，并通过调节模块化材质的属性值来快速地实现不同的材质效果。这些属性值可以包括颜色、纹理、透明度、金属度、粗糙度等参数，根据实际需求进行调整，从而达到理想的效果。通过使用模块化材质，我们可以快速创建各种不同的材质效果，提高制作效率，同时也可以大大降低制作难度和成本。</p>
+<p> 通过调节模块化材质的属性值，可以快速地改变材质的外观和效果。例如，在芒果材质中，可以通过调节高度图、法线图和颜色贴图等属性值，来改变芒果的纹理、凹凸和颜色等效果。同时，还可以通过添加各种滤镜和调节器来进一步调整材质的外观和效果，如曲线调整器、颜色平衡器、噪声过滤器等。这些工具和技术可以帮助我们快速地实现各种复杂的材质效果，提高制作效率和质量。</p>
+ <img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/513/835/small/shuhang-luan-1678738283792.jpg?1678738298" alt="img" style="zoom: 25%;"></li>
+</ul>
+</li>
+<li><h4 id="其他工作图展示"><a href="#其他工作图展示" class="headerlink" title="其他工作图展示"></a>其他工作图展示</h4><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/511/305/large/shuhang-luan-5.jpg?1678734640" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/296/large/shuhang-luan-2.jpg?1678734633" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/306/large/shuhang-luan-6.jpg?1678734645" alt="Aesthetic of Decay"></p>
+<p>​		<img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/511/303/large/shuhang-luan-4.jpg?1678734638" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/511/299/large/shuhang-luan-3.jpg?1678734635" alt="Aesthetic of Decay"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>​					</p>
+<h2 id="IV-有机食物在虚幻引擎场景中的搭建和优化"><a href="#IV-有机食物在虚幻引擎场景中的搭建和优化" class="headerlink" title="IV. 有机食物在虚幻引擎场景中的搭建和优化"></a>IV. 有机食物在虚幻引擎场景中的搭建和优化</h2><p>有机食物场景的搭建需要先进行场景布局和模型搭建。在虚幻引擎中，可以使用自带的基础几何体进行场景布局，也可以使用3D建模软件（如Maya）制作更复杂的模型并导入到虚幻引擎中。</p>
+<ul>
+<li><h4 id="材质球设置"><a href="#材质球设置" class="headerlink" title="材质球设置"></a>材质球设置</h4><p>在创建材质时，需要设置材质球的属性。可以设置材质球的名称、显示图标、优先级、输出和编辑器显示等属性。在编辑器显示中，可以选择显示不同的视图，如Texture、Material、Mesh等视图，以方便进行材质编辑和预览。</p>
+</li>
+<li><h4 id="子材质球创建"><a href="#子材质球创建" class="headerlink" title="子材质球创建"></a>子材质球创建</h4><p>在虚幻引擎中，可以创建多个子材质球，每个子材质球可以单独编辑和控制。在创建子材质球时，可以选择不同的材质模板，如PBR、Subsurface、Unlit等模板，以达到不同的效果。同时，也可以设置子材质球的属性，如名称、输出、优先级、是否支持透明度等属性。</p>
+</li>
+<li><h4 id="材质编辑器的功能介绍"><a href="#材质编辑器的功能介绍" class="headerlink" title="材质编辑器的功能介绍"></a>材质编辑器的功能介绍</h4><p>在虚幻引擎中，可以使用材质蓝图来创建更加复杂的材质和材质效果。材质蓝图可以将多个材质和节点组合起来，形成一个完整的材质效果。材质蓝图提供了丰富的节点和函数，如Math、Texture Sample、Material Attributes等，可以满足不同的材质需求。在使用材质蓝图时，需要注意节点之间的连接关系和顺序，以达到理想的效果。</p>
+<p>此外，在虚幻引擎中，还可以使用材质球设置来控制材质的属性和效果。可以通过添加各种节点和函数来调整颜色、透明度、金属度、粗糙度、光照等属性，从而实现不同的材质效果。材质球还支持子材质球的创建，可以对不同的部分使用不同的材质，从而达到更加精细的效果。</p>
+<p>在搭建场景时，还可以使用虚幻引擎中的材质蓝图来进行高级的材质编辑和效果控制。材质蓝图是一种基于节点图形化界面的可视化编辑工具，可以自由组合各种节点和函数，实现更加复杂和精细的材质效果和控制。</p>
+<p>总之，虚幻引擎提供了丰富的材质编辑和搭建工具，可以满足各种不同的制作需求。在有机食物场景制作中，可以通过灵活运用这些工具和技术，创造出更加逼真和精细的场景效果。</p>
+</li>
+</ul>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/512/267/large/shuhang-luan-highresscreenshot00026.jpg?1678736113" alt="Aesthetic of Decay"></p>
+<h2 id="V-虚幻引擎场景中的灯光与氛围搭建"><a href="#V-虚幻引擎场景中的灯光与氛围搭建" class="headerlink" title="V. 虚幻引擎场景中的灯光与氛围搭建"></a>V. 虚幻引擎场景中的灯光与氛围搭建</h2><p>在有机食物场景中，灯光和氛围的搭建非常重要，可以直接影响到玩家的游戏体验。在虚幻引擎中，可以使用自带的灯光系统和后期处理来创建逼真的灯光和氛围效果。</p>
+<p>首先，可以使用虚幻引擎自带的灯光系统来创建各种不同的灯光效果，如自然光、夜晚光、室内光等。通过调整灯光的位置、颜色、强度和阴影等参数，可以营造出各种不同的氛围和效果。</p>
+<p>其次，可以使用虚幻引擎自带的后期处理功能来调整场景的色调、饱和度、亮度等参数，进一步提升场景的氛围效果。在进行后期处理时，可以根据实际情况选择不同的后期处理效果，如色调映射、景深、光晕等，以达到理想的效果。</p>
+<p>总的来说，有机食物场景的制作和搭建需要综合运用多种技术和工具，在模块化材质技术、模型制作、场景搭建和灯光氛围搭建等方面进行优化和调整，以创造出更加逼真、生动的有机食物场景。</p>
+<ul>
+<li><h3 id="场景截图"><a href="#场景截图" class="headerlink" title="场景截图"></a>场景截图</h3></li>
+</ul>
+<h2 id="VI-结论"><a href="#VI-结论" class="headerlink" title="VI. 结论"></a>VI. 结论</h2><ul>
+<li><h3 id="总结本文的研究内容"><a href="#总结本文的研究内容" class="headerlink" title="总结本文的研究内容"></a>总结本文的研究内容</h3></li>
+<li><h3 id="指出研究的不足和未来发展方向"><a href="#指出研究的不足和未来发展方向" class="headerlink" title="指出研究的不足和未来发展方向"></a>指出研究的不足和未来发展方向</h3></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Modular Material Technique for Organic Food in Game Scenes，From Creation to Rendering</title>
+    <url>/2023/03/13/Modular-Material-Technique/</url>
+    <content><![CDATA[<h2 id="Modular-Material-Technique-for-Organic-Food-in-Game-Scenes-From-Creation-to-Rendering"><a href="#Modular-Material-Technique-for-Organic-Food-in-Game-Scenes-From-Creation-to-Rendering" class="headerlink" title="Modular Material Technique for Organic Food in Game Scenes: From Creation to Rendering"></a>Modular Material Technique for Organic Food in Game Scenes: From Creation to Rendering</h2><h2 id="I-Introduction"><a href="#I-Introduction" class="headerlink" title="I. Introduction"></a>I. Introduction</h2><ul>
+<li><h3 id="Background-and-Purpose"><a href="#Background-and-Purpose" class="headerlink" title="Background and Purpose"></a>Background and Purpose</h3><p>In the process of game development, the design and creation of game scenes have always been an important part. The degree of realism and detail of the scene can directly affect the quality of the game and the player’s gaming experience. With the continuous development of technology, the creation and rendering of game scenes are also constantly innovating and improving. Modular material technology is an important technical means that can decompose elements or objects in the scene into multiple small modules for creation and combination. Each small module can be created and modified separately, thereby improving production efficiency and reducing workload.</p>
+<p>In game scene creation, organic food scenes are an important category, which includes various vegetables, fruits, meats, and other foods and scenes. In the creation of organic food scenes, in addition to considering the characteristics and shapes of the food itself, attention also needs to be paid to the creation and rendering of materials.</p>
+</li>
+<li><h3 id="Research-Methods-and-Framework"><a href="#Research-Methods-and-Framework" class="headerlink" title="Research Methods and Framework"></a>Research Methods and Framework</h3><p>This paper aims to explore the application of modular material technology in the creation and rendering of organic food scenes. By introducing the concept, characteristics, and design requirements of organic food scenes, the paper will explain in detail how to use modular material technology to create materials and lighting effects in organic food scenes, including using Maya for model creation and UV unwrapping, Substance Designer for material creation, and Substance Painter for texture painting and adjustment.</p>
+<p>On this basis, through specific case analysis, the paper demonstrates how to use modular material technology to create realistic organic food scenes. Then, the factors and considerations that need to be taken into account during organic food scene rendering are discussed, as well as application cases of modular material technology in organic food scene rendering. Finally, the paper introduces in detail the application practice of using Substance Suite for organic food material creation and UE5 for organic food scene construction, animation, and rendering, and displays the demonstration effect of organic food scenes.</p>
+</li>
+</ul>
+<h2 id="II-Product-Showcase"><a href="#II-Product-Showcase" class="headerlink" title="II. Product Showcase"></a>II. Product Showcase</h2><ul>
+<li><h3 id="Final-Animation"><a href="#Final-Animation" class="headerlink" title="Final Animation"></a>Final Animation</h3><iframe width="608" height="304" src="https://www.youtube.com/embed/u7jM_NXORmk" title="Aesthetic of Decay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>width="900" height="450"></iframe>
+</li>
+<li><h3 id="Final-Screenshot"><a href="#Final-Screenshot" class="headerlink" title="Final Screenshot"></a>Final Screenshot</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/507/747/small/shuhang-luan-p3-luan-material-all.jpg?1678729496" alt="img"></p>
+</li>
+</ul>
+<h2 id="III-Application-of-Modular-Material-Technology"><a href="#III-Application-of-Modular-Material-Technology" class="headerlink" title="III. Application of Modular Material Technology"></a>III. Application of Modular Material Technology</h2><ul>
+<li><h3 id="Model-Preparation-Maya"><a href="#Model-Preparation-Maya" class="headerlink" title="Model Preparation (Maya)"></a>Model Preparation (Maya)</h3><ul>
+<li><h4 id="Model-Creation"><a href="#Model-Creation" class="headerlink" title="Model Creation:"></a>Model Creation:</h4><p>We first created models in Maya based on the design requirements and scene demands. This includes modeling various organic food elements such as vegetables, fruits, meats, etc. We used Maya’s polygonal modeling tools to create models according to actual needs and design requirements. During the modeling process, we paid special attention to the details and shape of the models to ensure that the final models can meet actual requirements and scene demands.</p>
+</li>
+<li><h4 id="UV-Unwrapping"><a href="#UV-Unwrapping" class="headerlink" title="UV Unwrapping:"></a>UV Unwrapping:</h4><p>After completing the model creation, we need to unwrap the models. UV unwrapping is the process of flattening the surface of a 3D model into a 2D image. It is a prerequisite for texture mapping and texture painting. In the process of unwrapping UV, we used Maya’s UV editing tools to layout and adjust the UV for each model. In the process of laying out the UV, we paid special attention to the continuity and repeatability of the models to ensure that the final UV maps can meet actual requirements and scene demands. At the same time, we also used Maya’s UV layout tools and automatic unwrapping tools to improve the efficiency and accuracy of UV layout.</p>
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/508/844/small/shuhang-luan-luan-p3-uv-ref.jpg?1678731193" alt="img" style="zoom: 67%;"></li>
+</ul>
+</li>
+</ul>
+<p>​				</p>
+<ul>
+<li><h3 id="Modular-material-technology"><a href="#Modular-material-technology" class="headerlink" title="Modular material technology"></a>Modular material technology</h3><p>Texture mapping is a critical part of creating realistic organic materials. In order to create realistic organic materials efficiently and with high quality, we used professional texture creation software, Substance Designer and Substance Painter.</p>
+<ul>
+<li><h4 id="Material-Texture-Analysis"><a href="#Material-Texture-Analysis" class="headerlink" title="Material Texture Analysis"></a>Material Texture Analysis</h4><p>Using Mango as an Example，The mango organic material has very complex color and texture details. Here is my material texture analysis of this material and how to use node drawing in Substance Designer to create this material:</p>
+<ul>
+<li><h5 id="Color-Variation-and-Distribution"><a href="#Color-Variation-and-Distribution" class="headerlink" title="Color Variation and Distribution"></a>Color Variation and Distribution</h5><p>The color variation and distribution of mango are very rich, usually presenting a mixed effect of multiple colors such as yellow, orange, and red. At the same time, the color on the surface of the mango also has a granular distribution. These granular colors usually present a dark or light point distribution.</p>
+<p>In Substance Designer, various nodes can be used to create this complex color variation and distribution effect, such as Gradient Map, Gradient Radial, etc. Different nodes and parameters can be selected according to the actual situation to achieve the desired color effect. At the same time, the Mask node can also be used to achieve the granular color distribution effect, and the Noise node can be used to create small noise detail effects.</p>
+</li>
+<li><h5 id="Texture-and-Granular-Details"><a href="#Texture-and-Granular-Details" class="headerlink" title="Texture and Granular Details"></a>Texture and Granular Details</h5><p>The surface of the mango has very rich texture and granular details, which usually present the characteristics of different shades, sizes, and complex shapes. Among them, the texture and granules on the surface of the mango are usually concentrated in the convex and concave parts of the fruit, such as the area around the seed.</p>
+<p>In Substance Designer, various nodes can be used to create this complex texture and granular detail effect, such as Noise, Height to Normal, etc. Different nodes and parameters can be selected according to the actual situation to achieve the desired effect. At the same time, the Mask node can also be used to control the distribution position and size of the texture and granules to achieve a more realistic effect.</p>
+<p>In conclusion, mangoes, as an organic food material, exhibit very complex color and texture details. By using node-based drawing in Substance Designer, it is possible to easily create realistic mango materials. It should be noted that different varieties and qualities of mangoes will exhibit different color and texture characteristics, and therefore adjustments and optimizations must be made based on the actual situation during the actual production process.</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/509/676/small/shuhang-luan-mango.jpg?1678732384" alt="img"></p>
+</li>
+</ul>
+</li>
+<li><h4 id="Modular-Material-Creation-Substance-Designer"><a href="#Modular-Material-Creation-Substance-Designer" class="headerlink" title="Modular Material Creation (Substance Designer)"></a>Modular Material Creation (Substance Designer)</h4><p>Modular material technology can break down complex materials into small modules for creation and combination. Each small module can be created and modified individually, thereby improving production efficiency and reducing workload. As a professional material creation software, Substance Designer can easily create various complex modular materials.</p>
+<ul>
+<li><h5 id="Create-Basic-Materials"><a href="#Create-Basic-Materials" class="headerlink" title="Create Basic Materials"></a>Create Basic Materials</h5><p>First, we need to create a basic material. In Substance Designer, basic materials can be created using basic nodes (such as Gradient Map, Checker, Turbulence, etc.), and then color, glossiness, and other properties can be added. These basic nodes can be combined with other nodes to create various materials.</p>
+</li>
+<li><h5 id="Create-Material-Modules"><a href="#Create-Material-Modules" class="headerlink" title="Create Material Modules"></a>Create Material Modules</h5><p>Next, we can use various nodes and tools to create material modules. Substance Designer provides rich nodes and tools, such as Noise, Tile Sampler, Pattern Generator, etc., which can easily create various material details such as textures, bumps, particles, etc. When creating modules, different nodes and tools can be selected according to the actual situation to achieve the desired effect.</p>
+</li>
+<li><h5 id="Combine-Material-Modules"><a href="#Combine-Material-Modules" class="headerlink" title="Combine Material Modules"></a>Combine Material Modules</h5><p>After making various material modules, we need to combine them to create a complete modular material. In Substance Designer, Blend, Transform, and other nodes can be used for combination, and Functions, Switch, and other nodes can be used for control to achieve various different combination effects.</p>
+</li>
+<li><h5 id="Workflow-for-Creating-Mango-Material-Using-Modular-Texture"><a href="#Workflow-for-Creating-Mango-Material-Using-Modular-Texture" class="headerlink" title="Workflow for Creating Mango Material Using Modular Texture"></a>Workflow for Creating Mango Material Using Modular Texture</h5></li>
+<li><p>Taking mango as an example, we will explain how to create a realistic mango material using the modular texture technique in Substance Designer. First, we can use basic nodes to create a base material and add properties such as color and glossiness. For organic food materials like mango, we can use nodes and tools such as Noise, Tile Sampler, and Pattern Generator to create various material details, such as the texture and graininess of the flesh and the glossiness and unevenness of the skin. When creating modules, it is necessary to choose different nodes and tools according to the actual situation to achieve the desired effect.</p>
+<p>After creating various material modules, they need to be combined to create a complete mango material. In Substance Designer, Blend, Transform, and other nodes can be used for composition, and Functions, Switch, and other nodes can be used for control to achieve various combination effects. It should be noted that different mango varieties and qualities will present different color and texture characteristics. Therefore, in actual production, adjustments and optimizations need to be made based on the actual situation. By using the modular texture technique, the production efficiency of mango material can be improved, and the workload can be reduced.</p>
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/513/476/small/shuhang-luan-1678737713763.jpg?1678737750" alt="img" style="zoom:33%;">
+
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/578/small/shuhang-luan-mango-sceen.jpg?1678733481" alt="img" style="zoom: 80%;">
+
+
+</li>
+<li><h5 id="Analysis-of-important-nodes"><a href="#Analysis-of-important-nodes" class="headerlink" title="Analysis of important nodes"></a>Analysis of important nodes</h5><ul>
+<li>Input nodes: These nodes are used to import different input images or parameters, such as height maps and normal maps. In the case of mango material, these nodes might import the height map and normal map of a mango.</li>
+<li>Shape nodes: These nodes are used to create basic shapes, such as spheres or cubes. In the case of mango material, these nodes might be used to create the basic shape of a mango.</li>
+<li>Generator nodes: These nodes are used to generate various textures, noise patterns, and patterns. In the case of mango material, these nodes might be used to create the texture and grain effect on the surface of a mango.</li>
+<li>Filter nodes: These nodes are used to adjust and filter the input images or textures. In the case of mango material, these nodes might be used to adjust the color and texture of the surface of a mango.</li>
+<li>Blending nodes: These nodes are used to blend and combine different material modules. In the case of mango material, these nodes might be used to blend and combine different texture modules.</li>
+<li>Utility nodes: These nodes are used to perform practical functions such as rotation, transformation, and curve adjustment. In the case of mango material, these nodes might be used to adjust and optimize the color and texture of a mango.</li>
+<li>Output nodes: These nodes are used to output the final material texture. In the case of mango material, these nodes generate the final mango material texture for use in rendering.</li>
+</ul>
+<p>It should be noted that these nodes are only a part of the nodes available in Substance Designer, and many other types of nodes can be used depending on the actual material production needs.</p>
+</li>
+</ul>
+</li>
+<li><h4 id="Modular-Material-Painting-Substance-Painter"><a href="#Modular-Material-Painting-Substance-Painter" class="headerlink" title="Modular Material Painting (Substance Painter)"></a>Modular Material Painting (Substance Painter)</h4><ul>
+<li><h5 id="Import-Model-and-Material"><a href="#Import-Model-and-Material" class="headerlink" title="Import Model and Material"></a>Import Model and Material</h5></li>
+</ul>
+<p>First, we need to import the model and material into Substance Painter. When importing materials, preset materials or custom materials can be selected. At the same time, material properties such as color, glossiness, and metallicity can also be set.</p>
+<ul>
+<li><h5 id="Paint-Basic-Color"><a href="#Paint-Basic-Color" class="headerlink" title="Paint Basic Color"></a>Paint Basic Color</h5></li>
+</ul>
+<p>Next, we can use the Paint tool to paint the basic color on the model. When painting the basic color, different color, transparency, and brush size parameters can be selected according to the actual situation to achieve the desired effect.</p>
+<ul>
+<li><h5 id="Add-Material-Details"><a href="#Add-Material-Details" class="headerlink" title="Add Material Details"></a>Add Material Details</h5><p>After painting the basic color, various tools and nodes can be used to add material details. Substance Painter provides rich tools and nodes, such as brushes, generators, smart materials, etc., which can easily add various material details such as textures, bumps, particles, etc. When adding details, different tools and nodes can be selected according to the actual situation to achieve the desired effect.</p>
+<p>In summary, modular material technology can improve production efficiency and reduce workload, and Substance Designer and Substance Painter can be used to easily create and paint various complex modular materials.</p>
+</li>
+<li><h5 id="Adjusting-Material-Properties"><a href="#Adjusting-Material-Properties" class="headerlink" title="Adjusting Material Properties"></a>Adjusting Material Properties</h5><p>We can use pre-made modular materials in Substance Designer and adjust their properties to quickly achieve different material effects. These properties can include color, texture, transparency, metallic, roughness, and other parameters, which can be adjusted according to the specific needs to achieve the desired effect. By using modular materials, we can quickly create different material effects, improve production efficiency, and significantly reduce production difficulty and cost.</p>
+<p>By adjusting the properties of modular materials, we can quickly change the appearance and effect of the materials. For example, in mango materials, we can change the texture, bumpiness, and color of the mango by adjusting the height map, normal map, and color map properties. Additionally, we can further adjust the appearance and effect of the material by adding various filters and adjusters, such as curve adjusters, color balancers, noise filters, and others. These tools and techniques can help us quickly achieve various complex material effects, improve production efficiency and quality.</p>
+<img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/513/835/small/shuhang-luan-1678738283792.jpg?1678738298" alt="img" style="zoom: 25%;"></li>
+</ul>
+</li>
+<li><h4 id="Other-work-images"><a href="#Other-work-images" class="headerlink" title="Other work images"></a>Other work images</h4><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/511/305/large/shuhang-luan-5.jpg?1678734640" alt="Aesthetic of Decay" style="zoom:50%;">
+
+
+
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/296/large/shuhang-luan-2.jpg?1678734633" alt="Aesthetic of Decay" style="zoom:50%;">
+
+
+
+<img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/306/large/shuhang-luan-6.jpg?1678734645" alt="Aesthetic of Decay" style="zoom:50%;">
+
+<p>​			</p>
+<img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/511/299/large/shuhang-luan-3.jpg?1678734635" alt="Aesthetic of Decay" style="zoom:50%;"></li>
+</ul>
+</li>
+</ul>
+<h2 id="IV-Building-and-optimizing-organic-food-scenes-in-Unreal-Engine"><a href="#IV-Building-and-optimizing-organic-food-scenes-in-Unreal-Engine" class="headerlink" title="IV. Building and optimizing organic food scenes in Unreal Engine"></a>IV. Building and optimizing organic food scenes in Unreal Engine</h2><p>Building an organic food scene requires scene layout and model construction. In Unreal Engine, basic geometric shapes can be used for scene layout, or more complex models can be created using 3D modeling software such as Maya and then imported into Unreal Engine.</p>
+<ul>
+<li><h3 id="Material-sphere-settings"><a href="#Material-sphere-settings" class="headerlink" title="Material sphere settings"></a>Material sphere settings</h3><p>When creating a material, the properties of the material sphere need to be set. The material sphere’s name, display icon, priority, output, and editor display properties can be set. In the editor display, different views can be selected, such as Texture, Material, Mesh, and other views, to facilitate material editing and previewing.</p>
+</li>
+<li><h3 id="Creating-sub-material-spheres"><a href="#Creating-sub-material-spheres" class="headerlink" title="Creating sub-material spheres"></a>Creating sub-material spheres</h3><p>In Unreal Engine, multiple sub-material spheres can be created, and each sub-material sphere can be edited and controlled separately. When creating sub-material spheres, different material templates can be selected, such as PBR, Subsurface, Unlit, etc., to achieve different effects. At the same time, the properties of the sub-material sphere can also be set, such as name, output, priority, and whether to support transparency.</p>
+</li>
+<li><h3 id="Introduction-to-Material-Editor-features"><a href="#Introduction-to-Material-Editor-features" class="headerlink" title="Introduction to Material Editor features"></a>Introduction to Material Editor features</h3><p>In Unreal Engine, a material blueprint can be used to create more complex material and material effects. The material blueprint can combine multiple materials and nodes to form a complete material effect. The material blueprint provides a rich set of nodes and functions, such as Math, Texture Sample, Material Attributes, etc., to meet different material needs. When using the material blueprint, it is important to pay attention to the connection relationship and order of the nodes to achieve the desired effect.</p>
+<p>In addition, in Unreal Engine, material sphere settings can also be used to control material properties and effects. Various nodes and functions can be added to adjust properties such as color, transparency, metallicity, roughness, and lighting, achieving different material effects. The material sphere also supports creating sub-material spheres, which can use different materials for different parts to achieve more fine-grained effects.</p>
+<p>When building a scene, the material blueprint in Unreal Engine can also be used for advanced material editing and effect control. The material blueprint is a visual editing tool based on node graphics, which can freely combine various nodes and functions to achieve more complex and fine-grained material effects and control.</p>
+<p>In summary, Unreal Engine provides rich material editing and construction tools that can meet various production needs. In the production of organic food scenes, flexible use of these tools and techniques can create more realistic and sophisticated scene effects.</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/512/267/large/shuhang-luan-highresscreenshot00026.jpg?1678736113" alt="Aesthetic of Decay"></p>
+</li>
+</ul>
+<h2 id="V-Lighting-and-atmosphere-construction-in-Unreal-Engine-scene"><a href="#V-Lighting-and-atmosphere-construction-in-Unreal-Engine-scene" class="headerlink" title="V. Lighting and atmosphere construction in Unreal Engine scene"></a>V. Lighting and atmosphere construction in Unreal Engine scene</h2><p>In creating a realistic and immersive organic food scene, lighting and ambiance are crucial elements that directly affect the player’s gaming experience. In Unreal Engine, the built-in lighting system and post-processing can be used to create various lighting effects, such as natural light, nighttime light, indoor light, etc. By adjusting the position, color, intensity, and shadows of the lights, various atmospheres and effects can be created.</p>
+<p>Additionally, post-processing features in Unreal Engine can be used to adjust the scene’s color tones, saturation, brightness, and other parameters to further enhance the scene’s ambiance. When performing post-processing, various effects can be selected based on the specific requirements, such as tone mapping, depth of field, bloom, etc., to achieve the desired effect.</p>
+<p>Overall, creating and building an organic food scene requires the use of various techniques and tools. Optimization and adjustment in modular material technology, model creation, scene building, and lighting ambiance construction are necessary to create a more realistic and immersive organic food scene.</p>
+<ul>
+<li><h3 id="Scene-screenshot"><a href="#Scene-screenshot" class="headerlink" title="Scene screenshot"></a>Scene screenshot</h3></li>
+<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/184/large/shuhang-luan-p3-luan-material-02.jpg?1678734496" alt="Aesthetic of Decay"></p>
+</li>
+<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/972/large/shuhang-luan-p3-luan-material-04.jpg?1678734097" alt="Aesthetic of Decay"></p>
+</li>
+<li><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/983/large/shuhang-luan-p3-luan-material-06.jpg?1678734102" alt="Aesthetic of Decay"></p>
+</li>
+<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/988/large/shuhang-luan-p3-luan-material-08.jpg?1678734113" alt="Aesthetic of Decay"></p>
+</li>
+<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/992/large/shuhang-luan-p3-luan-material-10.jpg?1678734120" alt="Aesthetic of Decay"></p>
+</li>
+<li><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/997/large/shuhang-luan-p3-luan-material-12.jpg?1678734127" alt="Aesthetic of Decay"></p>
+</li>
+</ul>
+<p>​			</p>
+]]></content>
+  </entry>
 </search>
