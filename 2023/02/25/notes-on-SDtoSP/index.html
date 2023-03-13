@@ -1,1 +1,930 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="keywords" content="Hexo Theme Redefine"><meta name="description" content="Hexo Theme Redefine"><meta name="author" content="Shuhang Luan"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png"><link rel="canonical" href="http://example.com/2023/02/25/notes-on-sdtosp/"><meta name="robots" content="index,follow"><meta name="googlebot" content="index,follow"><meta name="revisit-after" content="1 days"><meta property="og:type" content="article"><meta property="og:title" content="Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖"><meta property="og:description" content="Hexo Theme Redefine"><meta property="og:url" content="http://example.com2023/02/25/notes-on-SDtoSP/"><meta property="og:site_name" content="Archie."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖"><meta name="twitter:description" content="Hexo Theme Redefine"><meta name="twitter:image" content="/images/shuhang_logo.png"><link rel="icon" type="image/png" href="/images/shuhang_logo.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="/images/shuhang_logo.png"><meta name="theme-color" content="#005080"><link rel="shortcut icon" href="/images/shuhang_logo.png"><title>Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖 - Archie.</title><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/assets/fonts.css"><script id="hexo-configurations">let REDEFINE=window.REDEFINE||{};REDEFINE.hexo_config={hostname:"example.com",root:"/",language:"en",path:"search.xml"},REDEFINE.theme_config={toc:{enable:!0,number:!1,expand_all:!0,init_open:!0},style:{primary_color:"#005080",avatar:"/images/shuhang_avatar.jpg",favicon:"/images/shuhang_logo.png",og_image:{enable:!1,image_url:null},article_img_align:"center",right_side_width:"210px",content_max_width:"1000px",nav_color:{left:"#f78736",right:"#367df7",transparency:35},hover:{shadow:!0,scale:!1},first_screen:{enable:!0,background_image:{light:"https://evan.beee.top/img/wallhaven-wqery6-light.webp",dark:"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},title_color:{light:"#fff",dark:"#d1d1b6"},description:"SHUHANG LUAN",custom_font:{enable:!1,font_family:null,font_url:null}},scroll:{progress_bar:{enable:!0},percent:{enable:!1}}},local_search:{enable:!0,preload:!1},code_block:{copy:!0,style:"mac",custom_font:{enable:!1,font_family:null,font_url:null}},pjax:{enable:!0},lazyload:{enable:!0},version:"1.2.0",friend_links:{columns:2},home_article:{date_format:"auto",category:{enable:!0,limit:3},tag:{enable:!0,limit:3}},plugins:{aplayer:{enable:!0,audio:[{name:"Imagine",artist:"John Lennon",url:"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3",cover:"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg"},{name:"Something Just Like This",artist:"Coldplay",url:"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3",cover:"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]}}},REDEFINE.language_ago={second:"%s seconds ago",minute:"%s minutes ago",hour:"%s hours ago",day:"%s days ago",week:"%s weeks ago",month:"%s months ago",year:"%s years ago"}</script><link rel="stylesheet" href="/fontawesome/fontawesome.min.css"><link rel="stylesheet" href="/fontawesome/brands.min.css"><link rel="stylesheet" href="/fontawesome/solid.min.css"><link rel="stylesheet" href="/fontawesome/regular.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="progress-bar-container"><span class="scroll-progress-bar"></span> <span class="pjax-progress-bar"></span> <span class="pjax-progress-icon"><i class="fa-solid fa-circle-notch fa-spin"></i></span></div><main class="page-container"><div class="page-main-content"><div class="page-main-content-top"><header class="menu-wrapper"><div class="menu-content"><div class="left"><a class="logo-title" href="/">Archie.</a></div><div class="right"><div class="pc"><ul class="menu-list"><li class="menu-item"><a href="/"><i class="fa-regular fa-house"></i> HOME</a></li><li class="menu-item"><a href="/about"><i class="fa-regular fa-user"></i> RESUME</a></li><li class="menu-item"><a class="has-dropdown" href="#" onclick="return!1"><i class="fa-regular fa-link"></i> PORTFOLIO&nbsp;<i class="fa-solid fa-chevron-down"></i></a><ul class="sub-menu"><li><a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86">TOTAL</a></li><li><a href="/2023/03/03/MyPortfolio">PDF</a></li><li><a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%A8%8B%E5%BA%8F%E5%90%91">TECHNOLOGY</a></li><li><a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%BE%8E%E6%9C%AF%E5%90%91">ART</a></li><li><a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E6%B8%B8%E6%88%8F">GAME</a></li></ul></li><li class="menu-item"><a class="has-dropdown" href="#" onclick="return!1"><i class="fa-regular fa-link"></i> MORE&nbsp;<i class="fa-solid fa-chevron-down"></i></a><ul class="sub-menu"><li><a href="/shuoshuo">ESSAYS</a></li></ul></li><li class="menu-item"><a href="/archives"><i class="fa-regular fa-archive"></i> ARCHIVES</a></li><li class="menu-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></li></ul></div><div class="mobile"><div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div><div class="icon-item menu-bar"><div class="menu-bar-middle"></div></div></div></div></div><div class="menu-drawer"><ul class="drawer-menu-list"><li class="drawer-menu-item flex-center"><a href="/"><i class="fa-regular fa-house"></i> HOME</a></li><li class="drawer-menu-item flex-center"><a href="/about"><i class="fa-regular fa-user"></i> RESUME</a></li><li class="drawer-menu-item flex-center"><a class="has-dropdown" href="#" onclick="return!1"><i class="fa-regular fa-link"></i> PORTFOLIO&nbsp;<i class="fa-solid fa-chevron-down"></i></a></li><li class="dropdown-item flex-center"><a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86">TOTAL</a></li><li class="dropdown-item flex-center"><a class="dropdown-item" href="/2023/03/03/MyPortfolio">PDF</a></li><li class="dropdown-item flex-center"><a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%A8%8B%E5%BA%8F%E5%90%91">TECHNOLOGY</a></li><li class="dropdown-item flex-center"><a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%BE%8E%E6%9C%AF%E5%90%91">ART</a></li><li class="dropdown-item flex-center"><a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E6%B8%B8%E6%88%8F">GAME</a></li><li class="drawer-menu-item flex-center"><a class="has-dropdown" href="#" onclick="return!1"><i class="fa-regular fa-link"></i> MORE&nbsp;<i class="fa-solid fa-chevron-down"></i></a></li><li class="dropdown-item flex-center"><a class="dropdown-item" href="/shuoshuo">ESSAYS</a></li><li class="drawer-menu-item flex-center"><a href="/archives"><i class="fa-regular fa-archive"></i> ARCHIVES</a></li></ul></div><div class="window-mask"></div></header></div><div class="page-main-content-middle"><div class="main-content"><div class="fade-in-down-animation"><div class="post-page-container"><div class="article-content-container"><div class="article-title"><h1 class="article-title-regular">Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖</h1></div><div class="article-header"><div class="avatar"><img src="/images/shuhang_avatar.jpg"></div><div class="info"><div class="author"><span class="name">Shuhang Luan</span> <span class="author-label">lol</span></div><div class="meta-info"><div class="article-meta-info"><span class="article-date article-meta-item"><i class="fa-regular fa-pen-fancy"></i>&nbsp; <span class="pc">2023-02-25 16:02:02</span> <span class="mobile">2023-02-25 16:02</span> <span class="hover-info">Created</span> </span><span class="article-date article-meta-item"><i class="fa-regular fa-wrench"></i>&nbsp; <span class="pc">2023-03-02 05:33:52</span> <span class="mobile">2023-03-02 05:33</span> <span class="hover-info">Updated</span> </span><span class="article-categories article-meta-item"><i class="fa-regular fa-folders"></i>&nbsp;<ul><li><a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">经验笔记</a>&nbsp;</li><li>&gt; <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/%E7%BE%8E%E6%9C%AF%E5%90%91/">美术向</a>&nbsp;</li><li>&gt; <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/%E7%BE%8E%E6%9C%AF%E5%90%91/%E6%9D%90%E8%B4%A8/">材质</a>&nbsp;</li></ul></span><span class="article-tags article-meta-item"><i class="fa-regular fa-tags"></i>&nbsp;<ul><li><a href="/tags/Shader/">Shader</a>&nbsp;</li><li>| <a href="/tags/Substance-Designer/">Substance Designer</a>&nbsp;</li><li>| <a href="/tags/Substance-Painter/">Substance Painter</a>&nbsp;</li><li>| <a href="/tags/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">经验笔记</a>&nbsp;</li></ul></span><span class="article-pv article-meta-item"><i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span></span></div></div></div></div><div class="article-content markdown-body"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul><li><p>介绍 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 制作材质和纹理的基本概念和使用方法。</p></li><li><p>分享个人的使用经验和心得体会。</p></li><li><p>每天都会更新自己材质学习的经验和成果。</p></li></ul><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li>下载和安装 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong>。</li><li>学习 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 的基本节点、笔刷和工具。</li><li>使用 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 制作材质和纹理。分享自己的创作过程和结果。<ul><li>技巧和心得体会</li><li>节点、笔刷和工具的应用</li></ul></li><li>导入到 <strong>Unreal 引擎</strong>，并使用 <strong>Substance Designer</strong> 节点控制材料的外观和属性。分享自己的操作过程和注意事项。</li><li>调试和优化材质和纹理，以确保最佳的效果和性能。分享自己的实践经验和建议。<ul><li>性能和优化问题</li><li>如何做到最佳效果</li></ul></li></ol><h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><p>在这里分享自己的经验和过程，使用列表、图片、代码等方式展示</p><h3 id="一、贴图格式"><a href="#一、贴图格式" class="headerlink" title="一、贴图格式"></a>一、贴图格式</h3><p>在使用<strong>Substance Designer</strong>制作完贴图并将其导入<strong>Substance Painter</strong>之前，通常需要准备以下几种不同的贴图格式：</p><ol><li><p><strong>Base Color（基础颜色）</strong>：这是<strong>Substance Painter</strong>中最重要的贴图之一，因为它用于定义材质的主要颜色信息。在<strong>Substance Designer</strong>中，你可以使用任何支持的文件格式（例如PNG，TGA，JPEG等）导出Base Color贴图。</p><p>​ 注：<strong>Diffuse（漫反射）</strong>贴图通常用于传统的渲染管线中，在这种管线中，它用于定义材质表面的主要颜 色。在现代的基于物理的渲染（PBR）工作流程中，Diffuse贴图的作用<u><strong>已被Base Color所取代</strong></u>，因为 Base Color 更能准确地描述材质表面在不同光照条件下的颜色。</p></li><li><p><strong>Normal Map（法线贴图）</strong>：这种贴图通常用于增强模型表面的细节和凹凸感。在<strong>Substance Designer</strong>中，你可以使用标准的RGB格式导出Normal Map贴图。</p></li><li><p><strong>Ambient Occlusion（环境遮挡）</strong>：这种贴图通常用于定义模型表面的阴影和反射。在<strong>Substance Designer</strong>中，您可以使用标准的RGB格式导出Ambient Occlusion贴图。</p></li><li><p><strong>Roughness（粗糙度）</strong>：这种贴图通常用于定义材质表面的粗糙程度。在<strong>Substance Designer</strong>中，你可以使用标准的灰度图像格式（例如PNG，TGA，JPEG等）导出Roughness贴图。</p></li><li><p><strong>Metalness（金属度）</strong>：这种贴图通常用于定义材质的金属或非金属特性。在<strong>Substance Designer</strong>中，你可以使用标准的灰度图像格式（例如PNG，TGA，JPEG等）导出Metalness贴图。</p></li><li><p><strong>Height Map（高度图）</strong>：高度图是一种灰度图像，其中黑色表示表面高度最低，白色表示表面高度最高。在Substance Designer中，高度图通常用于为模型表面创建细节，例如凹凸感和纹理细节。在<strong>Substance Painter</strong>中，高度图通常用于创建表面细节，例如石头，裂纹和其他具有深度感的材质。</p></li><li><p><strong>Opacity Map（透明度贴图）</strong>：透明度贴图是一种用于控制模型表面透明度的图像。在<strong>Substance Designer</strong>中，透明度贴图通常用于创建透明材质，例如玻璃和水。在<strong>Substance Painter</strong>中，透明度贴图通常用于创建半透明和透明的材质，例如草，树叶和其他具有透明部分的材质。</p></li></ol><p>因此，在使用<strong>Substance Designer</strong>制作完贴图并将其导入<strong>Substance Painter</strong>之前，导出的<u><strong>标准贴图数量</strong>为 <strong>7</strong></u>。</p><h3 id="二、节点功能"><a href="#二、节点功能" class="headerlink" title="二、节点功能"></a>二、节点功能</h3><ul><li><h4 id="cube-3D"><a href="#cube-3D" class="headerlink" title="cube 3D"></a>cube 3D</h4></li></ul><p>Cube3D节点是Substance Designer中的一个节点，它可以用于创建3D物体形状，例如箱子、建筑、道具、雕塑、产品等等。使用Cube3D节点，用户可以快速方便地创建各种形状，并通过其他节点进一步调整其材质和纹理。因此，Cube3D节点是Substance Designer中一个非常实用的工具，可以用于各种应用场景，为用户提供了快速方便的形状和结构设计方案。</p><ul><li><h4 id="Edge-Detect"><a href="#Edge-Detect" class="headerlink" title="Edge Detect"></a>Edge Detect</h4></li></ul><p>Edge Detect节点是一种可以用于检测输入图像中边缘的节点 , 通常用于描边与高光。</p><h4 id="Grayscale-conversion（灰度转换）"><a href="#Grayscale-conversion（灰度转换）" class="headerlink" title="Grayscale conversion（灰度转换）"></a>Grayscale conversion（灰度转换）</h4><p>将彩色图像转换为灰度图像的过程, 将彩色图像转换为灰度图像可以使图像更容易分析和处理，同时减少了数据存储和传输的负担。</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p><strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 是 3D 制作中非常强大和流行的工具，它们提供了快速、高效、灵活的材质和纹理制作方案，可以让 3D 艺术家和游戏开发人员更快地创建高质量的模型和场景。使用这些工具制作材质和纹理需要掌握各种节点、笔刷和工具的应用，并注意材质和纹理的性能和优化问题，以确保在游戏中使用时能够获得最佳的效果和性能。</p></div><div class="post-copyright-info"><div class="article-copyright-info-container"><ul><li>Post title：Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖</li><li>Post author：Shuhang Luan</li><li>Create time：2023-02-25 16:02:02</li><li>Post link：https://archieluan.github.io/2023/02/25/notes-on-SDtoSP/</li><li>Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.</li></ul></div></div><ul class="post-tags-box"><li class="tag-item"><a href="/tags/Shader/">#Shader</a>&nbsp;</li><li class="tag-item"><a href="/tags/Substance-Designer/">#Substance Designer</a>&nbsp;</li><li class="tag-item"><a href="/tags/Substance-Painter/">#Substance Painter</a>&nbsp;</li><li class="tag-item"><a href="/tags/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">#经验笔记</a>&nbsp;</li></ul><div class="recommended-article"><div class="recommended-article-header"><i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>推荐阅读</span></div><div class="recommended-article-group"><a class="recommended-article-item" href="/2023/02/19/Shader/" title="作品：《Lost corner》-Shader" rel="bookmark"><img src="https://img.zcool.cn/community/01qpbn12wyhiwsvtxjvu3j3139.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="作品：《Lost corner》-Shader"> <span class="title">作品：《Lost corner》-Shader</span> </a><a class="recommended-article-item" href="/2022/04/11/MoJee-game/" title="作品：《MoJee》-Game" rel="bookmark"><img src="https://img.zcool.cn/community/01ndbjio8oqj144z5v9mw23033.png?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="作品：《MoJee》-Game"> <span class="title">作品：《MoJee》-Game</span> </a><a class="recommended-article-item" href="/2023/02/18/solve-the-bug-of-the-image/" title="经验：解决了关于Hexo本地图片无法加载的问题" rel="bookmark"><img src="https://evan.beee.top/img/wallhaven-wqery6-light.webp" alt="经验：解决了关于Hexo本地图片无法加载的问题"> <span class="title">经验：解决了关于Hexo本地图片无法加载的问题</span></a></div></div><div class="article-nav"><div class="article-prev"><a class="prev" rel="prev" href="/2023/03/03/MyPortfolio/"><span class="left arrow-icon flex-center"><i class="fa-solid fa-chevron-left"></i> </span><span class="title flex-center"><span class="post-nav-title-item">作品：作品集 — PDF</span> <span class="post-nav-item">Prev posts</span></span></a></div><div class="article-next"><a class="next" rel="next" href="/2023/02/19/Shader/"><span class="title flex-center"><span class="post-nav-title-item">作品：《Lost corner》-Shader</span> <span class="post-nav-item">Next posts</span> </span><span class="right arrow-icon flex-center"><i class="fa-solid fa-chevron-right"></i></span></a></div></div><div class="comment-container"><div class="comments-container"><div id="comment-anchor"></div><div class="comment-area-title"><i class="fa-solid fa-comments"></i>&nbsp;Comments</div><div id="waline"></div><script type="module" data-pjax>import{init}from"https://evan.beee.top/js/waline.mjs";function loadWaline(){init({el:"#waline",serverURL:"https://waline-for-comments-git-main-archieluan.vercel.app/",lang:"zh-CN",dark:'body[class~="dark-mode"]',requiredMeta:["nick","mail"]})}{const e=setTimeout(()=>{loadWaline(),clearTimeout(e)},1e3)}</script></div></div></div><div class="toc-content-container"><div class="post-toc-wrap"><div class="post-toc"><div class="toc-title">On this page</div><div class="page-title">Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖</div><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%94%E8%AE%B0"><span class="nav-text">笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%B4%B4%E5%9B%BE%E6%A0%BC%E5%BC%8F"><span class="nav-text">一、贴图格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%8A%82%E7%82%B9%E5%8A%9F%E8%83%BD"><span class="nav-text">二、节点功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cube-3D"><span class="nav-text">cube 3D</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Edge-Detect"><span class="nav-text">Edge Detect</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Grayscale-conversion%EF%BC%88%E7%81%B0%E5%BA%A6%E8%BD%AC%E6%8D%A2%EF%BC%89"><span class="nav-text">Grayscale conversion（灰度转换）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-text">结论</span></a></li></ol></div></div></div></div></div></div></div><div class="page-main-content-bottom"><footer class="footer"><div class="info-container"><div class="copyright-info">&copy; <span>2023</span> - 2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">Shuhang Luan</a></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="website-count info-item"><span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span> </span><span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span></span></div><div class="theme-info info-item"><span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span><br><span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.2.0</a></span></div><div id="start_time_div" style="display:none">2023/2/16 23:45:14</div><div>Blog up for <span class="odometer" id="runtime_days"></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec</div><script async data-pjax>try{function odometer_init(){document.querySelectorAll(".odometer").forEach(e=>{new Odometer({el:e,format:"( ddd).dd",duration:200})})}odometer_init()}catch(e){}</script></div></footer></div></div><div class="post-tools"><div class="post-tools-container"><ul class="tools-list"><li class="right-bottom-tools page-aside-toggle"><i class="fa-regular fa-outdent"></i></li><li class="go-comment"><i class="fa-regular fa-comments"></i></li></ul></div></div><div class="right-bottom-side-tools"><div class="side-tools-container"><ul class="unfolded-tools-list"><li class="right-bottom-tools tool-font-adjust-plus flex-center"><i class="fa-regular fa-magnifying-glass-plus"></i></li><li class="right-bottom-tools tool-font-adjust-minus flex-center"><i class="fa-regular fa-magnifying-glass-minus"></i></li><li class="right-bottom-tools tool-expand-width flex-center"><i class="fa-regular fa-expand"></i></li><li class="right-bottom-tools tool-dark-light-toggle flex-center"><i class="fa-regular fa-moon"></i></li><li class="right-bottom-tools tool-scroll-to-top flex-center"><i class="fa-regular fa-arrow-up"></i></li><li class="right-bottom-tools tool-scroll-to-bottom flex-center"><i class="fa-regular fa-arrow-down"></i></li></ul><ul class="folded-tools-list"><li class="right-bottom-tools tool-toggle-show flex-center"><i class="fa-regular fa-cog fa-spin"></i></li></ul></div></div><div class="image-viewer-container"><img src=""></div><div class="search-pop-overlay"><div class="popup search-popup"><div class="search-header"><span class="search-input-field-pre"><i class="fa-solid fa-keyboard"></i></span><div class="search-input-container"><input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Search..." spellcheck="false" type="search" class="search-input"></div><span class="popup-btn-close"><i class="fa-solid fa-times"></i></span></div><div id="search-result"><div id="no-result"><i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i></div></div></div></div></main><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/layouts/menu-shrink.js"></script><script src="/js/tools/go-top-bottom.js"></script><script src="/js/tools/dark-light-toggle.js"></script><script src="/js/tools/local-search.js"></script><script src="/js/tools/code-block.js"></script><script src="/js/layouts/lazyload.js"></script><script src="/js/tools/runtime.js"></script><script src="/js/layouts/odometer.min.js"></script><link rel="stylesheet" href="/assets/odometer-theme-minimal.css"><div class="post-scripts pjax"><script src="/js/tools/toc-toggle.js"></script><script src="/js/libs/anime.min.js"></script><script src="/js/layouts/toc.js"></script><script src="/js/plugins/tabs.js"></script></div><script src="/js/libs/pjax.min.js"></script><script>window.addEventListener("DOMContentLoaded",()=>{window.pjax=new Pjax({selectors:["head title",".page-container",".pjax"],history:!0,debug:!1,cacheBust:!1,timeout:0,analytics:!1,currentUrlFullReload:!1,scrollRestoration:!1}),document.addEventListener("pjax:send",()=>{REDEFINE.utils.pjaxProgressBarStart()}),document.addEventListener("pjax:complete",()=>{REDEFINE.utils.pjaxProgressBarEnd(),window.pjax.executeScripts(document.querySelectorAll("script[data-pjax], .pjax script")),REDEFINE.refresh()})})</script><div id="aplayer"></div><script src="/js/libs/APlayer.min.js"></script><script src="/js/plugins/aplayer.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="Shuhang Luan">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/02/25/notes-on-sdtosp/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="http://example.com2023/02/25/notes-on-SDtoSP/">
+    
+    <meta property="og:site_name" content="Archie.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/shuhang_logo.png">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/shuhang_logo.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/shuhang_logo.png">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/shuhang_logo.png">
+    
+    <title>
+        
+            Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖 -
+        
+        Archie.
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/shuhang_avatar.jpg","favicon":"/images/shuhang_logo.png","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"SHUHANG LUAN","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.2.0","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":true,"audio":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg"},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]}}};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Archie.
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        RESUME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        PORTFOLIO&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86">TOTAL
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/2023/03/03/MyPortfolio">PDF
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%A8%8B%E5%BA%8F%E5%90%91">TECHNOLOGY
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%BE%8E%E6%9C%AF%E5%90%91">ART
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        MORE&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/categories">CATEGORIES
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/shuoshuo">ESSAYS
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/about"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                RESUME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                PORTFOLIO&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86">TOTAL</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/2023/03/03/MyPortfolio">PDF</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%A8%8B%E5%BA%8F%E5%90%91">TECHNOLOGY</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/categories/%E4%BD%9C%E5%93%81%E9%9B%86/%E7%BE%8E%E6%9C%AF%E5%90%91">ART</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                MORE&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/categories">CATEGORIES</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/shuoshuo">ESSAYS</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/shuhang_avatar.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Shuhang Luan</span>
+                            
+                                <span class="author-label">lol</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-02-25 16:02:02</span>
+        <span class="mobile">2023-02-25 16:02</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-03-02 05:33:52</span>
+            <span class="mobile">2023-03-02 05:33</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">经验笔记</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        &gt; <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/%E7%BE%8E%E6%9C%AF%E5%90%91/">美术向</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        &gt; <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/%E7%BE%8E%E6%9C%AF%E5%90%91/%E6%9D%90%E8%B4%A8/">材质</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Shader/">Shader</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Substance-Designer/">Substance Designer</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Substance-Painter/">Substance Painter</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">经验笔记</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li><p>介绍 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 制作材质和纹理的基本概念和使用方法。</p>
+</li>
+<li><p>分享个人的使用经验和心得体会。</p>
+</li>
+<li><p>每天都会更新自己材质学习的经验和成果。</p>
+</li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>下载和安装 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong>。</li>
+<li>学习 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 的基本节点、笔刷和工具。</li>
+<li>使用 <strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 制作材质和纹理。分享自己的创作过程和结果。<ul>
+<li>技巧和心得体会</li>
+<li>节点、笔刷和工具的应用</li>
+</ul>
+</li>
+<li>导入到 <strong>Unreal 引擎</strong>，并使用 <strong>Substance Designer</strong> 节点控制材料的外观和属性。分享自己的操作过程和注意事项。</li>
+<li>调试和优化材质和纹理，以确保最佳的效果和性能。分享自己的实践经验和建议。<ul>
+<li>性能和优化问题</li>
+<li>如何做到最佳效果</li>
+</ul>
+</li>
+</ol>
+<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><p>在这里分享自己的经验和过程，使用列表、图片、代码等方式展示</p>
+<h3 id="一、贴图格式"><a href="#一、贴图格式" class="headerlink" title="一、贴图格式"></a>一、贴图格式</h3><p>在使用<strong>Substance Designer</strong>制作完贴图并将其导入<strong>Substance Painter</strong>之前，通常需要准备以下几种不同的贴图格式：</p>
+<ol>
+<li><p><strong>Base Color（基础颜色）</strong>：这是<strong>Substance Painter</strong>中最重要的贴图之一，因为它用于定义材质的主要颜色信息。在<strong>Substance Designer</strong>中，你可以使用任何支持的文件格式（例如PNG，TGA，JPEG等）导出Base Color贴图。</p>
+<p>​		注：<strong>Diffuse（漫反射）</strong>贴图通常用于传统的渲染管线中，在这种管线中，它用于定义材质表面的主要颜		色。在现代的基于物理的渲染（PBR）工作流程中，Diffuse贴图的作用<u><strong>已被Base Color所取代</strong></u>，因为		Base Color 更能准确地描述材质表面在不同光照条件下的颜色。</p>
+</li>
+<li><p><strong>Normal Map（法线贴图）</strong>：这种贴图通常用于增强模型表面的细节和凹凸感。在<strong>Substance Designer</strong>中，你可以使用标准的RGB格式导出Normal Map贴图。</p>
+</li>
+<li><p><strong>Ambient Occlusion（环境遮挡）</strong>：这种贴图通常用于定义模型表面的阴影和反射。在<strong>Substance Designer</strong>中，您可以使用标准的RGB格式导出Ambient Occlusion贴图。</p>
+</li>
+<li><p><strong>Roughness（粗糙度）</strong>：这种贴图通常用于定义材质表面的粗糙程度。在<strong>Substance Designer</strong>中，你可以使用标准的灰度图像格式（例如PNG，TGA，JPEG等）导出Roughness贴图。</p>
+</li>
+<li><p><strong>Metalness（金属度）</strong>：这种贴图通常用于定义材质的金属或非金属特性。在<strong>Substance Designer</strong>中，你可以使用标准的灰度图像格式（例如PNG，TGA，JPEG等）导出Metalness贴图。</p>
+</li>
+<li><p><strong>Height Map（高度图）</strong>：高度图是一种灰度图像，其中黑色表示表面高度最低，白色表示表面高度最高。在Substance Designer中，高度图通常用于为模型表面创建细节，例如凹凸感和纹理细节。在<strong>Substance Painter</strong>中，高度图通常用于创建表面细节，例如石头，裂纹和其他具有深度感的材质。</p>
+</li>
+<li><p><strong>Opacity Map（透明度贴图）</strong>：透明度贴图是一种用于控制模型表面透明度的图像。在<strong>Substance Designer</strong>中，透明度贴图通常用于创建透明材质，例如玻璃和水。在<strong>Substance Painter</strong>中，透明度贴图通常用于创建半透明和透明的材质，例如草，树叶和其他具有透明部分的材质。</p>
+</li>
+</ol>
+<p>因此，在使用<strong>Substance Designer</strong>制作完贴图并将其导入<strong>Substance Painter</strong>之前，导出的<u><strong>标准贴图数量</strong>为 <strong>7</strong></u>。</p>
+<h3 id="二、节点功能"><a href="#二、节点功能" class="headerlink" title="二、节点功能"></a>二、节点功能</h3><ul>
+<li><h4 id="cube-3D"><a href="#cube-3D" class="headerlink" title="cube 3D"></a>cube 3D</h4></li>
+</ul>
+<p>Cube3D节点是Substance Designer中的一个节点，它可以用于创建3D物体形状，例如箱子、建筑、道具、雕塑、产品等等。使用Cube3D节点，用户可以快速方便地创建各种形状，并通过其他节点进一步调整其材质和纹理。因此，Cube3D节点是Substance Designer中一个非常实用的工具，可以用于各种应用场景，为用户提供了快速方便的形状和结构设计方案。</p>
+<ul>
+<li><h4 id="Edge-Detect"><a href="#Edge-Detect" class="headerlink" title="Edge Detect"></a>Edge Detect</h4></li>
+</ul>
+<p>Edge Detect节点是一种可以用于检测输入图像中边缘的节点 , 通常用于描边与高光。</p>
+<h4 id="Grayscale-conversion（灰度转换）"><a href="#Grayscale-conversion（灰度转换）" class="headerlink" title="Grayscale conversion（灰度转换）"></a>Grayscale conversion（灰度转换）</h4><p>将彩色图像转换为灰度图像的过程, 将彩色图像转换为灰度图像可以使图像更容易分析和处理，同时减少了数据存储和传输的负担。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p><strong>Substance Designer</strong> 和 <strong>Substance Painter</strong> 是 3D 制作中非常强大和流行的工具，它们提供了快速、高效、灵活的材质和纹理制作方案，可以让 3D 艺术家和游戏开发人员更快地创建高质量的模型和场景。使用这些工具制作材质和纹理需要掌握各种节点、笔刷和工具的应用，并注意材质和纹理的性能和优化问题，以确保在游戏中使用时能够获得最佳的效果和性能。</p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖</li>
+        <li>Post author：Shuhang Luan</li>
+        <li>Create time：2023-02-25 16:02:02</li>
+        <li>
+            Post link：https://archieluan.github.io/2023/02/25/notes-on-SDtoSP/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Shader/">#Shader</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Substance-Designer/">#Substance Designer</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Substance-Painter/">#Substance Painter</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">#经验笔记</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            <div class="recommended-article">
+  <div class="recommended-article-header">
+    <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>推荐阅读</span>
+  </div>
+  <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/02/19/Shader/" title="作品：《Lost corner》-Shader" rel="bookmark">
+  <img src="https://img.zcool.cn/community/01qpbn12wyhiwsvtxjvu3j3139.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="作品：《Lost corner》-Shader">
+  <span class="title">作品：《Lost corner》-Shader</span>
+</a><a class="recommended-article-item" href="/2022/04/11/MoJee-game/" title="作品：《MoJee》-Game" rel="bookmark">
+  <img src="https://img.zcool.cn/community/01ndbjio8oqj144z5v9mw23033.png?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="作品：《MoJee》-Game">
+  <span class="title">作品：《MoJee》-Game</span>
+</a><a class="recommended-article-item" href="/2023/02/18/solve-the-bug-of-the-image/" title="经验：解决了关于Hexo本地图片无法加载的问题" rel="bookmark">
+  <img src="https://evan.beee.top/img/wallhaven-wqery6-light.webp" alt="经验：解决了关于Hexo本地图片无法加载的问题">
+  <span class="title">经验：解决了关于Hexo本地图片无法加载的问题</span>
+</a></div>
+</div>
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/03/03/MyPortfolio/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">作品：作品集 — PDF</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/02/19/Shader/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">作品：《Lost corner》-Shader</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Substance Designer 和 Substance Painter 材质和纹理制作流程 -- 经验笔记帖</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%94%E8%AE%B0"><span class="nav-text">笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%B4%B4%E5%9B%BE%E6%A0%BC%E5%BC%8F"><span class="nav-text">一、贴图格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%8A%82%E7%82%B9%E5%8A%9F%E8%83%BD"><span class="nav-text">二、节点功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cube-3D"><span class="nav-text">cube 3D</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Edge-Detect"><span class="nav-text">Edge Detect</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Grayscale-conversion%EF%BC%88%E7%81%B0%E5%BA%A6%E8%BD%AC%E6%8D%A2%EF%BC%89"><span class="nav-text">Grayscale conversion（灰度转换）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-text">结论</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">Shuhang Luan</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br> 
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.2.0</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2023/2/16 23:45:14
+            </div>
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/tools/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/toc-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+
+    <div id="aplayer"></div>
+
+    
+<script src="/js/libs/APlayer.min.js"></script>
+
+    
+<script src="/js/plugins/aplayer.js"></script>
+
+
+
+</body>
+</html>
