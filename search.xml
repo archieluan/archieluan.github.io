@@ -702,9 +702,9 @@
       </tags>
   </entry>
   <entry>
-    <title>有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染</title>
+    <title>文档：《从农场到游戏：实现有机食品虚拟场景中的模块化材质技术》</title>
     <url>/2023/03/13/workflow-for-organic-food/</url>
-    <content><![CDATA[<h2 id="有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染"><a href="#有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染" class="headerlink" title="有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染"></a>有机食物的模块化材质技术在游戏场景中的应用：从制作到渲染</h2><h2 id="I-引言"><a href="#I-引言" class="headerlink" title="I. 引言"></a>I. 引言</h2><ul>
+    <content><![CDATA[<h2 id="从农场到游戏：实现有机食品虚拟场景中的模块化材质技术"><a href="#从农场到游戏：实现有机食品虚拟场景中的模块化材质技术" class="headerlink" title="从农场到游戏：实现有机食品虚拟场景中的模块化材质技术"></a>从农场到游戏：实现有机食品虚拟场景中的模块化材质技术</h2><h2 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h2><ul>
 <li><h3 id="研究背景和目的"><a href="#研究背景和目的" class="headerlink" title="研究背景和目的"></a>研究背景和目的</h3><p>在游戏开发过程中，场景的设计和制作一直是一个重要的环节，其逼真度和细节程度可以直接影响到游戏的质量和玩家的游戏体验。而随着技术的不断发展，游戏场景的制作和渲染也在不断创新和进步。模块化材质技术是一种重要的技术手段，它可以将场景中的元素或对象分解成多个小模块进行制作和组合，每个小模块都可以单独制作和修改，从而提高制作效率和减少工作量。</p>
 <p>在游戏场景制作中，有机食物场景是一个重要的类别，它包括了各种蔬菜、水果、肉类等食物和食品的场景。在有机食物场景的制作中，除了需要考虑到食物本身的特点和形态，还需要注意到材质的制作和渲染。</p>
 </li>
@@ -712,13 +712,13 @@
 <p>在此基础上，通过具体的案例分析，展示了如何使用模块化材质技术制作逼真的有机食物场景。接着，探讨了有机食物场景渲染时需要考虑的因素和注意事项，以及模块化材质技术在有机食物场景渲染中的应用案例。最后，详细介绍了使用Substance Suite进行有机食物材质的制作和使用UE5进行有机食物场景的搭建、动画与渲染的应用实践，并展示了有机食物场景的展示效果。</p>
 </li>
 </ul>
-<h2 id="II-完成品展示"><a href="#II-完成品展示" class="headerlink" title="II. 完成品展示"></a>II. 完成品展示</h2><ul>
+<h2 id="2-完成品展示"><a href="#2-完成品展示" class="headerlink" title="2. 完成品展示"></a>2. 完成品展示</h2><ul>
 <li><h3 id="最终视频"><a href="#最终视频" class="headerlink" title="最终视频"></a>最终视频</h3><iframe width="608" height="304" src="https://www.youtube.com/embed/u7jM_NXORmk" title="Aesthetic of Decay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>width="900" height="450"></iframe>
 </li>
 <li><h3 id="最终截图"><a href="#最终截图" class="headerlink" title="最终截图"></a>最终截图</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/507/747/small/shuhang-luan-p3-luan-material-all.jpg?1678729496" alt="img"></p>
 </li>
 </ul>
-<h2 id="III-模块化材质技术的应用"><a href="#III-模块化材质技术的应用" class="headerlink" title="III. 模块化材质技术的应用"></a>III. 模块化材质技术的应用</h2><ul>
+<h2 id="3-模块化材质技术的应用"><a href="#3-模块化材质技术的应用" class="headerlink" title="3. 模块化材质技术的应用"></a>3. 模块化材质技术的应用</h2><ul>
 <li><h3 id="模型准备-Maya"><a href="#模型准备-Maya" class="headerlink" title="模型准备(Maya)"></a>模型准备(Maya)</h3><ul>
 <li><h4 id="模型创作："><a href="#模型创作：" class="headerlink" title="模型创作："></a>模型创作：</h4></li>
 </ul>
@@ -793,7 +793,7 @@
 </li>
 </ul>
 <p>​					</p>
-<h2 id="IV-有机食物在虚幻引擎场景中的搭建和优化"><a href="#IV-有机食物在虚幻引擎场景中的搭建和优化" class="headerlink" title="IV. 有机食物在虚幻引擎场景中的搭建和优化"></a>IV. 有机食物在虚幻引擎场景中的搭建和优化</h2><p>有机食物场景的搭建需要先进行场景布局和模型搭建。在虚幻引擎中，可以使用自带的基础几何体进行场景布局，也可以使用3D建模软件（如Maya）制作更复杂的模型并导入到虚幻引擎中。</p>
+<h2 id="4-有机食物在虚幻引擎场景中的搭建和优化"><a href="#4-有机食物在虚幻引擎场景中的搭建和优化" class="headerlink" title="4. 有机食物在虚幻引擎场景中的搭建和优化"></a>4. 有机食物在虚幻引擎场景中的搭建和优化</h2><p>有机食物场景的搭建需要先进行场景布局和模型搭建。在虚幻引擎中，可以使用自带的基础几何体进行场景布局，也可以使用3D建模软件（如Maya）制作更复杂的模型并导入到虚幻引擎中。</p>
 <ul>
 <li><h4 id="材质球设置"><a href="#材质球设置" class="headerlink" title="材质球设置"></a>材质球设置</h4><p>在创建材质时，需要设置材质球的属性。可以设置材质球的名称、显示图标、优先级、输出和编辑器显示等属性。在编辑器显示中，可以选择显示不同的视图，如Texture、Material、Mesh等视图，以方便进行材质编辑和预览。</p>
 </li>
@@ -806,23 +806,45 @@
 </li>
 </ul>
 <p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/512/267/large/shuhang-luan-highresscreenshot00026.jpg?1678736113" alt="Aesthetic of Decay"></p>
-<h2 id="V-虚幻引擎场景中的灯光与氛围搭建"><a href="#V-虚幻引擎场景中的灯光与氛围搭建" class="headerlink" title="V. 虚幻引擎场景中的灯光与氛围搭建"></a>V. 虚幻引擎场景中的灯光与氛围搭建</h2><p>在有机食物场景中，灯光和氛围的搭建非常重要，可以直接影响到玩家的游戏体验。在虚幻引擎中，可以使用自带的灯光系统和后期处理来创建逼真的灯光和氛围效果。</p>
+<h2 id="5-虚幻引擎场景中的灯光与氛围搭建"><a href="#5-虚幻引擎场景中的灯光与氛围搭建" class="headerlink" title="5. 虚幻引擎场景中的灯光与氛围搭建"></a>5. 虚幻引擎场景中的灯光与氛围搭建</h2><p>在有机食物场景中，灯光和氛围的搭建非常重要，可以直接影响到玩家的游戏体验。在虚幻引擎中，可以使用自带的灯光系统和后期处理来创建逼真的灯光和氛围效果。</p>
 <p>首先，可以使用虚幻引擎自带的灯光系统来创建各种不同的灯光效果，如自然光、夜晚光、室内光等。通过调整灯光的位置、颜色、强度和阴影等参数，可以营造出各种不同的氛围和效果。</p>
 <p>其次，可以使用虚幻引擎自带的后期处理功能来调整场景的色调、饱和度、亮度等参数，进一步提升场景的氛围效果。在进行后期处理时，可以根据实际情况选择不同的后期处理效果，如色调映射、景深、光晕等，以达到理想的效果。</p>
 <p>总的来说，有机食物场景的制作和搭建需要综合运用多种技术和工具，在模块化材质技术、模型制作、场景搭建和灯光氛围搭建等方面进行优化和调整，以创造出更加逼真、生动的有机食物场景。</p>
 <ul>
-<li><h3 id="场景截图"><a href="#场景截图" class="headerlink" title="场景截图"></a>场景截图</h3></li>
+<li><h3 id="场景截图"><a href="#场景截图" class="headerlink" title="场景截图"></a>场景截图</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/184/large/shuhang-luan-p3-luan-material-02.jpg?1678734496" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/972/large/shuhang-luan-p3-luan-material-04.jpg?1678734097" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/983/large/shuhang-luan-p3-luan-material-06.jpg?1678734102" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/988/large/shuhang-luan-p3-luan-material-08.jpg?1678734113" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/992/large/shuhang-luan-p3-luan-material-10.jpg?1678734120" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/997/large/shuhang-luan-p3-luan-material-12.jpg?1678734127" alt="Aesthetic of Decay"></p>
+<p>​</p>
+</li>
 </ul>
-<h2 id="VI-结论"><a href="#VI-结论" class="headerlink" title="VI. 结论"></a>VI. 结论</h2><ul>
+<p>			</p>
+<h2 id="6-结论"><a href="#6-结论" class="headerlink" title="6. 结论"></a>6. 结论</h2><ul>
 <li><h3 id="总结本文的研究内容"><a href="#总结本文的研究内容" class="headerlink" title="总结本文的研究内容"></a>总结本文的研究内容</h3></li>
 <li><h3 id="指出研究的不足和未来发展方向"><a href="#指出研究的不足和未来发展方向" class="headerlink" title="指出研究的不足和未来发展方向"></a>指出研究的不足和未来发展方向</h3></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>作品集</category>
+        <category>美术向</category>
+        <category>CG动画</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>3D动画</tag>
+        <tag>CG</tag>
+        <tag>团队作品</tag>
+        <tag>Shader</tag>
+        <tag>Substance Designer</tag>
+        <tag>UE5</tag>
+      </tags>
   </entry>
   <entry>
-    <title>Modular Material Technique for Organic Food in Game Scenes，From Creation to Rendering</title>
+    <title>Documentation：《From Farm to Game： Implementation of Modular Material Technology in Organic Food Virtual Scenes》</title>
     <url>/2023/03/13/Modular-Material-Technique/</url>
-    <content><![CDATA[<h2 id="Modular-Material-Technique-for-Organic-Food-in-Game-Scenes-From-Creation-to-Rendering"><a href="#Modular-Material-Technique-for-Organic-Food-in-Game-Scenes-From-Creation-to-Rendering" class="headerlink" title="Modular Material Technique for Organic Food in Game Scenes: From Creation to Rendering"></a>Modular Material Technique for Organic Food in Game Scenes: From Creation to Rendering</h2><h2 id="I-Introduction"><a href="#I-Introduction" class="headerlink" title="I. Introduction"></a>I. Introduction</h2><ul>
+    <content><![CDATA[<h2 id="From-Farm-to-Game-Implementation-of-Modular-Material-Technology-in-Organic-Food-Virtual-Scenes"><a href="#From-Farm-to-Game-Implementation-of-Modular-Material-Technology-in-Organic-Food-Virtual-Scenes" class="headerlink" title="From Farm to Game: Implementation of Modular Material Technology in Organic Food Virtual Scenes"></a>From Farm to Game: Implementation of Modular Material Technology in Organic Food Virtual Scenes</h2><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><ul>
 <li><h3 id="Background-and-Purpose"><a href="#Background-and-Purpose" class="headerlink" title="Background and Purpose"></a>Background and Purpose</h3><p>In the process of game development, the design and creation of game scenes have always been an important part. The degree of realism and detail of the scene can directly affect the quality of the game and the player’s gaming experience. With the continuous development of technology, the creation and rendering of game scenes are also constantly innovating and improving. Modular material technology is an important technical means that can decompose elements or objects in the scene into multiple small modules for creation and combination. Each small module can be created and modified separately, thereby improving production efficiency and reducing workload.</p>
 <p>In game scene creation, organic food scenes are an important category, which includes various vegetables, fruits, meats, and other foods and scenes. In the creation of organic food scenes, in addition to considering the characteristics and shapes of the food itself, attention also needs to be paid to the creation and rendering of materials.</p>
 </li>
@@ -830,13 +852,13 @@
 <p>On this basis, through specific case analysis, the paper demonstrates how to use modular material technology to create realistic organic food scenes. Then, the factors and considerations that need to be taken into account during organic food scene rendering are discussed, as well as application cases of modular material technology in organic food scene rendering. Finally, the paper introduces in detail the application practice of using Substance Suite for organic food material creation and UE5 for organic food scene construction, animation, and rendering, and displays the demonstration effect of organic food scenes.</p>
 </li>
 </ul>
-<h2 id="II-Product-Showcase"><a href="#II-Product-Showcase" class="headerlink" title="II. Product Showcase"></a>II. Product Showcase</h2><ul>
+<h2 id="2-Product-Showcase"><a href="#2-Product-Showcase" class="headerlink" title="2. Product Showcase"></a>2. Product Showcase</h2><ul>
 <li><h3 id="Final-Animation"><a href="#Final-Animation" class="headerlink" title="Final Animation"></a>Final Animation</h3><iframe width="608" height="304" src="https://www.youtube.com/embed/u7jM_NXORmk" title="Aesthetic of Decay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>width="900" height="450"></iframe>
 </li>
 <li><h3 id="Final-Screenshot"><a href="#Final-Screenshot" class="headerlink" title="Final Screenshot"></a>Final Screenshot</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/507/747/small/shuhang-luan-p3-luan-material-all.jpg?1678729496" alt="img"></p>
 </li>
 </ul>
-<h2 id="III-Application-of-Modular-Material-Technology"><a href="#III-Application-of-Modular-Material-Technology" class="headerlink" title="III. Application of Modular Material Technology"></a>III. Application of Modular Material Technology</h2><ul>
+<h2 id="3-Implementation-of-Modular-Material-Technology"><a href="#3-Implementation-of-Modular-Material-Technology" class="headerlink" title="3. Implementation of Modular Material Technology"></a>3. Implementation of Modular Material Technology</h2><ul>
 <li><h3 id="Model-Preparation-Maya"><a href="#Model-Preparation-Maya" class="headerlink" title="Model Preparation (Maya)"></a>Model Preparation (Maya)</h3><ul>
 <li><h4 id="Model-Creation"><a href="#Model-Creation" class="headerlink" title="Model Creation:"></a>Model Creation:</h4><p>We first created models in Maya based on the design requirements and scene demands. This includes modeling various organic food elements such as vegetables, fruits, meats, etc. We used Maya’s polygonal modeling tools to create models according to actual needs and design requirements. During the modeling process, we paid special attention to the details and shape of the models to ensure that the final models can meet actual requirements and scene demands.</p>
 </li>
@@ -869,8 +891,7 @@
 </li>
 <li><h5 id="Combine-Material-Modules"><a href="#Combine-Material-Modules" class="headerlink" title="Combine Material Modules"></a>Combine Material Modules</h5><p>After making various material modules, we need to combine them to create a complete modular material. In Substance Designer, Blend, Transform, and other nodes can be used for combination, and Functions, Switch, and other nodes can be used for control to achieve various different combination effects.</p>
 </li>
-<li><h5 id="Workflow-for-Creating-Mango-Material-Using-Modular-Texture"><a href="#Workflow-for-Creating-Mango-Material-Using-Modular-Texture" class="headerlink" title="Workflow for Creating Mango Material Using Modular Texture"></a>Workflow for Creating Mango Material Using Modular Texture</h5></li>
-<li><p>Taking mango as an example, we will explain how to create a realistic mango material using the modular texture technique in Substance Designer. First, we can use basic nodes to create a base material and add properties such as color and glossiness. For organic food materials like mango, we can use nodes and tools such as Noise, Tile Sampler, and Pattern Generator to create various material details, such as the texture and graininess of the flesh and the glossiness and unevenness of the skin. When creating modules, it is necessary to choose different nodes and tools according to the actual situation to achieve the desired effect.</p>
+<li><h5 id="Workflow-for-Creating-Mango-Material-Using-Modular-Texture"><a href="#Workflow-for-Creating-Mango-Material-Using-Modular-Texture" class="headerlink" title="Workflow for Creating Mango Material Using Modular Texture"></a>Workflow for Creating Mango Material Using Modular Texture</h5><p>Taking mango as an example, we will explain how to create a realistic mango material using the modular texture technique in Substance Designer. First, we can use basic nodes to create a base material and add properties such as color and glossiness. For organic food materials like mango, we can use nodes and tools such as Noise, Tile Sampler, and Pattern Generator to create various material details, such as the texture and graininess of the flesh and the glossiness and unevenness of the skin. When creating modules, it is necessary to choose different nodes and tools according to the actual situation to achieve the desired effect.</p>
 <p>After creating various material modules, they need to be combined to create a complete mango material. In Substance Designer, Blend, Transform, and other nodes can be used for composition, and Functions, Switch, and other nodes can be used for control to achieve various combination effects. It should be noted that different mango varieties and qualities will present different color and texture characteristics. Therefore, in actual production, adjustments and optimizations need to be made based on the actual situation. By using the modular texture technique, the production efficiency of mango material can be improved, and the workload can be reduced.</p>
 <img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/513/476/small/shuhang-luan-1678737713763.jpg?1678737750" alt="img" style="zoom:33%;">
 
@@ -923,7 +944,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="IV-Building-and-optimizing-organic-food-scenes-in-Unreal-Engine"><a href="#IV-Building-and-optimizing-organic-food-scenes-in-Unreal-Engine" class="headerlink" title="IV. Building and optimizing organic food scenes in Unreal Engine"></a>IV. Building and optimizing organic food scenes in Unreal Engine</h2><p>Building an organic food scene requires scene layout and model construction. In Unreal Engine, basic geometric shapes can be used for scene layout, or more complex models can be created using 3D modeling software such as Maya and then imported into Unreal Engine.</p>
+<h2 id="4-Building-and-optimizing-organic-food-scenes-in-Unreal-Engine"><a href="#4-Building-and-optimizing-organic-food-scenes-in-Unreal-Engine" class="headerlink" title="4. Building and optimizing organic food scenes in Unreal Engine"></a>4. Building and optimizing organic food scenes in Unreal Engine</h2><p>Building an organic food scene requires scene layout and model construction. In Unreal Engine, basic geometric shapes can be used for scene layout, or more complex models can be created using 3D modeling software such as Maya and then imported into Unreal Engine.</p>
 <ul>
 <li><h3 id="Material-sphere-settings"><a href="#Material-sphere-settings" class="headerlink" title="Material sphere settings"></a>Material sphere settings</h3><p>When creating a material, the properties of the material sphere need to be set. The material sphere’s name, display icon, priority, output, and editor display properties can be set. In the editor display, different views can be selected, such as Texture, Material, Mesh, and other views, to facilitate material editing and previewing.</p>
 </li>
@@ -936,25 +957,33 @@
 <p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/512/267/large/shuhang-luan-highresscreenshot00026.jpg?1678736113" alt="Aesthetic of Decay"></p>
 </li>
 </ul>
-<h2 id="V-Lighting-and-atmosphere-construction-in-Unreal-Engine-scene"><a href="#V-Lighting-and-atmosphere-construction-in-Unreal-Engine-scene" class="headerlink" title="V. Lighting and atmosphere construction in Unreal Engine scene"></a>V. Lighting and atmosphere construction in Unreal Engine scene</h2><p>In creating a realistic and immersive organic food scene, lighting and ambiance are crucial elements that directly affect the player’s gaming experience. In Unreal Engine, the built-in lighting system and post-processing can be used to create various lighting effects, such as natural light, nighttime light, indoor light, etc. By adjusting the position, color, intensity, and shadows of the lights, various atmospheres and effects can be created.</p>
+<h2 id="5-Lighting-and-atmosphere-construction-in-Unreal-Engine-scene"><a href="#5-Lighting-and-atmosphere-construction-in-Unreal-Engine-scene" class="headerlink" title="5. Lighting and atmosphere construction in Unreal Engine scene"></a>5. Lighting and atmosphere construction in Unreal Engine scene</h2><p>In creating a realistic and immersive organic food scene, lighting and ambiance are crucial elements that directly affect the player’s gaming experience. In Unreal Engine, the built-in lighting system and post-processing can be used to create various lighting effects, such as natural light, nighttime light, indoor light, etc. By adjusting the position, color, intensity, and shadows of the lights, various atmospheres and effects can be created.</p>
 <p>Additionally, post-processing features in Unreal Engine can be used to adjust the scene’s color tones, saturation, brightness, and other parameters to further enhance the scene’s ambiance. When performing post-processing, various effects can be selected based on the specific requirements, such as tone mapping, depth of field, bloom, etc., to achieve the desired effect.</p>
 <p>Overall, creating and building an organic food scene requires the use of various techniques and tools. Optimization and adjustment in modular material technology, model creation, scene building, and lighting ambiance construction are necessary to create a more realistic and immersive organic food scene.</p>
 <ul>
-<li><h3 id="Scene-screenshot"><a href="#Scene-screenshot" class="headerlink" title="Scene screenshot"></a>Scene screenshot</h3></li>
-<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/184/large/shuhang-luan-p3-luan-material-02.jpg?1678734496" alt="Aesthetic of Decay"></p>
-</li>
-<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/972/large/shuhang-luan-p3-luan-material-04.jpg?1678734097" alt="Aesthetic of Decay"></p>
-</li>
-<li><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/983/large/shuhang-luan-p3-luan-material-06.jpg?1678734102" alt="Aesthetic of Decay"></p>
-</li>
-<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/988/large/shuhang-luan-p3-luan-material-08.jpg?1678734113" alt="Aesthetic of Decay"></p>
-</li>
-<li><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/992/large/shuhang-luan-p3-luan-material-10.jpg?1678734120" alt="Aesthetic of Decay"></p>
-</li>
-<li><p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/997/large/shuhang-luan-p3-luan-material-12.jpg?1678734127" alt="Aesthetic of Decay"></p>
+<li><h3 id="Scene-screenshot"><a href="#Scene-screenshot" class="headerlink" title="Scene screenshot"></a>Scene screenshot</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/184/large/shuhang-luan-p3-luan-material-02.jpg?1678734496" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/972/large/shuhang-luan-p3-luan-material-04.jpg?1678734097" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/983/large/shuhang-luan-p3-luan-material-06.jpg?1678734102" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/988/large/shuhang-luan-p3-luan-material-08.jpg?1678734113" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/992/large/shuhang-luan-p3-luan-material-10.jpg?1678734120" alt="Aesthetic of Decay"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/997/large/shuhang-luan-p3-luan-material-12.jpg?1678734127" alt="Aesthetic of Decay"></p>
 </li>
 </ul>
 <p>​			</p>
 ]]></content>
+      <categories>
+        <category>作品集</category>
+        <category>美术向</category>
+        <category>CG动画</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>3D动画</tag>
+        <tag>CG</tag>
+        <tag>团队作品</tag>
+        <tag>Shader</tag>
+        <tag>Substance Designer</tag>
+        <tag>UE5</tag>
+      </tags>
   </entry>
 </search>
