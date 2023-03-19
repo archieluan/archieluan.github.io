@@ -1072,7 +1072,11 @@
     <content><![CDATA[<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《风格化森林-程序化生成工具》，这是一个使用<strong>Maya Python</strong>编写的森林场景生成脚本。该脚本可以<strong>随机生成树木、草地和石头</strong>。</p>
 <p>用户可以根据需要随意调整<strong>窗口</strong>的数值，控制这些植被的<strong>数量</strong>、<strong>尺寸</strong>和<strong>形状</strong>，从而快速构建出一个丰富多样的自然环境。同时，该工具还支持植被的<strong>随机化</strong>，让每一棵树、每一块石头都具有独特的形态，避免了场景中的重复感。</p>
 <p>该工具内置了一套基本的<strong>材质系统</strong>，能够快速为植被分配合适的材质属性。同时，它还提供了一套基本的<strong>光照</strong>方案，包括太阳光和天空光，让用户能够在真实的光照环境下预览植被效果。</p>
-<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01porwyeib04vjefuhktp83139.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"></p>
+<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2023/03/18/Stylized-Forest-Tool/image-01.png" class title="This is an forest_tool image">
+
+
+
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01porwyeib04vjefuhktp83139.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"></p>
 <p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01nni1yrsf5xvrxhhl5dqs3739.png?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01wpdtwiupesjnsis5shke3737.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"></p>
 <h3 id="Design-Thinking："><a href="#Design-Thinking：" class="headerlink" title="Design Thinking："></a><strong>Design Thinking：</strong></h3><ol>
 <li><h4 id="定义变量："><a href="#定义变量：" class="headerlink" title="定义变量："></a>定义变量：</h4><p>在这个部分，我们会定义一些用于控制场景的生成的常量和变量，例如树木、石头和草地的数量、大小范围、位置范围等。这些变量可以根据需要进行调整，以生成不同的森林场景。</p>
