@@ -6,8 +6,7 @@
     <content><![CDATA[<p>​	</p>
 <hr>
 <p>大家好，我叫栾书航，一个集阳光、帅气与智慧于一身的男人…</p>
-<p>​	一直很想搭建一个人网站，但是因为时间和技术问题，被耽误了。这次借着初步掌握python程序，手感还热乎的时候，赶紧将它搭建起来了。</p>
-<p>​	时间还是太赶了，萨凡纳的作业很多，老师也非常的严格，想得到一个好成绩，确实是不容易的事情，因此想在课余时间来学习其他新的知识，也需要很大的勇气。</p>
+<p>​	一直很想搭建一个人网站，但是因为时间问题被耽误了。争取在投递实习岗位前，尽快将它搭建补充起来。也算是补充自己对于网页设计的知识储备，这是一个非常好的锻炼精力。</p>
 <p>​	对于这个博客，我的初步计划主要以分享个人作品、杂七杂八的经验为主。通过不断学习，来慢慢将自己对于网页和生活中的idea加入其中。</p>
 <p>​	<strong>So, be knowledgeable, be healthy, be safe!</strong></p>
 ]]></content>
@@ -67,7 +66,8 @@
   <entry>
     <title>作品：《戒之歌》-Animation</title>
     <url>/2020/10/15/Ring-Animation/</url>
-    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>中文名：《戒之歌》，英文名：《The darkest hour before the dawn》。这个作品是我在本科，开题答辩的时候做出的demo，当时设想的背景非常宏大。可惜因为毕设团队都参加了实习，最后夭折了。</p>
+    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>中文名：《戒之歌》，英文名：《The darkest hour before the dawn》。本科期间创作的，CG独立动画，设想的背景非常宏大，设定也很多。</p>
+<p>熟练掌握了maya to UE4的角色动画创建，和迷雾、火焰特效创建方法。</p>
 <h3 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h3><p>在自然之婴诞生之时，时空产生平行空间，两个误入其中的不同种族分别带走了其不同的灵魂部分，并被扶养长大。因为在残酷的战场中，切身感受到身边的杀戮与残酷，因此激发了自然之子的融合，拥有沟通万物之力的她成功拔下战场中心的守护之剑并沟通巨龙平息战争。</p>
 <h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、UE4、AE完成。</p>
 <h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><iframe src="//player.bilibili.com/player.html?aid=395546796&bvid=BV15o4y1k7gA&cid=1041232465&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="900" height="450"> </iframe>
@@ -94,7 +94,8 @@
   <entry>
     <title>作品：《MoJee》-Animation</title>
     <url>/2021/01/11/MoJee-Animation/</url>
-    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee》，我的毕业设计动画，团队由两人组成，队友胡梓雍负责二维角色和场景概念的创作，我作为导演负责剩下所有，制作时长两个半月。我也是通过这个作品，申请到了国外的众多学校。现在回头看看，当时制作手法较为笨拙，也暴露了很多细节上的问题。</p>
+    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee》，毕业设计短片，三维独立动画，全流程创作，制作时长两个半月。</p>
+<p>第一部由UE4引擎创作的独立动画，加深了对于DCC软件 to UE4管线的认识，熟悉掌握了场景搭建、资源导入与材质蓝图创建、骨骼重定向、灯光、过场动画等技术。</p>
 <h3 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h3><p>MoJee因爱而生，是生活在原始森林里的小野人，长期的营养不良导致他非常瘦弱，令人怜惜。但他心地淳朴，乐观且活泼。他一生都在追求着功夫的最高境界，为此独自离开族群，飘洋过海来到仙岛，向猴子大师求学武艺。</p>
 <p>而这个小野人也代表着作者本身，我希望像他一样，千山万水，只为追求心中的那个梦想。</p>
 <h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、UE4、AE完成。</p>
@@ -125,14 +126,16 @@
         <tag>个人作品</tag>
         <tag>3D动画</tag>
         <tag>卡通</tag>
+        <tag>引擎</tag>
       </tags>
   </entry>
   <entry>
     <title>作品：《Feast》-Animation</title>
     <url>/2022/06/02/Feast-Animation/</url>
-    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《Feast》，是我在SCAD研一的团队合作项目，由8个队员合作完成，每个人都有分工。我主要负责：角色模型+绑定+动画的pipeline，最后承担部分镜头的灯光与渲染。</p>
+    <content><![CDATA[<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《Feast》，SCAD研一的团队合作项目, 风格化卡通风动画。</p>
+<p><strong>主要负责：</strong>角色模型+绑定+动画，部分镜头的灯光与渲染。</p>
 <h3 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h3><p>该作品描述了一个邋遢男人，在家中遇见了“好邻居“蟑螂的故事。蟑螂与邋遢男人之间斗智斗勇，最终蟑螂团队获胜，并享用了家中美食的盛宴，故事充满了趣味性。该作品采用风格化的形式，将角色卡通化、拟人化、夸张化。</p>
-<h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>Maya、blender。</p>
+<h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>3Dsmax, Maya, blender。</p>
 <h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><h4 id="Full-video"><a href="#Full-video" class="headerlink" title="Full video :"></a>Full video :</h4><iframe src="//player.bilibili.com/player.html?aid=727152200&bvid=BV15S4y1B7JB&cid=735908449&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="900" height="450"></iframe>
 
 <h3 id="Highres-Screenshot："><a href="#Highres-Screenshot：" class="headerlink" title="Highres Screenshot："></a>Highres Screenshot：</h3><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01rwohznfbcdomyi5hk91m3435.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="Feast"></p>
@@ -159,10 +162,10 @@
       </tags>
   </entry>
   <entry>
-    <title>作品：用Python创建罗马文字图形</title>
+    <title>作品：《用Python创建罗马文字图形》</title>
     <url>/2022/11/18/Practice-plane-composition/</url>
     <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01hsz4yanmu2luhoiqhihu3231.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="程序图集合"></p>
-<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>在我练习Python的时候，我观察了罗马字体，发现如果将把它放在平面构成里，它看起来也非常漂亮。因此我试着将它构建了出来。</p>
+<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>在我练习Python的时候，我观察了罗马字体，发现如果将把它放在平面构成里，它看起来也非常漂亮。</p>
 <h2 id="Reference："><a href="#Reference：" class="headerlink" title="Reference："></a>Reference：</h2><p>大致模仿了罗马文字圆形形式，比例非常好。</p>
 <img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/1676782386825.jpg" class title="This is an roman image">
 
@@ -221,15 +224,6 @@
 <ul>
 <li>搞定！</li>
 </ul>
-<h3 id="易错点反思："><a href="#易错点反思：" class="headerlink" title="易错点反思："></a>易错点反思：</h3><ol>
-<li>首先，源代码制作慢，总是忘记添加函数变量，这也导致后期合成的时候，无法在main代码中控制图形的大小，导致回炉重造。</li>
-<li>其次，我没有在一开始就设计程序的大框架，而是盲目的一个一个去绘制图形，到最后想到要开始制作main程序的时候，发现所有文件都很独立，工程很大，最后不得不一个一个反攻修改。</li>
-<li>我不能理解很多变量之间的操作和结果，所以我不断出错。最后，我使用了我能理解的if函数，在尝试中完成了我的工作。</li>
-</ol>
-<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/%E5%9B%BE%E7%89%871.png" class title="This is an roman image">
-
-
-
 <h2 id="另附杂七杂八临摹练习图："><a href="#另附杂七杂八临摹练习图：" class="headerlink" title="另附杂七杂八临摹练习图："></a>另附杂七杂八临摹练习图：</h2><img lazyload src="/images/loading.svg" data-src="/2022/11/18/Practice-plane-composition/%E5%9B%BE%E7%89%872.png" class title="This is an roman image">
 
 
@@ -259,7 +253,7 @@
       </tags>
   </entry>
   <entry>
-    <title>作品：用Python创建飓风模拟器</title>
+    <title>作品：《用Python创建飓风模拟器》</title>
     <url>/2022/12/20/HurricaneStarter/</url>
     <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/code01.gif" class title="This is an hurricane image">
 
@@ -267,10 +261,8 @@
 
 
 
-<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《飓风模拟器》，是在学校所修的代码课程中的一项作业，选自Nifty Assignments 2018 -斯坦福计算机科学SIGCSE。</p>
-<p>作业要求：您将编写代码，使飓风沿着其轨迹移动，同时在地图上标记每个点的风暴类别。至少，你的代码应该显示一个提供的飓风路径，着色和改变线的厚度适当的类别，以不同的速度移动海龟适当的风速(速度)，并打印类别的值为每个数据点的适当颜色。</p>
-<p>额外学分: 1.展示课堂教学之外的个人研究. 2.创建从可能的飓风文件列表中选择的能力。3.为用户提供选择所有飓风并同时在一个窗口中绘制它们的能力(绘制重叠).</p>
-<p>超额完成作业，虽作品依旧相对粗糙，但也是在技术上成长的过程，因此记录下来，作为经验。</p>
+<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《飓风模拟器》，Python代码项目，参考选自Nifty Assignments 2018 -斯坦福计算机科学SIGCSE。</p>
+<p><strong>玩法：</strong>提供五个时期的飓风路线模拟动画，用户可通过选择，来播放某一时期的飓风动态，并展示其速度、路线、等级等信息。</p>
 <h2 id="Design-thinking"><a href="#Design-thinking" class="headerlink" title="Design thinking:"></a>Design thinking:</h2><h3 id="背景与启动函数制作"><a href="#背景与启动函数制作" class="headerlink" title="背景与启动函数制作"></a>背景与启动函数制作</h3><ul>
 <li>首先以turtle库为基本库绘制图像：</li>
 </ul>
@@ -336,16 +328,6 @@
 
 
 
-<h3 id="易错点反思："><a href="#易错点反思：" class="headerlink" title="易错点反思："></a>易错点反思：</h3><ol>
-<li>很多新的语法还不够熟练，经常想不起来用，这也导致很多时候代码写不下去。</li>
-<li>学会了使用AI进行询问新函数和语法的使用。</li>
-</ol>
-<h5 id="错误展示："><a href="#错误展示：" class="headerlink" title="错误展示："></a><strong>错误展示：</strong></h5><img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/%E5%9B%BE%E7%89%871.jpg" class title="This is an hurricane image">
-
-<img lazyload src="/images/loading.svg" data-src="/2022/12/20/HurricaneStarter/%E5%9B%BE%E7%89%872.jpg" class title="This is an hurricane image">
-
-
-
 
 
 
@@ -367,7 +349,7 @@
       </tags>
   </entry>
   <entry>
-    <title>作品：用Python创建Maya重命名工具</title>
+    <title>作品：《在Maya和UE5中制作批量重命名工具》</title>
     <url>/2023/02/01/rename-maya-tool/</url>
     <content><![CDATA[<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><img lazyload src="/images/loading.svg" data-src="/2023/02/01/rename-maya-tool/tree01.gif" class title="This is an hurricane image">
 
@@ -376,13 +358,16 @@
 
 
 
-<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《Maya重命名工具》，是我在22年在腾讯天美工作室实习的时候，最常见也最实用的一个工具，这也是我认为逻辑清晰，也非常容易制作的工具。特别是在辅助程序组进行批量创建模型，测试性能的时候，自己创建一个这样的工具，真的能提高太多的效率了。</p>
-<p>不过22年我还不熟悉python，只会在UE5中使用widget工具，用库里已经存在的函数节点来连接，虽然也很方便，但是也会受到很多的限制。</p>
+<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《Maya重命名工具》，是我在腾讯天美工作室，担任技术美术实习生时，最常见也最实用的一个工具，这也是我认为逻辑清晰，也非常容易制作的工具。特别是在辅助程序组进行批量创建模型，测试性能的时候，自己创建一个这样的工具，能够大大提高工作效率。</p>
+<p>这里分享两个工具制作：</p>
+<ol>
+<li>UE5 Widget工具蓝图，应用于UE5引擎内的资源管理。可以快速使用内置的函数库，来通过节点连接的方式，制作出简单的重命名工具。</li>
+<li>Python in Maya，应用于Maya软件内的资源管理，通过在maya中使用Python的Maya API 工具，来制作出简单有效的重命名工具。</li>
+</ol>
 <h5 id="UE5-Widget工具展示："><a href="#UE5-Widget工具展示：" class="headerlink" title="UE5-Widget工具展示："></a>UE5-Widget工具展示：</h5><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/018vd0oeinkvb5wvkfpgwn3932.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="程序图集合"></p>
 <p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01t6vjyq6n3x7wtuaw34yl3638.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="程序图集合"></p>
-<p>因此在我开始练习python工具制作后，我就想起了曾经的“挚爱”。</p>
-<p>那么，开干！</p>
-<h2 id="Design-thinking"><a href="#Design-thinking" class="headerlink" title="Design thinking:"></a>Design thinking:</h2><h3 id="建立窗口"><a href="#建立窗口" class="headerlink" title="建立窗口"></a>建立窗口</h3><ul>
+<p>UE5 widget 工具不多赘述，逻辑原理与python同理。</p>
+<h2 id="Design-Thinking"><a href="#Design-Thinking" class="headerlink" title="Design Thinking:"></a>Design Thinking:</h2><h3 id="建立窗口"><a href="#建立窗口" class="headerlink" title="建立窗口"></a>建立窗口</h3><ul>
 <li>创建后缀字典：</li>
 </ul>
 <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">SUFFIXES = &#123;</span><br><span class="line">    <span class="string">&quot;mesh&quot;</span>: <span class="string">&quot;GEO&quot;</span>,</span><br><span class="line">    <span class="string">&quot;joint&quot;</span>: <span class="string">&quot;JNT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;camera&quot;</span>: <span class="string">&quot;CAM&quot;</span>,</span><br><span class="line">    <span class="string">&quot;ambientLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;directionalLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;pointLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;spotLight&quot;</span>: <span class="string">&quot;LGT&quot;</span>,</span><br></pre></td></tr></table></figure></div>
@@ -506,11 +491,7 @@
 <ul>
 <li>！！！重点：<code>replace</code> 是 Python 字符串方法，用于替换字符串中的子字符串。注意！这只是在 Python 中修改了字符串，它并不会实际更改场景中物体的名称。因此，要更改场景中的物体名称，还是需要使用 <code>cmds.rename(oldname,newname)</code> 命令（血的教训！！！）</li>
 </ul>
-<h3 id="易错点反思："><a href="#易错点反思：" class="headerlink" title="易错点反思："></a>易错点反思：</h3><ol>
-<li>很多新的语法还不够熟练，经常想不起来用，这也导致很多时候代码写不下去。</li>
-<li>还是有一些bug存在，比如添加了“_”，但是不识别，目前只能手动添加。也许是命令不兼容，有时间了还需要继续研究解决。</li>
-</ol>
-<h4 id><a href="#" class="headerlink" title></a></h4>]]></content>
+]]></content>
       <categories>
         <category>作品集</category>
         <category>程序向</category>
@@ -532,7 +513,9 @@
 
 
 
-<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《Lost Corner》，《遗失的角落》，是冬季学期的Game Shader项目作品。工程较大，较赶，在一个月内完成了模型、UV、材质全流程（SD+SP)、UE5- Shader、场景和灯光的全流程制作，因此整体质量受到了影响，我会在接下来的空余时间，继续深入优化贴图的细节。</p>
+<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《Lost Corner》，《遗失的角落》，个人独立动画项目作品，包括Maya模型制作，SD贴图烘焙与SP材质绘制。在一个月内完成了模型、UV、材质全流程（SD+SP)、UE5- Shader、场景和灯光的全流程制作，因此整体质量受到了影响，我会在接下来的空余时间，继续深入优化贴图的细节。</p>
+<h3 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement:"></a>Achievement:</h3><p>重点训练了Substance Designer中的程序化贴图制作，并生成大量可控的变量，以供Substance Painter中进行绘制，并着重训练了SP进入UE5中后的材质优化工作。</p>
+<p>大大增强了自己对于节点式和程序化的逻辑思维能力，与同时进行的python练习作品结合，加深了对程序化和工具化的理解，更加坚定了对于技术美术方向的研究目标。</p>
 <h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、Substance Designer&#x2F;Painter、UE5完成。</p>
 <h3 id="Highres-Screenshot："><a href="#Highres-Screenshot：" class="headerlink" title="Highres Screenshot："></a>Highres Screenshot：</h3><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01qpbn12wyhiwsvtxjvu3j3139.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《Lost corner》-Shader"></p>
 <p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01ow0y73moi325xfispuai3735.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《Lost corner》-Shader"></p>
@@ -545,8 +528,6 @@
 <p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01vqapq8xbpbw78he12ffv3337.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《Lost corner》-Shader"></p>
 <p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01nzv6jjcvxevdz7zh7vb33434.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《Lost corner》-Shader"></p>
 <p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01lm7yl1xetxffjvwgwd6p3037.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《Lost corner》-Shader"></p>
-<h3 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement:"></a>Achievement:</h3><p>重点训练了Substance Designer中的程序化贴图制作，并生成大量可控的变量，以供Substance Painter中进行绘制，并着重训练了SP进入UE5中后的材质优化工作。</p>
-<p>大大增强了自己对于节点式和程序化的逻辑思维能力，与同时进行的python练习作品结合，加深了对程序化和工具化的理解，更加坚定了对于技术美术方向的研究目标。</p>
 <h3 id="Obsolete-Version"><a href="#Obsolete-Version" class="headerlink" title="Obsolete Version"></a>Obsolete Version</h3><ul>
 <li><h5 id="废弃草稿："><a href="#废弃草稿：" class="headerlink" title="废弃草稿："></a>废弃草稿：</h5><iframe src="//player.bilibili.com/player.html?aid=695586912&bvid=BV1Z24y1t7Qa&cid=1041243111&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="900" height="450"> </iframe></li>
 </ul>
@@ -569,12 +550,13 @@
     <url>/2022/04/11/MoJee-game/</url>
     <content><![CDATA[<h3 id="Video"><a href="#Video" class="headerlink" title="Video:"></a>Video:</h3><iframe src="//player.bilibili.com/player.html?aid=568091304&bvid=BV1Bv4y1b7di&cid=1041222490&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="900" height="450"> </iframe>
 
-<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee-Game》，是一个学校的Game pipeline课程项目作品，在2022.3月完成。制作周期仅为两个月，课程比较紧张，因此续弦了本科毕业设计的MoJee IP，制作出一个游戏世界。</p>
+<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>《MoJee-Game》，全流程独立游戏。制作周期为两个月，课程比较紧张，因此续弦了本科毕业设计的MoJee IP，制作出一个游戏世界。</p>
+<p>掌握了引擎内<strong>动画和角色状态机</strong>创建的基本原理，和游戏交互系统。打通了基本游戏制作流程和游戏内过场动画系统。</p>
 <h3 id="Main-Designer："><a href="#Main-Designer：" class="headerlink" title="Main Designer："></a>Main Designer：</h3><ol>
-<li>进行了模型贴图的优化，并重定向游戏内骨骼配置。</li>
+<li>进行了<strong>模型材质</strong>的优化，并重定向游戏内骨骼配置。</li>
 <li>完成了角色状态机的走跑跳，与连续攻击动作。</li>
 <li>通过素材和特效制作，搭建两个较为完备的游戏关卡。</li>
-<li>制作了大量的交互程序，比如关卡跳跃、人物攻击、怪物惊醒、追踪与死亡，血条和头像等UI界面、音效等等，通宵了无数个夜晚，解决了一个又一个bug，痛恨自己不是程序员出身。</li>
+<li>制作了大量的交互程序，包括关卡跳跃、人物攻击、怪物惊醒、追踪与死亡，血条和头像等UI界面、音效等等。</li>
 </ol>
 <h3 id="Pipeline："><a href="#Pipeline：" class="headerlink" title="Pipeline："></a>Pipeline：</h3><p>该作品主要由3dsmax、Maya、Substance Designer&#x2F;Painter、UE5完成。</p>
 <h3 id="Game-Screenshot："><a href="#Game-Screenshot：" class="headerlink" title="Game Screenshot："></a>Game Screenshot：</h3><h3 id><a href="#" class="headerlink" title></a><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01yjd9l0cacfz26b7gvota3832.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《MoJee》-Game"></h3><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01ofpxn7feocewh5jonv8z3338.png?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《MoJee》-Game"></p>
@@ -592,6 +574,7 @@
         <tag>卡通</tag>
         <tag>游戏</tag>
         <tag>3D</tag>
+        <tag>UE4</tag>
       </tags>
   </entry>
   <entry>
@@ -866,12 +849,11 @@
 <h3 id="5-全局光照（Global-Illumination）"><a href="#5-全局光照（Global-Illumination）" class="headerlink" title="5. 全局光照（Global Illumination）"></a>5. 全局光照（Global Illumination）</h3><p>​		全局光照是一种真实光照模拟技术，它考虑了直接光照、间接光照以及多次反射等光线传播过程。在有机食		物场景中，全局光照可以提供更加真实的光照效果，使物体之间的亮度和色彩更加和谐统一。虚幻引擎中提		供了多种全局光照技术，如静态光照贴图（Lightmaps）、动态光照探针（Light Probes）等，可以根据场景		的需求选择合适的全局光照技术。</p>
 <p>​		通过综合运用虚幻引擎自带的灯光系统和后期处理功能，以及环境光遮蔽、屏幕空间反射和全局光照等技		术，可以在有机食物场景中营造出各种不同的氛围和效果。同时，还可以根据实际需要对这些技术进行深入		研究和优化，以达到更加逼真和生动的效果。</p>
 <p>总的来说，有机食物场景的制作和搭建需要综合运用多种技术和工具，在模块化材质技术、模型制作、场景搭建和灯光氛围搭建等方面进行优化和调整，以创造出更加逼真、生动的有机食物场景。</p>
-<h3 id="6-场景截图"><a href="#6-场景截图" class="headerlink" title="6. 场景截图"></a>6. 场景截图</h3><p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/511/184/large/shuhang-luan-p3-luan-material-02.jpg?1678734496" alt="Aesthetic of Decay"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/972/large/shuhang-luan-p3-luan-material-04.jpg?1678734097" alt="Aesthetic of Decay"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/983/large/shuhang-luan-p3-luan-material-06.jpg?1678734102" alt="Aesthetic of Decay"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/988/large/shuhang-luan-p3-luan-material-08.jpg?1678734113" alt="Aesthetic of Decay"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdna.artstation.com/p/assets/images/images/060/510/992/large/shuhang-luan-p3-luan-material-10.jpg?1678734120" alt="Aesthetic of Decay"></p>
-<p><img lazyload src="/images/loading.svg" data-src="https://cdnb.artstation.com/p/assets/images/images/060/510/997/large/shuhang-luan-p3-luan-material-12.jpg?1678734127" alt="Aesthetic of Decay"></p>
+<h3 id="6-场景截图"><a href="#6-场景截图" class="headerlink" title="6. 场景截图"></a>6. 场景截图</h3><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01w4ns4ae3r2bsxv9cmfsk3732.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="Aesthetic of Decay 杂七杂八图库"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/014ehjyas7j23mrkqp2h2y3834.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="Aesthetic of Decay 杂七杂八图库"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01tisxaiyntkjdo8odvuls3337.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="Aesthetic of Decay 杂七杂八图库"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01abcpqlcrcnlgg5py92is3339.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="Aesthetic of Decay 杂七杂八图库"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01kyueqaelyw2cmytpsh8f3935.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="Aesthetic of Decay 杂七杂八图库"></p>
 <p>​			</p>
 <h2 id="六、结论"><a href="#六、结论" class="headerlink" title="六、结论"></a>六、结论</h2><h3 id="1-总结本文的研究内容"><a href="#1-总结本文的研究内容" class="headerlink" title="1. 总结本文的研究内容"></a>1. 总结本文的研究内容</h3><p>本文研究了模块化材质技术在有机食物场景制作中的应用。首先，我们介绍了有机食物场景的概念、特点和设计要求。然后，详细讲解了使用模块化材质技术创建有机食物场景中的材质、灯光效果、以及如何利用虚幻引擎进行场景搭建。本文还讨论了有机食物场景渲染时需要考虑的因素和注意事项，并提供了实际应用案例。最后，介绍了使用Substance Suite进行有机食物材质的制作以及使用虚幻引擎进行有机食物场景的搭建、动画与渲染的应用实践。</p>
 <h3 id="2-指出研究的不足和未来发展方向"><a href="#2-指出研究的不足和未来发展方向" class="headerlink" title="2. 指出研究的不足和未来发展方向"></a>2. 指出研究的不足和未来发展方向</h3><p>尽管本文取得了一定的成果，但在实际应用中仍存在一些不足之处。以下是本文研究的不足和未来发展方向：</p>
@@ -884,8 +866,7 @@
 ]]></content>
       <categories>
         <category>作品集</category>
-        <category>美术向</category>
-        <category>CG动画</category>
+        <category>文章</category>
       </categories>
       <tags>
         <tag>个人作品</tag>
@@ -894,6 +875,8 @@
         <tag>Shader</tag>
         <tag>Substance Designer</tag>
         <tag>UE5</tag>
+        <tag>文档</tag>
+        <tag>技术文章</tag>
       </tags>
   </entry>
   <entry>
@@ -1070,8 +1053,7 @@
 ]]></content>
       <categories>
         <category>作品集</category>
-        <category>美术向</category>
-        <category>CG动画</category>
+        <category>文章</category>
       </categories>
       <tags>
         <tag>个人作品</tag>
@@ -1080,6 +1062,49 @@
         <tag>Shader</tag>
         <tag>Substance Designer</tag>
         <tag>UE5</tag>
+        <tag>文档</tag>
+        <tag>技术文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作品：《风格化森林-程序化生成工具》</title>
+    <url>/2023/03/18/Stylized-Forest-Tool/</url>
+    <content><![CDATA[<h2 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h2><p>《风格化森林-程序化生成工具》，这是一个使用<strong>Maya Python</strong>编写的森林场景生成脚本。该脚本可以<strong>随机生成树木、草地和石头</strong>。</p>
+<p>用户可以根据需要随意调整<strong>窗口</strong>的数值，控制这些植被的<strong>数量</strong>、<strong>尺寸</strong>和<strong>形状</strong>，从而快速构建出一个丰富多样的自然环境。同时，该工具还支持植被的<strong>随机化</strong>，让每一棵树、每一块石头都具有独特的形态，避免了场景中的重复感。</p>
+<p>该工具内置了一套基本的<strong>材质系统</strong>，能够快速为植被分配合适的材质属性。同时，它还提供了一套基本的<strong>光照</strong>方案，包括太阳光和天空光，让用户能够在真实的光照环境下预览植被效果。</p>
+<h2 id="Completed-Image："><a href="#Completed-Image：" class="headerlink" title="Completed Image："></a>Completed Image：</h2><p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01porwyeib04vjefuhktp83139.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01nni1yrsf5xvrxhhl5dqs3739.png?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"><img lazyload src="/images/loading.svg" data-src="https://img.zcool.cn/community/01wpdtwiupesjnsis5shke3737.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" alt="《风格化森林-程序化生成工具》"></p>
+<h3 id="Design-Thinking："><a href="#Design-Thinking：" class="headerlink" title="Design Thinking："></a><strong>Design Thinking：</strong></h3><ol>
+<li><h4 id="定义变量："><a href="#定义变量：" class="headerlink" title="定义变量："></a>定义变量：</h4><p>在这个部分，我们会定义一些用于控制场景的生成的常量和变量，例如树木、石头和草地的数量、大小范围、位置范围等。这些变量可以根据需要进行调整，以生成不同的森林场景。</p>
+</li>
+<li><h4 id="定义树木函数："><a href="#定义树木函数：" class="headerlink" title="定义树木函数："></a>定义树木函数：</h4><h5 id="a-创建树叶函数："><a href="#a-创建树叶函数：" class="headerlink" title="a) 创建树叶函数："></a>a) 创建树叶函数：</h5><p>该函数负责生成单个树叶的几何形状。根据参数，您可以调整树叶的形状、大小和初始位置。</p>
+<h5 id="b-创建树层函数："><a href="#b-创建树层函数：" class="headerlink" title="b) 创建树层函数："></a>b) 创建树层函数：</h5><p>该函数用于创建树的一个层级，包括多个树叶。通过调整层级的高度和半径，以及树叶的数量和排列，您可以生成不同外观的树木。</p>
+<h5 id="c-创建树干函数："><a href="#c-创建树干函数：" class="headerlink" title="c) 创建树干函数："></a>c) 创建树干函数：</h5><p>该函数负责生成树干的几何形状。您可以调整树干的高度、半径和细节，以创建不同类型的树干。</p>
+<h5 id="d-创建石头函数："><a href="#d-创建石头函数：" class="headerlink" title="d) 创建石头函数："></a>d) 创建石头函数：</h5><p>该函数用于生成石头的几何形状。您可以调整石头的大小、形状和初始位置，以在森林中添加自然的石头元素。</p>
+<h5 id="e-创建草地函数："><a href="#e-创建草地函数：" class="headerlink" title="e) 创建草地函数："></a>e) 创建草地函数：</h5><p>该函数负责生成草地的几何形状。通过调整草地的大小、高度和密度，您可以在场景中创建丰富多样的草地效果。</p>
+</li>
+<li><h4 id="主函数："><a href="#主函数：" class="headerlink" title="主函数："></a>主函数：</h4><p>这个函数会调用上述定义的函数，按照设定的参数和随机范围生成树木、石头和草地。您可以在主函数中设置要生成的元素数量和范围，从而创建出具有随机性和多样性的森林场景。</p>
+</li>
+<li><h4 id="材质设置："><a href="#材质设置：" class="headerlink" title="材质设置："></a>材质设置：</h4><p>在这个部分，我们为树叶、树干、石头和草地分别定义材质。您可以调整颜色、纹理、光泽度等属性，以达到不同的视觉效果。</p>
+</li>
+<li><h4 id="光照设置："><a href="#光照设置：" class="headerlink" title="光照设置："></a>光照设置：</h4><p>这个部分包括创建一个阳光和一个天空穹顶光源，并进行相关设置。阳光负责产生主要的阴影和明暗效果，而天空穹顶光源则提供全局的环境光。您可以调整光源的颜色、强度和角度，以模拟不同时间和天气条件下的光照效果。</p>
+</li>
+</ol>
+<p>当运行此程序时，它将在Maya场景中生成树、石头和草。这些对象将根据所选顶点的位置进行随机分布。对象的形状、大小、颜色等属性也将随机生成，以创建一个多样化的环境。场景中的光源包括阳光和天空穹顶光，用于为场景提供照明。</p>
+]]></content>
+      <categories>
+        <category>作品集</category>
+        <category>程序向</category>
+        <category>Python</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>Python</tag>
+        <tag>程序向</tag>
+        <tag>工具</tag>
+        <tag>场景</tag>
+        <tag>Maya</tag>
       </tags>
   </entry>
 </search>
