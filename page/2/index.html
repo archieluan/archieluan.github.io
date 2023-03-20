@@ -56,7 +56,7 @@
     <script id="hexo-configurations">
     let REDEFINE = window.REDEFINE || {};
     REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
-    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/shuhang_avatar.jpg","favicon":"/images/shuhang_logo.png","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"font_sizes":{"title":"3rem","subtitle":"1.5rem"},"line_height":1.2,"title":"SHUHANG LUAN","subtitle":{"enable":true,"list":["Welcome to my world！","感谢有你，我才会变得更好！","我热爱生活，因此我会很努力~"]},"custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.2.3","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":true,"audio":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg"},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}}};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/shuhang_avatar.jpg","favicon":"/images/shuhang_logo.png","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"font_sizes":{"title":"2.6rem","subtitle":"1.5rem"},"line_height":1.2,"title":"SHUHANG LUAN","subtitle":{"enable":true,"list":["Welcome to my world！","感谢有你，我才会变得更好！","我热爱生活，因此我会很努力~"]},"custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.2.3","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":true,"audio":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg"},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}}};
     REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
     
@@ -646,6 +646,90 @@
     </div>
 
     <a href="/2023/03/13/workflow-for-organic-food/">Read more<span class="seo-reader-text">文档：《从农场到游戏：实现有机食品虚拟场景中的模块化材质技术》</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/03/20/slove-the-problem-in-web-submittion/">
+                        经验笔记：解决了关于线上网页更新与本地不符的问题
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        问题背景由于在使用 Hexo 构建静态网站时，经常会出现线上网页deploy后，与本地网页不一致的情况。因此就写下这篇经验贴，也作为自己的一个记录。
+这是由于缓存文件未被正确更新，导致线上网页仍然显示旧的内容。为了解决这个问题，可以执行以下操作：
+解...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Mar 20 2023 02:19:24 GMT-0400">
+                
+                    2023-03-20
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">经验笔记</a>&nbsp;
+                        </li>
+                    
+                    
+                        <li>
+                            &gt; 
+                            <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/%E7%A8%8B%E5%BA%8F%E5%90%91/">程序向</a>&nbsp;
+                        </li>
+                    
+                    
+                        <li>
+                            &gt; 
+                            <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/%E7%A8%8B%E5%BA%8F%E5%90%91/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/">网页设计</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Debug/">Debug</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/">网页设计</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/bug%E7%83%A6%E6%AD%BB%E4%BA%86%EF%BC%81/">bug烦死了！</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/03/20/slove-the-problem-in-web-submittion/">Read more<span class="seo-reader-text">经验笔记：解决了关于线上网页更新与本地不符的问题</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>

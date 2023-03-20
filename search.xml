@@ -1204,4 +1204,46 @@
         <tag>技术文章</tag>
       </tags>
   </entry>
+  <entry>
+    <title>经验笔记：解决了关于线上网页更新与本地不符的问题</title>
+    <url>/2023/03/20/slove-the-problem-in-web-submittion/</url>
+    <content><![CDATA[<h1 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h1><p>由于在使用 Hexo 构建静态网站时，经常会出现线上网页deploy后，与本地网页不一致的情况。因此就写下这篇经验贴，也作为自己的一个记录。</p>
+<p>这是由于缓存文件未被正确更新，导致线上网页仍然显示旧的内容。为了解决这个问题，可以执行以下操作：</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ol>
+<li><h2 id="清理-Hexo-项目中的缓存文件："><a href="#清理-Hexo-项目中的缓存文件：" class="headerlink" title="清理 Hexo 项目中的缓存文件："></a>清理 Hexo 项目中的缓存文件：</h2><p>使用 <code>hexo clean</code> 命令清理 Hexo 项目目录中生成的缓存文件，例如生成的 HTML 文件、CSS 文件、静态资源文件等。这些缓存文件通常存储在 <code>public</code> 文件夹中。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><h2 id="删除-Git-缓存中的文件："><a href="#删除-Git-缓存中的文件：" class="headerlink" title="删除 Git 缓存中的文件："></a>删除 Git 缓存中的文件：</h2><p>使用 <code>git rm</code> 命令删除 Git 缓存中的文件。这些文件可能已经被提交到 Git 仓库中，但是你需要将它们从 Git 缓存中删除，以便重新生成静态文件。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git rm -r --cached .</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><h2 id="重新生成-Hexo-项目中的静态文件："><a href="#重新生成-Hexo-项目中的静态文件：" class="headerlink" title="重新生成 Hexo 项目中的静态文件："></a>重新生成 Hexo 项目中的静态文件：</h2><p>使用 <code>hexo generate</code> 命令重新生成 Hexo 项目中的静态文件。这个命令将重新生成所有需要生成的 HTML 文件、CSS 文件、JavaScript 文件等，并将它们存储在指定的 <code>public</code> 目录中。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><h2 id="在本地查看更新后的网页："><a href="#在本地查看更新后的网页：" class="headerlink" title="在本地查看更新后的网页："></a>在本地查看更新后的网页：</h2><p>使用 <code>hexo server</code> 命令在本地启动 Hexo 服务器，并在浏览器中查看更新后的网页。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><h2 id="将更新后的网页部署到线上："><a href="#将更新后的网页部署到线上：" class="headerlink" title="将更新后的网页部署到线上："></a>将更新后的网页部署到线上：</h2><p>使用 <code>hexo deploy</code> 命令将更新后的网页部署到服务器上。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p>执行以上操作后，你应该可以解决线上网页与本地网页不一致的问题，并得到最新的网页内容。</p>
+<p>注意，以上命令中的术语解释如下：</p>
+<ul>
+<li>Hexo：一款基于 Node.js 的静态网站生成器，可以将 Markdown 文件转换成静态网页。</li>
+<li>Git：一种分布式版本控制系统，可以帮助你管理代码的版本和历史记录。</li>
+<li>缓存文件：指 Hexo 项目中生成的中间文件，例如生成的 HTML 文件、CSS 文件、静态资源文件等，通常存储在 <code>public</code> 文件夹中。</li>
+<li>Git 缓存：指 Git 仓库中存储的文件，这些文件已经被添加到 Git 缓存区中，但尚未提交到 Git 仓库中。</li>
+</ul>
+<p>搞定！</p>
+]]></content>
+      <categories>
+        <category>经验笔记</category>
+        <category>程序向</category>
+        <category>网页设计</category>
+      </categories>
+      <tags>
+        <tag>Debug</tag>
+        <tag>网页设计</tag>
+        <tag>bug烦死了！</tag>
+      </tags>
+  </entry>
 </search>
