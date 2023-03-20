@@ -399,6 +399,9 @@
                 <!-- 引用 artitalk -->
 
 <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+
+
+
 <!-- 存放说说的容器 -->
 
 <div id="artitalk_main"></div>
@@ -406,6 +409,7 @@
 new Artitalk({
       appId: 'HqiPCXncVNxXiPwIfR776Iil-MdYXbMMI',
       appKey: 'XjArc84UZxO4sgwpiea1RtJd',
+      serverURL: 'https://avoscloud.com',
       pageSize: 50, //每页评论数量
       shuoPla: '', //评论框里显示，可以不填
       motion: 0, //加载动画的开关 0（关闭），1（开启）
@@ -438,7 +442,7 @@ new Artitalk({
         function loadWaline() {
             init({
                 el: '#waline',
-                serverURL: 'https://waline-for-comments-git-main-archieluan.vercel.app/',
+                serverURL: 'https://waline-for-comments-ace4jwyf7-archieluan.vercel.app',
                 lang: 'zh-CN',
                 dark: 'body[class~="dark-mode"]',
                 requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
