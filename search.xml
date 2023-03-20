@@ -1153,4 +1153,55 @@
         <tag>Material</tag>
       </tags>
   </entry>
+  <entry>
+    <title>经验笔记：UE5全局光照设置规范-影视动画方向</title>
+    <url>/2023/03/19/Global-lighting-Settings-specification/</url>
+    <content><![CDATA[<h1 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h1><p>UE5场景中的<strong>全局光照设置规范</strong>的经验笔记。</p>
+<h1 id="Setting-Process"><a href="#Setting-Process" class="headerlink" title="Setting Process"></a>Setting Process</h1><h2 id="1-光线追踪"><a href="#1-光线追踪" class="headerlink" title="1. 光线追踪"></a>1. 光线追踪</h2><h4 id="创建项目页面-开启光线追踪"><a href="#创建项目页面-开启光线追踪" class="headerlink" title="创建项目页面 - 开启光线追踪"></a>创建项目页面 - 开启光线追踪</h4><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/01_%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA.jpg" class title="This is an lightsetting image">
+
+
+
+<h2 id="2-项目设置"><a href="#2-项目设置" class="headerlink" title="2. 项目设置"></a>2. 项目设置</h2><h3 id="2-1-项目设置-支持平台-选择所面向平台"><a href="#2-1-项目设置-支持平台-选择所面向平台" class="headerlink" title="2.1 项目设置 - 支持平台 - 选择所面向平台"></a>2.1 项目设置 - 支持平台 - 选择所面向平台</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/02_%E9%80%89%E6%8B%A9%E5%B9%B3%E5%8F%B0.jpg" class title="This is an lightsetting image">
+
+
+
+<h3 id="2-2-项目设置-渲染-GI全局光照-x2F-反射-x2F-Lumen"><a href="#2-2-项目设置-渲染-GI全局光照-x2F-反射-x2F-Lumen" class="headerlink" title="2.2 项目设置 - 渲染 - GI全局光照&#x2F;反射&#x2F;Lumen"></a>2.2 项目设置 - 渲染 - GI全局光照&#x2F;反射&#x2F;Lumen</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/03_GI%E5%85%A8%E5%B1%80%E5%85%89%E7%85%A7%E5%8F%8D%E5%B0%84Lumen.jpg" class title="This is an lightsetting image">
+
+
+
+<h3 id="2-3-项目设置-渲染-材质-x2F-虚拟纹理-x2F-色彩空间"><a href="#2-3-项目设置-渲染-材质-x2F-虚拟纹理-x2F-色彩空间" class="headerlink" title="2.3 项目设置 - 渲染 - 材质&#x2F;虚拟纹理&#x2F;色彩空间"></a>2.3 项目设置 - 渲染 - 材质&#x2F;虚拟纹理&#x2F;色彩空间</h3><p>注：先打开“支持硬件光线追踪”，再进行以下操作</p>
+<img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/04_%E6%9D%90%E8%B4%A8%E8%99%9A%E6%8B%9F%E7%BA%B9%E7%90%86%E8%89%B2%E5%BD%A9%E7%A9%BA%E9%97%B4.jpg" class title="This is an lightsetting image">
+
+
+
+<h3 id="2-4-项目设置-渲染-优化"><a href="#2-4-项目设置-渲染-优化" class="headerlink" title="2.4 项目设置 - 渲染 -优化"></a>2.4 项目设置 - 渲染 -优化</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/05_%E4%BC%98%E5%8C%96.jpg" class title="This is an lightsetting image">
+
+
+
+<h3 id="2-5-项目设置-平台-Windows"><a href="#2-5-项目设置-平台-Windows" class="headerlink" title="2.5 项目设置 - 平台 - Windows"></a>2.5 项目设置 - 平台 - Windows</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/06_%E7%9B%AE%E6%A0%87RHT.jpg" class title="This is an lightsetting image">
+
+
+
+<h2 id="3-PostProcessVolume-Setting"><a href="#3-PostProcessVolume-Setting" class="headerlink" title="3. PostProcessVolume Setting"></a>3. PostProcessVolume Setting</h2><h3 id="3-1-全局光照"><a href="#3-1-全局光照" class="headerlink" title="3.1 全局光照"></a>3.1 全局光照</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/07_%E5%85%A8%E5%B1%80%E5%85%89%E7%85%A7.jpg" class title="This is an lightsetting image">
+
+<h3 id="3-2-反射-渲染功能"><a href="#3-2-反射-渲染功能" class="headerlink" title="3.2 反射+渲染功能"></a>3.2 反射+渲染功能</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/08_%E5%8F%8D%E5%B0%84+%E6%B8%B2%E6%9F%93%E5%8A%9F%E8%83%BD.jpg" class title="This is an lightsetting image">
+
+<h3 id="3-3-Bloom"><a href="#3-3-Bloom" class="headerlink" title="3.3 Bloom"></a>3.3 Bloom</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/09_bloom.jpg" class title="This is an lightsetting image">
+
+<h3 id="3-4-Exposure-and-EV100"><a href="#3-4-Exposure-and-EV100" class="headerlink" title="3.4 Exposure and EV100"></a>3.4 Exposure and EV100</h3><img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/10_Exposure.jpg" class title="This is an lightsetting image">
+
+<img lazyload src="/images/loading.svg" data-src="/2023/03/19/Global-lighting-Settings-specification/11_EV100.jpg" class title="This is an lightsetting image">
+]]></content>
+      <categories>
+        <category>经验笔记</category>
+        <category>美术向</category>
+        <category>UE5</category>
+      </categories>
+      <tags>
+        <tag>UE5</tag>
+        <tag>全局光照</tag>
+        <tag>光线追踪</tag>
+        <tag>场景灯光</tag>
+      </tags>
+  </entry>
 </search>
