@@ -409,7 +409,6 @@
 new Artitalk({
       appId: 'HqiPCXncVNxXiPwIfR776Iil-MdYXbMMI',
       appKey: 'XjArc84UZxO4sgwpiea1RtJd',
-      serverURL: 'https://avoscloud.com',
       pageSize: 50, //每页评论数量
       shuoPla: '', //评论框里显示，可以不填
       motion: 0, //加载动画的开关 0（关闭），1（开启）
@@ -421,51 +420,10 @@ new Artitalk({
 })
 </script>
 
+
             
         </div>
         <div class="page-template-comments">
-            
-                <div class="comments-container">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fa-solid fa-comments"></i>&nbsp;Comments
-    </div>
-    
-
-        
-            
- 
-    <div id="waline"></div>
-    <script type="module"  data-pjax>
-        import { init } from 'https://evan.beee.top/js/waline.mjs';
-
-        function loadWaline() {
-            init({
-                el: '#waline',
-                serverURL: 'https://waline-for-comments-ace4jwyf7-archieluan.vercel.app',
-                lang: 'zh-CN',
-                dark: 'body[class~="dark-mode"]',
-                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
-            });
-        }
-
-        if ('true') {
-            const loadWalineTimeout = setTimeout(() => {
-                loadWaline();
-                clearTimeout(loadWalineTimeout);
-            }, 1000);
-        } else {
-            window.addEventListener('DOMContentLoaded', loadWaline);
-        }
-        
-    </script>
-
-
-
-        
-    
-</div>
-
             
         </div>
     </div>
