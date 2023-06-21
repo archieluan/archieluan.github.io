@@ -1,7 +1,7 @@
-REDEFINE.initLocalSearch = () => {
+Global.initLocalSearch = () => {
 
   // Search DB path
-  let searchPath = REDEFINE.hexo_config.path;
+  let searchPath = Global.hexo_config.path;
   if (!searchPath) {
     // Search DB path
     console.warn('`hexo-generator-searchdb` plugin is not installed!');
@@ -39,10 +39,12 @@ REDEFINE.initLocalSearch = () => {
 
   // Merge hits into slices
   const mergeIntoSlice = (start, end, index, searchText) => {
-    let item = index[index.length - 1];
-    let {position, word} = item;
+    let currentItem = index[index.length - 1];
+    let { position, word } = currentItem;
     let hits = [];
     let searchTextCountInSlice = 0;
+  
+    // Merge hits into the slice
     while (position + word.length <= end && index.length !== 0) {
       if (word === searchText) {
         searchTextCountInSlice++;
@@ -51,21 +53,23 @@ REDEFINE.initLocalSearch = () => {
         position,
         length: word.length
       });
-      let wordEnd = position + word.length;
-
-      // Move to next position of hit
+  
+      const wordEnd = position + word.length;
+  
+      // Move to the next position of the hit
       index.pop();
-      while (index.length !== 0) {
-        item = index[index.length - 1];
-        position = item.position;
-        word = item.word;
-        if (wordEnd > position) {
-          index.pop();
-        } else {
+      for (let i = index.length - 1; i >= 0; i--) {
+        currentItem = index[i];
+        position = currentItem.position;
+        word = currentItem.word;
+        if (wordEnd <= position) {
           break;
+        } else {
+          index.pop();
         }
       }
     }
+  
     return {
       hits,
       start,
@@ -161,7 +165,7 @@ REDEFINE.initLocalSearch = () => {
           });
 
           // Select top N slices in content
-          let upperBound = parseInt(REDEFINE.theme_config.local_search.top_n_per_article ? REDEFINE.theme_config.local_search.top_n_per_article : 1, 10);
+          let upperBound = parseInt(Global.theme_config.navbar.search.top_n_per_article ? Global.theme_config.navbar.search.top_n_per_article : 1, 10);
           if (upperBound >= 0) {
             slicesOfContent = slicesOfContent.slice(0, upperBound);
           }
@@ -212,7 +216,7 @@ REDEFINE.initLocalSearch = () => {
   };
 
   const fetchData = () => {
-    fetch(REDEFINE.hexo_config.root + searchPath)
+    fetch(Global.hexo_config.root + searchPath)
       .then(response => response.text())
       .then(res => {
         // Get the contents from search data
@@ -237,7 +241,7 @@ REDEFINE.initLocalSearch = () => {
       });
   };
 
-  if (REDEFINE.theme_config.local_search.preload) {
+  if (Global.theme_config.navbar.search.preload) {
     fetchData();
   }
 

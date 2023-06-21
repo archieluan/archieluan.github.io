@@ -1,15 +1,17 @@
-/* global REDEFINE */
+/* global function */
 
-REDEFINE.initUtils = () => {
-  REDEFINE.utils = {
+Global.initUtils = () => {
+  Global.utils = {
     html_root_dom: document.querySelector("html"),
     pageContainer_dom: document.querySelector(".page-container"),
-    pageTop_dom: document.querySelector(".page-main-content-top"),
-    firstScreen_dom: document.querySelector(".first-screen-container"),
+    pageTop_dom: document.querySelector(".main-content-header"),
+    homeBanner_dom: document.querySelector(".home-banner-container"),
     scrollProgressBar_dom: document.querySelector(".scroll-progress-bar"),
     pjaxProgressBar_dom: document.querySelector(".pjax-progress-bar"),
     pjaxProgressIcon_dom: document.querySelector(".pjax-progress-icon"),
     backToTopButton_dom: document.querySelector(".tool-scroll-to-top"),
+    toolsList: document.querySelector(".hidden-tools-list"),
+    toggleButton: document.querySelector(".toggle-tools-list"),
 
     innerHeight: window.innerHeight,
     pjaxProgressBarTimer: null,
@@ -17,203 +19,224 @@ REDEFINE.initUtils = () => {
     fontSizeLevel: 0,
 
     isHasScrollProgressBar:
-      REDEFINE.theme_config.style.scroll.progress_bar.enable === true,
+      Global.theme_config.global.scroll_progress.bar === true,
     isHasScrollPercent:
-      REDEFINE.theme_config.style.scroll.percent.enable === true,
+      Global.theme_config.global.scroll_progress.percentage === true,
 
-    // Scroll Style Handle
-    styleHandleWhenScroll() {
-      const scrollTop =
-        document.body.scrollTop || document.documentElement.scrollTop;
-      const scrollHeight =
-        document.body.scrollHeight || document.documentElement.scrollHeight;
-      const clientHeight =
-        window.innerHeight || document.documentElement.clientHeight;
-
-      const percent = Math.round(
-        (scrollTop / (scrollHeight - clientHeight)) * 100
-      );
-
-      if (this.isHasScrollProgressBar) {
-        const ProgressPercent = (
-          (scrollTop / (scrollHeight - clientHeight)) *
-          100
-        ).toFixed(3);
-        this.scrollProgressBar_dom.style.visibility =
-          percent === 0 ? "hidden" : "visible";
-        this.scrollProgressBar_dom.style.width = `${ProgressPercent}%`;
-      }
-
-      if (this.isHasScrollPercent) {
-        const percent_dom = this.backToTopButton_dom.querySelector(".percent");
-        if (percent === 0 || percent === undefined) {
-          this.backToTopButton_dom.classList.remove("show");
-        } else {
-          this.backToTopButton_dom.classList.add("show");
-          percent_dom.innerHTML = percent.toFixed(0);
-        }
-      }
-
-      // hide menu handle
-      if (scrollTop > this.prevScrollValue && scrollTop > this.innerHeight) {
-        this.pageTop_dom.classList.remove("hide");
-      } else {
-        this.pageTop_dom.classList.remove("hide");
-      }
+    // Scroll Style
+    updateScrollStyle() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const clientHeight = window.innerHeight || document.documentElement.clientHeight;
+      const percent = this.calculatePercentage(scrollTop, scrollHeight, clientHeight);
+    
+      this.updateScrollProgressBar(percent);
+      this.updateScrollPercent(percent);
+      this.updatePageTopVisibility(scrollTop, clientHeight);
+      
       this.prevScrollValue = scrollTop;
+    },
+
+    calculatePercentage(scrollTop, scrollHeight, clientHeight) {
+      return Math.round((scrollTop / (scrollHeight - clientHeight)) * 100);
+    },
+
+    
+    updateScrollProgressBar(percent) {
+      if (this.isHasScrollProgressBar) {
+        const progressPercent = percent.toFixed(3);
+        const visibility = percent === 0 ? 'hidden' : 'visible';
+    
+        this.scrollProgressBar_dom.style.visibility = visibility;
+        this.scrollProgressBar_dom.style.width = `${progressPercent}%`;
+      }
+    },
+    
+    updateScrollPercent(percent) {
+      if (this.isHasScrollPercent) {
+        const percentDom = this.backToTopButton_dom.querySelector('.percent');
+        const showButton = percent !== 0 && percent !== undefined;
+    
+        this.backToTopButton_dom.classList.toggle('show', showButton);
+        percentDom.innerHTML = percent.toFixed(0);
+      }
+    },
+    
+    updatePageTopVisibility(scrollTop, clientHeight) {
+      if (Global.theme_config.navbar.auto_hide) {
+        const prevScrollValue = this.prevScrollValue;
+        const hidePageTop = prevScrollValue > clientHeight && scrollTop > prevScrollValue;
+    
+        this.pageTop_dom.classList.toggle('hide', hidePageTop);
+      } else {
+        this.pageTop_dom.classList.remove('hide');
+      }
+    },
+    
+    calculatePercentage(scrollTop, scrollHeight, clientHeight) {
+      return Math.round((scrollTop / (scrollHeight - clientHeight)) * 100);
     },
 
     // register window scroll event
     registerWindowScroll() {
       window.addEventListener("scroll", () => {
-        // style handle when scroll
-        if (this.isHasScrollPercent || this.isHasScrollProgressBar) {
-          this.styleHandleWhenScroll();
-        }
-
-        // TOC scroll handle
-        if (
-          REDEFINE.theme_config.toc.enable &&
-          REDEFINE.utils.hasOwnProperty("updateActiveTOCLink")
-        ) {
-          REDEFINE.utils.updateActiveTOCLink();
-        }
-
-        // menu shrink
-        REDEFINE.utils.menuShrink.menuShrink();
-
-        // auto hide tools
-        var y = window.pageYOffset;
-        var height = document.body.scrollHeight;
-        var windowHeight = window.innerHeight;
-        var toolList = document.getElementsByClassName('right-bottom-side-tools');
-        
-        for (var i = 0; i < toolList.length; i++) {
-          var tools = toolList[i];
-          if (y <= 0) {
-            if (location.pathname !== '/') {
-              //console.log(location.pathname)
-            } else {
-              tools.classList.add('hide');
-            }
-          } else if (y + windowHeight >= height - 20) {
-            tools.classList.add('hide');
-          } else {
-            tools.classList.remove('hide');
-          }
-        }
-
-        /*aplayer auto hide*/
-        
-        var aplayer = document.getElementById('aplayer');
-        if (aplayer == null) {} else {
-          if (y <= 0) {
-              if (location.pathname !== '/') {
-                //console.log(location.pathname)
-              } else {
-                aplayer.classList.add('hide');
-              }
-          } else if (y + windowHeight >= height - 20) {
-            aplayer.classList.add('hide');
-          } else {
-            aplayer.classList.remove('hide');
-          }
-        }
+        this.updateScrollStyle();
+        this.updateTOCScroll();
+        this.updateNavbarShrink();
+        this.updateHomeBannerBlur();
+        this.updateAutoHideTools();
+        this.updateAPlayerAutoHide();
       });
     },
-
-    // toggle show tools list
-    toggleShowToolsList() {
-      document
-        .querySelector(".tool-toggle-show")
-        .addEventListener("click", () => {
-          document
-            .querySelector(".unfolded-tools-list")
-            .classList.toggle("show");
-        });
+    
+    updateTOCScroll() {
+      if (Global.theme_config.articles.toc.enable && Global.utils.hasOwnProperty("updateActiveTOCLink")) {
+        Global.utils.updateActiveTOCLink();
+      }
+    },
+    
+    updateNavbarShrink() {
+      navbarShrink.init();
+    },
+    
+    updateHomeBannerBlur() {
+      if (Global.theme_config.home_banner.style === "fixed" && location.pathname === Global.hexo_config.root) {
+        const blurElement = document.querySelector(".home-banner-background");
+        const viewHeight = window.innerHeight;
+        const scrollY = window.scrollY || window.pageYOffset;
+        const triggerViewHeight = viewHeight / 2;
+        const blurValue = scrollY >= triggerViewHeight ? 15 : 0;
+    
+        try {
+          blurElement.style.transition = "0.3s";
+          blurElement.style.webkitFilter = `blur(${blurValue}px)`;
+        } catch (e) {}
+      }
+    },
+    
+    updateAutoHideTools() {
+      const y = window.pageYOffset;
+      const height = document.body.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const toolList = document.getElementsByClassName('right-side-tools-container');
+    
+      for (let i = 0; i < toolList.length; i++) {
+        const tools = toolList[i];
+        if (y <= 0) {
+          if (location.pathname !== '/') {
+            //console.log(location.pathname)
+          } else {
+            tools.classList.add('hide');
+          }
+        } else if (y + windowHeight >= height - 20) {
+          tools.classList.add('hide');
+        } else {
+          tools.classList.remove('hide');
+        }
+      }
+    },
+    
+    updateAPlayerAutoHide() {
+      const aplayer = document.getElementById('aplayer');
+      if (aplayer == null) {} else {
+        const y = window.pageYOffset;
+        const height = document.body.scrollHeight;
+        const windowHeight = window.innerHeight;
+        if (y <= 0) {
+          if (location.pathname !== '/') {
+            //console.log(location.pathname)
+          } else {
+            aplayer.classList.add('hide');
+          }
+        } else if (y + windowHeight >= height - 20) {
+          aplayer.classList.add('hide');
+        } else {
+          aplayer.classList.remove('hide');
+        }
+      }
     },
 
-    // global font adjust
-    globalFontAdjust() {
-      const fontSize = document.defaultView.getComputedStyle(
-        document.body
-      ).fontSize;
-      const fs = parseFloat(fontSize);
-
-      const initFontSize = () => {
-        const styleStatus = REDEFINE.getStyleStatus();
-        if (styleStatus) {
-          this.fontSizeLevel = styleStatus.fontSizeLevel;
-          setFontSize(this.fontSizeLevel);
-        }
-      };
-
-      const setFontSize = (fontSizeLevel) => {
-        this.html_root_dom.style.fontSize = `${
-          fs * (1 + fontSizeLevel * 0.05)
-        }px`;
-        REDEFINE.styleStatus.fontSizeLevel = fontSizeLevel;
-        REDEFINE.setStyleStatus();
-      };
-
-      initFontSize();
-
-      document
-        .querySelector(".tool-font-adjust-plus")
-        .addEventListener("click", () => {
-          if (this.fontSizeLevel === 5) return;
-          this.fontSizeLevel++;
-          setFontSize(this.fontSizeLevel);
-        });
-
-      document
-        .querySelector(".tool-font-adjust-minus")
-        .addEventListener("click", () => {
-          if (this.fontSizeLevel <= 0) return;
-          this.fontSizeLevel--;
-          setFontSize(this.fontSizeLevel);
-        });
+    toggleToolsList() {
+      this.toggleButton.addEventListener("click", () => {
+        this.toolsList.classList.toggle("show");
+      });
+    },
+    
+    globalFontSizeAdjust() {
+      const htmlRoot = this.html_root_dom;
+      const fontAdjustPlus = document.querySelector('.tool-font-adjust-plus');
+      const fontAdjustMinus = document.querySelector('.tool-font-adjust-minus');
+    
+      const fontSize = document.defaultView.getComputedStyle(document.body).fontSize;
+      const baseFontSize = parseFloat(fontSize);
+    
+      let fontSizeLevel = 0;
+      const styleStatus = Global.getStyleStatus();
+      if (styleStatus) {
+        fontSizeLevel = styleStatus.fontSizeLevel;
+        setFontSize(fontSizeLevel);
+      }
+    
+      function setFontSize(level) {
+        const fontSize = baseFontSize * (1 + level * 0.05);
+        htmlRoot.style.fontSize = `${fontSize}px`;
+        Global.styleStatus.fontSizeLevel = level;
+        Global.setStyleStatus();
+      }
+    
+      function increaseFontSize() {
+        fontSizeLevel = Math.min(fontSizeLevel + 1, 5);
+        setFontSize(fontSizeLevel);
+      }
+    
+      function decreaseFontSize() {
+        fontSizeLevel = Math.max(fontSizeLevel - 1, 0);
+        setFontSize(fontSizeLevel);
+      }
+    
+      fontAdjustPlus.addEventListener('click', increaseFontSize);
+      fontAdjustMinus.addEventListener('click', decreaseFontSize);
     },
 
     // toggle content area width
     contentAreaWidthAdjust() {
       const toolExpandDom = document.querySelector(".tool-expand-width");
-      const menuContentDom = document.querySelector(".menu-content");
+      const navbarContentDom = document.querySelector(".navbar-content");
       const mainContentDom = document.querySelector(".main-content");
       const iconDom = toolExpandDom.querySelector("i");
 
       const defaultMaxWidth =
-        REDEFINE.theme_config.style.content_max_width || "1000px";
+        Global.theme_config.global.content_max_width || "1000px";
       const expandMaxWidth = "90%";
-      let menuMaxWidth = defaultMaxWidth;
+      let navbarMaxWidth = defaultMaxWidth;
 
       let isExpand = false;
 
       if (
-        REDEFINE.theme_config.style.first_screen.enable === true &&
+        Global.theme_config.home_banner.enable === true &&
         window.location.pathname === "/"
       ) {
-        menuMaxWidth = parseInt(defaultMaxWidth) * 1.2 + "px";
+        navbarMaxWidth = parseInt(defaultMaxWidth) * 1.2 + "px";
       }
 
       const setPageWidth = (isExpand) => {
-        REDEFINE.styleStatus.isExpandPageWidth = isExpand;
-        REDEFINE.setStyleStatus();
+        Global.styleStatus.isExpandPageWidth = isExpand;
+        Global.setStyleStatus();
         if (isExpand) {
           iconDom.classList.remove("fa-expand");
           iconDom.classList.add("fa-compress");
-          menuContentDom.style.maxWidth = expandMaxWidth;
+          navbarContentDom.style.maxWidth = expandMaxWidth;
           mainContentDom.style.maxWidth = expandMaxWidth;
         } else {
           iconDom.classList.remove("fa-compress");
           iconDom.classList.add("fa-expand");
-          menuContentDom.style.maxWidth = menuMaxWidth;
+          navbarContentDom.style.maxWidth = navbarMaxWidth;
           mainContentDom.style.maxWidth = defaultMaxWidth;
         }
       };
 
       const initPageWidth = () => {
-        const styleStatus = REDEFINE.getStyleStatus();
+        const styleStatus = Global.getStyleStatus();
         if (styleStatus) {
           isExpand = styleStatus.isExpandPageWidth;
           setPageWidth(isExpand);
@@ -233,8 +256,13 @@ REDEFINE.initUtils = () => {
       this.goComment_dom = document.querySelector(".go-comment");
       if (this.goComment_dom) {
         this.goComment_dom.addEventListener("click", () => {
-          document.querySelector("#comment-anchor").scrollIntoView({
-            behavior: "smooth",
+          const target = document.querySelector("#comment-anchor");
+          const offset = target.getBoundingClientRect().top + window.scrollY;
+          window.anime({
+            targets: document.scrollingElement,
+            duration: 500,
+            easing: 'linear',
+            scrollTop: offset - 10
           });
         });
       }
@@ -247,20 +275,20 @@ REDEFINE.initUtils = () => {
     },
 
     // init first screen height
-    initFirstScreenHeight() {
-      this.firstScreen_dom &&
-        (this.firstScreen_dom.style.height = this.innerHeight + "px");
+    inithomeBannerHeight() {
+      this.homeBanner_dom &&
+        (this.homeBanner_dom.style.height = this.innerHeight + "px");
     },
 
     // init page height handle
     initPageHeightHandle() {
-      if (this.firstScreen_dom) return;
-      const temp_h1 = this.getElementHeight(".page-main-content-top");
-      const temp_h2 = this.getElementHeight(".page-main-content-middle");
-      const temp_h3 = this.getElementHeight(".page-main-content-bottom");
+      if (this.homeBanner_dom) return;
+      const temp_h1 = this.getElementHeight(".main-content-header");
+      const temp_h2 = this.getElementHeight(".main-content-body");
+      const temp_h3 = this.getElementHeight(".main-content-footer");
       const allDomHeight = temp_h1 + temp_h2 + temp_h3;
       const innerHeight = window.innerHeight;
-      const pb_dom = document.querySelector(".page-main-content-bottom");
+      const pb_dom = document.querySelector(".main-content-footer");
       if (allDomHeight < innerHeight) {
         const marginTopValue = Math.floor(innerHeight - allDomHeight);
         if (marginTopValue > 0) {
@@ -290,7 +318,7 @@ REDEFINE.initUtils = () => {
           showHandle(imageViewerDom, isBigImage);
         });
 
-      const imgDoms = document.querySelectorAll(".markdown-body img");
+      const imgDoms = document.querySelectorAll(".markdown-body img, .masonry-item img");
 
       if (imgDoms.length) {
         imgDoms.forEach((img) => {
@@ -312,7 +340,7 @@ REDEFINE.initUtils = () => {
     
 
     getHowLongAgo(timestamp) {
-      const l = REDEFINE.language_ago;
+      const l = Global.language_ago;
 
       const __Y = Math.floor(timestamp / (60 * 60 * 24 * 30) / 12);
       const __M = Math.floor(timestamp / (60 * 60 * 24 * 30));
@@ -343,7 +371,7 @@ REDEFINE.initUtils = () => {
       const post = document.querySelectorAll(
         ".home-article-meta-info .home-article-date"
       );
-      const df = REDEFINE.theme_config.home_article.date_format;
+      const df = Global.theme_config.home.article_date_format;
       if (df === "relative") {
         post &&
           post.forEach((v) => {
@@ -477,32 +505,32 @@ REDEFINE.initUtils = () => {
   };
 
   // init scroll
-  REDEFINE.utils.registerWindowScroll();
+  Global.utils.registerWindowScroll();
 
   // toggle show tools list
-  REDEFINE.utils.toggleShowToolsList();
+  Global.utils.toggleToolsList();
 
   // global font adjust
-  REDEFINE.utils.globalFontAdjust();
+  Global.utils.globalFontSizeAdjust();
 
   // adjust content area width
-  REDEFINE.utils.contentAreaWidthAdjust();
+  Global.utils.contentAreaWidthAdjust();
 
   // go comment
-  REDEFINE.utils.goComment();
+  Global.utils.goComment();
 
   // init page height handle
-  REDEFINE.utils.initPageHeightHandle();
+  Global.utils.initPageHeightHandle();
 
   // init first screen height
-  REDEFINE.utils.initFirstScreenHeight();
+  Global.utils.inithomeBannerHeight();
 
   // big image viewer handle
-  REDEFINE.utils.imageViewer();
+  Global.utils.imageViewer();
 
   // set how long ago in home article block
-  REDEFINE.utils.relativeTimeInHome();
+  Global.utils.relativeTimeInHome();
 
   // calculate material colors
-  //REDEFINE.utils.calculateMaterialColors(REDEFINE.theme_config.style.primary_color);
+  //Global.utils.calculateMaterialColors(Global.theme_config.colors.primary);
 };
