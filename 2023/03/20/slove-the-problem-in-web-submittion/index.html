@@ -26,7 +26,7 @@
 <meta property="og:description" content="问题背景由于在使用 Hexo 构建静态网站时，经常会出现线上网页deploy后，与本地网页不一致的情况。因此就写下这篇经验贴，也作为自己的一个记录。 这是由于缓存文件未被正确更新，导致线上网页仍然显示旧的内容。为了解决这个问题，可以执行以下操作： 解决方案 清理 Hexo 项目中的缓存文件：使用 hexo clean 命令清理 Hexo 项目目录中生成的缓存文件，例如生成的 HTML 文件、CSS">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-03-19T18:19:24.000Z">
-<meta property="article:modified_time" content="2023-03-20T06:35:25.837Z">
+<meta property="article:modified_time" content="2023-07-03T07:00:23.500Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Debug">
 <meta property="article:tag" content="网页设计">
@@ -466,8 +466,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-03-20 14:35:25</span>
-            <span class="mobile">2023-03-20 14:35</span>
+            <span class="desktop">2023-07-03 15:23</span>
+            <span class="mobile">2023-07-03 15</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -535,8 +535,8 @@
 <li><h2 id="清理-Hexo-项目中的缓存文件："><a href="#清理-Hexo-项目中的缓存文件：" class="headerlink" title="清理 Hexo 项目中的缓存文件："></a>清理 Hexo 项目中的缓存文件：</h2><p>使用 <code>hexo clean</code> 命令清理 Hexo 项目目录中生成的缓存文件，例如生成的 HTML 文件、CSS 文件、静态资源文件等。这些缓存文件通常存储在 <code>public</code> 文件夹中。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><h2 id="删除-Git-缓存中的文件："><a href="#删除-Git-缓存中的文件：" class="headerlink" title="删除 Git 缓存中的文件："></a>删除 Git 缓存中的文件：</h2><p>使用 <code>git rm</code> 命令删除 Git 缓存中的文件。这些文件可能已经被提交到 Git 仓库中，但是你需要将它们从 Git 缓存中删除，以便重新生成静态文件。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br></pre></td></tr></table></figure></div>
+<li><h2 id="删除-Git-缓存中的文件："><a href="#删除-Git-缓存中的文件：" class="headerlink" title="删除 Git 缓存中的文件："></a>删除 Git 缓存中的文件：</h2><p>在deploy git目录，使用 <code>git rm</code> 命令删除 Git 缓存中的文件。这些文件可能已经被提交到 Git 仓库中，<code>- r *</code> 表示所有。但是你需要将它们从 Git 缓存中删除，以便重新生成静态文件。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r *</span><br></pre></td></tr></table></figure></div>
 </li>
 <li><h2 id="重新生成-Hexo-项目中的静态文件："><a href="#重新生成-Hexo-项目中的静态文件：" class="headerlink" title="重新生成 Hexo 项目中的静态文件："></a>重新生成 Hexo 项目中的静态文件：</h2><p>使用 <code>hexo generate</code> 命令重新生成 Hexo 项目中的静态文件。这个命令将重新生成所有需要生成的 HTML 文件、CSS 文件、JavaScript 文件等，并将它们存储在指定的 <code>public</code> 目录中。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
@@ -568,7 +568,7 @@
         <li><strong>Created at:</strong> 2023-03-20 02:19:24</li>
         
             <li>
-                <strong>Updated at:</strong> 2023-03-20 14:35:25
+                <strong>Updated at:</strong> 2023-07-03 15:00:23
             </li>
         
         <li>
